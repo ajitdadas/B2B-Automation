@@ -1,7 +1,7 @@
 package org.b2bAutomationService;
 
 
-//Dummy Class
+//Dummy Classs
 public class Test {
 
 }
