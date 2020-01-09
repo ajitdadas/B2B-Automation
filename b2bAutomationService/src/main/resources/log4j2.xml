@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+  <Appenders>
+     <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss.SSS z} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>  
+    <RollingFile name="bizLogFile" fileName="ngcAutomation.log" filePattern="ngcAutomation-%d{yyyy-MMM-dd}-%i.log">
+    	<PatternLayout>
+    		<pattern>"%d{yyyy-MMM-dd HH:mm:ss.SSS z} [%t] %-5level %logger{36} - %msg%n"</pattern>
+    	</PatternLayout>
+    	<Policies>
+        	<SizeBasedTriggeringPolicy size="10MB"/>
+      	</Policies>
+      	<DefaultRolloverStrategy max="10"/>
+    </RollingFile>  
+  </Appenders>
+  <Loggers>
+   <Logger name="com.cisco.b2b.automation" level="debug" additivity="false">
+      <AppenderRef ref="bizLogFile"/>
+    </Logger>   
+    <Root level="debug">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>

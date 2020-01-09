@@ -1,0 +1,30 @@
+<ProcessConfiguration xmlns="urn:cisco:b2b:bod:services:1.0">
+	<Sender>
+		<LogicalID>12</LogicalID>
+		<ComponentID>B2B-3.0</ComponentID>
+		<ReferenceID>Cisco Systems</ReferenceID>
+	</Sender>
+	<Receiver>
+		<LogicalID>1111</LogicalID>
+		<ID>B2B Partner</ID>
+	</Receiver>
+	<ConfigurationHeader>
+		<TAAFlag>Y</TAAFlag>
+		<RecommendationControl>ASFIX</RecommendationControl>
+		<TotalCartAmount>10.0</TotalCartAmount>
+		<AmountContribution></AmountContribution>
+		<PercentageContribution>0.0</PercentageContribution>
+		<InstallSiteLocation>
+			<Address>
+				<CountryCode>IN</CountryCode>
+				<PostalCode></PostalCode>
+			</Address>
+		</InstallSiteLocation>
+	</ConfigurationHeader>
+	<ConfigurationLine>
+		<LineNumber></LineNumber>
+		<ItemName>IPCOMM7-LIC</ItemName>
+		<ServiceAttributes/>
+		<XaasAttributes/>
+	</ConfigurationLine>
+</ProcessConfiguration>

@@ -1,0 +1,49 @@
+<cs:ConfigRecommendationResponse xmlns:cs="urn:cisco:icw:config:service" xmlns:cm="urn:cisco:icw:config:common" xmlns:cl="urn:cisco:icw:config:client">
+   <cm:requestId>851c7fe2-3b6b-4676-ba1a-c660d1110a4e</cm:requestId>
+   <cm:errorFlag>false</cm:errorFlag>
+   <cm:stats value="[cs1srvnprdlae-v52z4z3icstg-2]" key="instance"/>
+   <cm:stats value="Thu Dec 20 21:14:00 PST 2018" key="timeStamp"/>
+   <cm:stats value="69" key="totalTimetaken"/>
+   <cs:majorLine>
+      <cs:itemName>TRN-CLC-004</cs:itemName>
+      <cs:itemType>NONCONFIGURABLE</cs:itemType>
+      <cs:quantity>1</cs:quantity>
+      <cs:unitListPrice>136.51</cs:unitListPrice>
+      <cs:description>1 Prepaid Training Credits:Redeem W/Cisco Learning Partners</cs:description>
+      <cs:serviceable>false</cs:serviceable>
+      <cs:additionalItemInfo>TRAINING</cs:additionalItemInfo>
+      <cs:selectionFlag>USER</cs:selectionFlag>
+      <cs:status>VALID</cs:status>
+      <cs:installSite>
+         <cm:zipcode>411014</cm:zipcode>
+         <cm:country>IN</cm:country>
+      </cs:installSite>
+      <cs:flexServiceDuration>N</cs:flexServiceDuration>
+      <cs:extendedAttributes>
+         <cm:attribute type="string" name="ASSET_TYPE">Cisco Hardware and Software Services</cm:attribute>
+      </cs:extendedAttributes>
+   </cs:majorLine>
+   <cs:majorLine>
+      <cs:itemName>TRN-CLC-055</cs:itemName>
+      <cs:itemType>NONCONFIGURABLE</cs:itemType>
+      <cs:quantity>1</cs:quantity>
+      <cs:unitListPrice>1365.1</cs:unitListPrice>
+      <cs:description>10 Learning Credits</cs:description>
+      <cs:serviceable>false</cs:serviceable>
+      <cs:additionalItemInfo>TRAINING</cs:additionalItemInfo>
+      <cs:selectionFlag>USER</cs:selectionFlag>
+      <cs:status>VALID</cs:status>
+      <cs:installSite>
+         <cm:zipcode>411014</cm:zipcode>
+         <cm:country>IN</cm:country>
+      </cs:installSite>
+      <cs:flexServiceDuration>N</cs:flexServiceDuration>
+      <cs:extendedAttributes>
+         <cm:attribute type="string" name="ASSET_TYPE">Cisco Hardware and Software Services</cm:attribute>
+      </cs:extendedAttributes>
+   </cs:majorLine>
+   <cs:recommendationAttributes>
+      <cm:attribute type="double" name="CONTRIBUTION_AMMOUNT">2.0</cm:attribute>
+      <cm:attribute type="double" name="DERIVED_CONTRIBUTED_AMMOUNT">0.0</cm:attribute>
+   </cs:recommendationAttributes>
+</cs:ConfigRecommendationResponse>
