@@ -1,0 +1,255 @@
+2020-01-08 18:21:22,729 [DEBUG] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: best-match
+2020-01-08 18:21:22,759 [DEBUG] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+2020-01-08 18:21:22,762 [DEBUG] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://cloudsso-test.cisco.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-01-08 18:21:22,797 [DEBUG] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {s}->https://cloudsso-test.cisco.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-01-08 18:21:22,800 [DEBUG] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://cloudsso-test.cisco.com:443
+2020-01-08 18:21:22,888 [DEBUG] org.apache.http.impl.conn.HttpClientConnectionOperator  - Connecting to cloudsso-test.cisco.com/173.38.126.106:443
+2020-01-08 18:21:24,127 [DEBUG] org.apache.http.impl.conn.HttpClientConnectionOperator  - Connection established 10.107.168.144:51913<->173.38.126.106:443
+2020-01-08 18:21:24,127 [DEBUG] org.apache.http.impl.execchain.MainClientExec  - Executing request POST /as/token.oauth2?grant_type=password&client_id=w7tbdx2t9arpqw392e3t7wmz&client_secret=mcsUQtNGvrQbHExWv5hqStXn&username=mariar&password=cisco123 HTTP/1.1
+2020-01-08 18:21:24,128 [DEBUG] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+2020-01-08 18:21:24,129 [DEBUG] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+2020-01-08 18:21:24,133 [DEBUG] org.apache.http.headers  - http-outgoing-0 >> POST /as/token.oauth2?grant_type=password&client_id=w7tbdx2t9arpqw392e3t7wmz&client_secret=mcsUQtNGvrQbHExWv5hqStXn&username=mariar&password=cisco123 HTTP/1.1
+2020-01-08 18:21:24,133 [DEBUG] org.apache.http.headers  - http-outgoing-0 >> Content-Length: 0
+2020-01-08 18:21:24,133 [DEBUG] org.apache.http.headers  - http-outgoing-0 >> Host: cloudsso-test.cisco.com
+2020-01-08 18:21:24,134 [DEBUG] org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+2020-01-08 18:21:24,134 [DEBUG] org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2020-01-08 18:21:24,134 [DEBUG] org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2020-01-08 18:21:24,134 [DEBUG] org.apache.http.wire  - http-outgoing-0 >> "POST /as/token.oauth2?grant_type=password&client_id=w7tbdx2t9arpqw392e3t7wmz&client_secret=mcsUQtNGvrQbHExWv5hqStXn&username=mariar&password=cisco123 HTTP/1.1[\r][\n]"
+2020-01-08 18:21:24,134 [DEBUG] org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+2020-01-08 18:21:24,134 [DEBUG] org.apache.http.wire  - http-outgoing-0 >> "Host: cloudsso-test.cisco.com[\r][\n]"
+2020-01-08 18:21:24,135 [DEBUG] org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2020-01-08 18:21:24,135 [DEBUG] org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2020-01-08 18:21:24,135 [DEBUG] org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-01-08 18:21:24,135 [DEBUG] org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+2020-01-08 18:21:24,491 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2020-01-08 18:21:24,491 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Date: Wed, 08 Jan 2020 12:51:24 GMT[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Cache-Control: no-cache, no-store[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Set-Cookie: PF=1mGrwyYs0YlWbRzcZ4gcOQ;Path=/;Secure;HttpOnly[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "X-XSS-Protection: 1[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Keep-Alive: timeout=2, max=993[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2020-01-08 18:21:24,492 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+2020-01-08 18:21:24,493 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "96[\r][\n]"
+2020-01-08 18:21:24,493 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "{"access_token":"xWGUmHyATgn4Ur0kg37JjkrPcMXd","refresh_token":"LxFQfMQVa1YnAhbKNJKsZ8LsbeSatLFVZDGiTBuH1e","token_type":"Bearer","expires_in":3599}[\r][\n]"
+2020-01-08 18:21:24,493 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+2020-01-08 18:21:24,493 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+2020-01-08 18:21:24,493 [DEBUG] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+2020-01-08 18:21:24,500 [DEBUG] org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+2020-01-08 18:21:24,500 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Date: Wed, 08 Jan 2020 12:51:24 GMT
+2020-01-08 18:21:24,500 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Access-Control-Allow-Origin: *
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Cache-Control: no-cache, no-store
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Pragma: no-cache
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Expires: Thu, 01 Jan 1970 00:00:00 GMT
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=utf-8
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Set-Cookie: PF=1mGrwyYs0YlWbRzcZ4gcOQ;Path=/;Secure;HttpOnly
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << X-Content-Type-Options: nosniff
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << X-XSS-Protection: 1
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Keep-Alive: timeout=2, max=993
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Connection: Keep-Alive
+2020-01-08 18:21:24,501 [DEBUG] org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+2020-01-08 18:21:24,511 [DEBUG] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive for 2000 MILLISECONDS
+2020-01-08 18:21:24,525 [DEBUG] org.apache.http.client.protocol.ResponseProcessCookies  - Cookie accepted [PF="1mGrwyYs0YlWbRzcZ4gcOQ", version:0, domain:cloudsso-test.cisco.com, path:/, expiry:null]
+2020-01-08 18:21:24,974 [DEBUG] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {s}->https://cloudsso-test.cisco.com:443] can be kept alive for 2.0 seconds
+2020-01-08 18:21:24,974 [DEBUG] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {s}->https://cloudsso-test.cisco.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-01-08 18:21:24,974 [DEBUG] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection manager is shutting down
+2020-01-08 18:21:24,974 [DEBUG] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: Close connection
+2020-01-08 18:21:24,975 [DEBUG] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: Close connection
+2020-01-08 18:21:24,975 [DEBUG] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection manager shut down
+2020-01-08 18:21:26,846 [DEBUG] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://api-stage.cisco.com
+2020-01-08 18:21:26,901 [DEBUG] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to api-stage.cisco.com:443
+2020-01-08 18:21:28,887 [DEBUG] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+2020-01-08 18:21:28,891 [DEBUG] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+2020-01-08 18:21:28,892 [DEBUG] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+2020-01-08 18:21:28,894 [DEBUG] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+2020-01-08 18:21:28,894 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /commerce/CONFIG/v2/YS1-STG/sync/configRecommendation HTTP/1.1
+2020-01-08 18:21:28,895 [DEBUG] org.apache.http.wire  -  >> "POST /commerce/CONFIG/v2/YS1-STG/sync/configRecommendation HTTP/1.1[\r][\n]"
+2020-01-08 18:21:28,895 [DEBUG] org.apache.http.wire  -  >> "Authorization: Bearer xWGUmHyATgn4Ur0kg37JjkrPcMXd[\r][\n]"
+2020-01-08 18:21:28,895 [DEBUG] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+2020-01-08 18:21:28,895 [DEBUG] org.apache.http.wire  -  >> "Content-Type: application/xml; charset=ISO-8859-1[\r][\n]"
+2020-01-08 18:21:28,895 [DEBUG] org.apache.http.wire  -  >> "Content-Length: 877[\r][\n]"
+2020-01-08 18:21:28,895 [DEBUG] org.apache.http.wire  -  >> "Host: api-stage.cisco.com[\r][\n]"
+2020-01-08 18:21:28,896 [DEBUG] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+2020-01-08 18:21:28,896 [DEBUG] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2020-01-08 18:21:28,896 [DEBUG] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-01-08 18:21:28,896 [DEBUG] org.apache.http.wire  -  >> "[\r][\n]"
+2020-01-08 18:21:28,896 [DEBUG] org.apache.http.headers  - >> POST /commerce/CONFIG/v2/YS1-STG/sync/configRecommendation HTTP/1.1
+2020-01-08 18:21:28,896 [DEBUG] org.apache.http.headers  - >> Authorization: Bearer xWGUmHyATgn4Ur0kg37JjkrPcMXd
+2020-01-08 18:21:28,896 [DEBUG] org.apache.http.headers  - >> Accept: */*
+2020-01-08 18:21:28,896 [DEBUG] org.apache.http.headers  - >> Content-Type: application/xml; charset=ISO-8859-1
+2020-01-08 18:21:28,897 [DEBUG] org.apache.http.headers  - >> Content-Length: 877
+2020-01-08 18:21:28,897 [DEBUG] org.apache.http.headers  - >> Host: api-stage.cisco.com
+2020-01-08 18:21:28,897 [DEBUG] org.apache.http.headers  - >> Connection: Keep-Alive
+2020-01-08 18:21:28,897 [DEBUG] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2020-01-08 18:21:28,897 [DEBUG] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+2020-01-08 18:21:28,902 [DEBUG] org.apache.http.wire  -  >> "<ProcessConfiguration xmlns="urn:cisco:b2b:bod:services:1.0">[\r][\n]"
+2020-01-08 18:21:28,902 [DEBUG] org.apache.http.wire  -  >> "[0x9]<Sender>[\r][\n]"
+2020-01-08 18:21:28,902 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<LogicalID>12</LogicalID>[\r][\n]"
+2020-01-08 18:21:28,902 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ComponentID>B2B-3.0</ComponentID>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ReferenceID>Cisco Systems</ReferenceID>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9]</Sender>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9]<Receiver>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<LogicalID>1111</LogicalID>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ID>B2B Partner</ID>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9]</Receiver>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9]<ConfigurationHeader>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<TAAFlag>Y</TAAFlag>[\r][\n]"
+2020-01-08 18:21:28,903 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<RecommendationControl>ASFIX</RecommendationControl>[\r][\n]"
+2020-01-08 18:21:28,904 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<TotalCartAmount>10.0</TotalCartAmount>[\r][\n]"
+2020-01-08 18:21:28,904 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<AmountContribution>0.0</AmountContribution>[\r][\n]"
+2020-01-08 18:21:28,904 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<PercentageContribution>0.0</PercentageContribution>[\r][\n]"
+2020-01-08 18:21:28,904 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<InstallSiteLocation>[\r][\n]"
+2020-01-08 18:21:28,904 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9][0x9]<Address>[\r][\n]"
+2020-01-08 18:21:28,904 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9][0x9][0x9]<CountryCode>IN</CountryCode>[\r][\n]"
+2020-01-08 18:21:28,904 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9][0x9][0x9]<PostalCode>411014</PostalCode>[\r][\n]"
+2020-01-08 18:21:28,905 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9][0x9]</Address>[\r][\n]"
+2020-01-08 18:21:28,905 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]</InstallSiteLocation>[\r][\n]"
+2020-01-08 18:21:28,905 [DEBUG] org.apache.http.wire  -  >> "[0x9]</ConfigurationHeader>[\r][\n]"
+2020-01-08 18:21:28,905 [DEBUG] org.apache.http.wire  -  >> "[0x9]<ConfigurationLine>[\r][\n]"
+2020-01-08 18:21:28,905 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<LineNumber/>[\r][\n]"
+2020-01-08 18:21:28,905 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ItemName>SMA-M380-Kdnsa9</ItemName>[\r][\n]"
+2020-01-08 18:21:28,906 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ServiceAttributes/>[\r][\n]"
+2020-01-08 18:21:28,906 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<XaasAttributes/>[\r][\n]"
+2020-01-08 18:21:28,906 [DEBUG] org.apache.http.wire  -  >> "[0x9]</ConfigurationLine>[\r][\n]"
+2020-01-08 18:21:28,907 [DEBUG] org.apache.http.wire  -  >> "</ProcessConfiguration>"
+2020-01-08 18:21:30,961 [DEBUG] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-01-08 18:21:30,962 [DEBUG] org.apache.http.wire  -  << "Date: Wed, 08 Jan 2020 12:51:30 GMT[\r][\n]"
+2020-01-08 18:21:30,962 [DEBUG] org.apache.http.wire  -  << "X-Mashery-Message-ID: 0c5be344-f572-48e6-a73f-c74af5f20ca2[\r][\n]"
+2020-01-08 18:21:30,962 [DEBUG] org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+2020-01-08 18:21:30,962 [DEBUG] org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+2020-01-08 18:21:30,963 [DEBUG] org.apache.http.wire  -  << "Content-Type: application/xml[\r][\n]"
+2020-01-08 18:21:30,963 [DEBUG] org.apache.http.wire  -  << "Content-Length: 387[\r][\n]"
+2020-01-08 18:21:30,963 [DEBUG] org.apache.http.wire  -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-01-08 18:21:30,963 [DEBUG] org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS[\r][\n]"
+2020-01-08 18:21:30,964 [DEBUG] org.apache.http.wire  -  << "Access-Control-Allow-Headers: Content-type, fromPartyID, inputFormat, outputFormat, Authorization, Content-Length, Accept, Origin[\r][\n]"
+2020-01-08 18:21:30,964 [DEBUG] org.apache.http.wire  -  << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload;[\r][\n]"
+2020-01-08 18:21:30,964 [DEBUG] org.apache.http.wire  -  << "X-RP-SSL-Name: cae-np-rtp-ext-dedicated5-rp-0[\r][\n]"
+2020-01-08 18:21:30,964 [DEBUG] org.apache.http.wire  -  << "Connection: close[\r][\n]"
+2020-01-08 18:21:30,964 [DEBUG] org.apache.http.wire  -  << "[\r][\n]"
+2020-01-08 18:21:30,965 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+2020-01-08 18:21:30,965 [DEBUG] org.apache.http.headers  - << HTTP/1.1 200 OK
+2020-01-08 18:21:30,965 [DEBUG] org.apache.http.headers  - << Date: Wed, 08 Jan 2020 12:51:30 GMT
+2020-01-08 18:21:30,965 [DEBUG] org.apache.http.headers  - << X-Mashery-Message-ID: 0c5be344-f572-48e6-a73f-c74af5f20ca2
+2020-01-08 18:21:30,965 [DEBUG] org.apache.http.headers  - << Vary: Accept-Encoding
+2020-01-08 18:21:30,966 [DEBUG] org.apache.http.headers  - << Content-Encoding: gzip
+2020-01-08 18:21:30,966 [DEBUG] org.apache.http.headers  - << Content-Type: application/xml
+2020-01-08 18:21:30,966 [DEBUG] org.apache.http.headers  - << Content-Length: 387
+2020-01-08 18:21:30,966 [DEBUG] org.apache.http.headers  - << Access-Control-Allow-Credentials: true
+2020-01-08 18:21:30,966 [DEBUG] org.apache.http.headers  - << Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS
+2020-01-08 18:21:30,966 [DEBUG] org.apache.http.headers  - << Access-Control-Allow-Headers: Content-type, fromPartyID, inputFormat, outputFormat, Authorization, Content-Length, Accept, Origin
+2020-01-08 18:21:30,967 [DEBUG] org.apache.http.headers  - << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload;
+2020-01-08 18:21:30,967 [DEBUG] org.apache.http.headers  - << X-RP-SSL-Name: cae-np-rtp-ext-dedicated5-rp-0
+2020-01-08 18:21:30,967 [DEBUG] org.apache.http.headers  - << Connection: close
+2020-01-08 18:21:31,042 [DEBUG] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/xml
+2020-01-08 18:21:31,047 [DEBUG] org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x0][0x8d][0x92]MO[0xc3]0[0xc][0x86][0xff]J[0xb4][0xcb]N][0xd3][0xae]e][0x95]e[0x1a][0x1d][0x8][0x4]h[0xd2]6[0xe]p[0xcb]R[0xb7]D[0xb4][0xc9][0x94][0xa4][0x83][0xfd]{[0xd2][0xc1][0xbe][0xf8][0x90][0xb8][0xd9][0x8e][0xfd][0xe8][0xb5][0xdf][0x90][0xf1]{][0xa1][\r]h#[0x94][0x1c]u[0x83][0x1e][0xee]"[0x90]\[0xe5]B[0x96][0xa3][0xee][0xe3][0xf2][0xda]K[0xba]cJ&[0xfc]U[0xaa][0xb7][\n]"
+2020-01-08 18:21:31,049 [DEBUG] org.apache.http.wire  -  << "[0xf2][0x12]2%[0xb]Q6[0x9a]Y7[0x81][0xdc][0xb4]4[0xa3]N[0xa3]e[0xca][0x85][0xe1]*][0x85][0xab]t[0xa5][0xf2][0xd4][0x80][0xde][0x8][0xe]&u[0xc8][0xe]%[0xb][0x90]9hJ[0xee]U)8[0xab]n[0xa7]4[0x89][0x6][0xe1]0[0x18][0x6][0x1][0xf1][0x8f]E2[0x87][0x2][0xb4][0x13][0x0].[0xc9]Z Zl[0x8d][0x85][0xda][0xa0][[0xc9]{[0xc4]?}'[0xfe][0x9e]:[0x7][0xe]bs[0xce][0xf][0xc2][0xff][0x81][0xbf]3[0x8f][0xac]L[0xc3]n[0xc9])[0xb3][0xb0][0x14]5[0xd0][0x10][0x87][0xd8][0xc3][0x81][0x87][0x93]e[0x10][0xa6]q[0x90][0xf6][0xf1]3[0xf1][0xb4][0x91][0xcb][0xd9][0xd4][0xa1]0[0x8f]W[0xd0][0x8f]"[0xaf][0x88][0x7][0xa1][0x17]%p[0xe1][0xb1]A[0xbf][0xf0][0xf8] bE\[0x84][0x98]3'[0xf1][0xb3][0xd7][0xc9]3k%[\r],,[0xb3][0x8d][0xa1]WZ+[0xdd]j9[0xab][0x92][0xb3][0xdb][0xdf][0x0][0xdb]-[0xff][0x0][0xc6][0xb0][0x12][0xe]A[0xa6]r[0xa0][0xd9]"[0x8e]0[0xf1]OKd[\n]"
+2020-01-08 18:21:31,049 [DEBUG] org.apache.http.wire  -  << "[0x86]k[0xb1]ng[0xe9][0xf2][0x5][0x90][0xd9][0x1d][0x0]q[0xd5]T9[0x92][0xca]"[\r]\[0xd5][0xb5][0xbb])br[0x8b][0xf6][0xe][0xa2]Bid[0xdb]~[0xa8][0x80][[0xc8][0xd1]Z[0xab][0xbc][0xe1][0xd6]8?N[0x99][0xce]dw7a[0xb7]tv7yj[0xdd][0xf9]J[0xf]:\[0xf4][0xeb][\n]"
+2020-01-08 18:21:31,049 [DEBUG] org.apache.http.wire  -  << "[0xfe]_[0xff][0x8b]~[0x0]9T[0x86][0xea][0xa0][0x2][0x0][0x0]"
+2020-01-08 18:21:31,051 [DEBUG] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-01-08 18:21:31,185 [DEBUG] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7ce9e05a
+2020-01-08 18:21:31,186 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51914<->173.38.30.199:443 shut down
+2020-01-08 18:21:31,666 [DEBUG] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://api-stage.cisco.com
+2020-01-08 18:21:31,667 [DEBUG] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to api-stage.cisco.com:443
+2020-01-08 18:21:33,137 [DEBUG] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+2020-01-08 18:21:33,137 [DEBUG] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+2020-01-08 18:21:33,137 [DEBUG] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+2020-01-08 18:21:33,137 [DEBUG] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /commerce/CONFIG/v2/YS1-STG/sync/configRecommendation HTTP/1.1
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "POST /commerce/CONFIG/v2/YS1-STG/sync/configRecommendation HTTP/1.1[\r][\n]"
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "Authorization: Bearer xWGUmHyATgn4Ur0kg37JjkrPcMXd[\r][\n]"
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "Content-Type: application/xml; charset=ISO-8859-1[\r][\n]"
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "Content-Length: 873[\r][\n]"
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "Host: api-stage.cisco.com[\r][\n]"
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2020-01-08 18:21:33,138 [DEBUG] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.wire  -  >> "[\r][\n]"
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> POST /commerce/CONFIG/v2/YS1-STG/sync/configRecommendation HTTP/1.1
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> Authorization: Bearer xWGUmHyATgn4Ur0kg37JjkrPcMXd
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> Accept: */*
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> Content-Type: application/xml; charset=ISO-8859-1
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> Content-Length: 873
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> Host: api-stage.cisco.com
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> Connection: Keep-Alive
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2020-01-08 18:21:33,139 [DEBUG] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+2020-01-08 18:21:33,140 [DEBUG] org.apache.http.wire  -  >> "<ProcessConfiguration xmlns="urn:cisco:b2b:bod:services:1.0">[\r][\n]"
+2020-01-08 18:21:33,140 [DEBUG] org.apache.http.wire  -  >> "[0x9]<Sender>[\r][\n]"
+2020-01-08 18:21:33,140 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<LogicalID>12</LogicalID>[\r][\n]"
+2020-01-08 18:21:33,140 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ComponentID>B2B-3.0</ComponentID>[\r][\n]"
+2020-01-08 18:21:33,140 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ReferenceID>Cisco Systems</ReferenceID>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9]</Sender>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9]<Receiver>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<LogicalID>1111</LogicalID>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ID>B2B Partner</ID>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9]</Receiver>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9]<ConfigurationHeader>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<TAAFlag>Y</TAAFlag>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<RecommendationControl>ASFIX</RecommendationControl>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<TotalCartAmount>10.0</TotalCartAmount>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<AmountContribution>0.0</AmountContribution>[\r][\n]"
+2020-01-08 18:21:33,141 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<PercentageContribution>0.0</PercentageContribution>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<InstallSiteLocation>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9][0x9]<Address>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9][0x9][0x9]<CountryCode>IN</CountryCode>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9][0x9][0x9]<PostalCode>411014</PostalCode>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9][0x9]</Address>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]</InstallSiteLocation>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9]</ConfigurationHeader>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9]<ConfigurationLine>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<LineNumber/>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ItemName>IPCOMM7-LIC</ItemName>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<ServiceAttributes/>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9][0x9]<XaasAttributes/>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "[0x9]</ConfigurationLine>[\r][\n]"
+2020-01-08 18:21:33,142 [DEBUG] org.apache.http.wire  -  >> "</ProcessConfiguration>"
+2020-01-08 18:21:34,331 [DEBUG] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-01-08 18:21:34,331 [DEBUG] org.apache.http.wire  -  << "Date: Wed, 08 Jan 2020 12:51:34 GMT[\r][\n]"
+2020-01-08 18:21:34,331 [DEBUG] org.apache.http.wire  -  << "X-Mashery-Message-ID: 0c1a043d-c8c5-4f06-90cf-870770296aa2[\r][\n]"
+2020-01-08 18:21:34,332 [DEBUG] org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+2020-01-08 18:21:34,332 [DEBUG] org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+2020-01-08 18:21:34,332 [DEBUG] org.apache.http.wire  -  << "Content-Type: application/xml[\r][\n]"
+2020-01-08 18:21:34,332 [DEBUG] org.apache.http.wire  -  << "Content-Length: 389[\r][\n]"
+2020-01-08 18:21:34,332 [DEBUG] org.apache.http.wire  -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-01-08 18:21:34,332 [DEBUG] org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS[\r][\n]"
+2020-01-08 18:21:34,333 [DEBUG] org.apache.http.wire  -  << "Access-Control-Allow-Headers: Content-type, fromPartyID, inputFormat, outputFormat, Authorization, Content-Length, Accept, Origin[\r][\n]"
+2020-01-08 18:21:34,333 [DEBUG] org.apache.http.wire  -  << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload;[\r][\n]"
+2020-01-08 18:21:34,333 [DEBUG] org.apache.http.wire  -  << "X-RP-SSL-Name: cae-np-rtp-ext-dedicated5-rp-0[\r][\n]"
+2020-01-08 18:21:34,333 [DEBUG] org.apache.http.wire  -  << "Connection: close[\r][\n]"
+2020-01-08 18:21:34,333 [DEBUG] org.apache.http.wire  -  << "[\r][\n]"
+2020-01-08 18:21:34,333 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << HTTP/1.1 200 OK
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << Date: Wed, 08 Jan 2020 12:51:34 GMT
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << X-Mashery-Message-ID: 0c1a043d-c8c5-4f06-90cf-870770296aa2
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << Vary: Accept-Encoding
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << Content-Encoding: gzip
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << Content-Type: application/xml
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << Content-Length: 389
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << Access-Control-Allow-Credentials: true
+2020-01-08 18:21:34,334 [DEBUG] org.apache.http.headers  - << Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS
+2020-01-08 18:21:34,335 [DEBUG] org.apache.http.headers  - << Access-Control-Allow-Headers: Content-type, fromPartyID, inputFormat, outputFormat, Authorization, Content-Length, Accept, Origin
+2020-01-08 18:21:34,335 [DEBUG] org.apache.http.headers  - << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload;
+2020-01-08 18:21:34,335 [DEBUG] org.apache.http.headers  - << X-RP-SSL-Name: cae-np-rtp-ext-dedicated5-rp-0
+2020-01-08 18:21:34,335 [DEBUG] org.apache.http.headers  - << Connection: close
+2020-01-08 18:21:34,336 [DEBUG] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/xml
+2020-01-08 18:21:34,336 [DEBUG] org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x0][0x8d][0x92]MO[0xe3]0[0x10][0x86][0xff][0x8a][0xc5][0xa5][0xa7][0x10];[0xa4]4[0x8d]\#6e[0xb5][0x8][0x10][0x12]-[0x7][0xf6][0xe6][0x8e]'Yk[0x13][0xbb][0xb2][0x9d].[0xfd][0xf7]8[0xe5][0xab][0x85]E[0xe2]63[0x9e]y[0xf4][0xce][0xbc][0xe6]g[0x8f]]K6[0xe8][0xbc][0xb6]f6b[0xc7]tD[0xd0][0x80]U[0xda]4[0xb3][0xd1][0xfd][0xf2]gR[0x8c][0xce][0x4]?[0x87][0xbf][0xc6][0xfe]kQ5XYS[0xeb][0xa6]w2[0xc4][0x9][0x12][0xa7][0x8d][0x9f][0x1d][0xf5][0xce][0x94][0xa0]=[0xd8]r[0x95][0xad][0xca][0x95]U[0xa5]G[0xb7][0xd1][0x80][0xbe][0x8c][0xc8]#[0xc1][0x17]h[0x14]:[0xc1][0xaf]m[0xa3]A[0xb6][0x97]sQ[0xe4][0x93]l[0xca][0xa6][0x8c][0xf1][0xf4][0xbd][0xc8][0xef][0xb0]F[0x17][0x5]`L[0xaa][0x1]H[0x16][[0x1f][0xb0][0xf3][0xe4][0xd2][0xc0]1O[0xf7][0xdf]y[0xfa]J[0xbd]C@[0xbd]9[0xe4][0xb3][0xec]{[0xe0][0x8f][0xcc]wV[0xe5]p[0xb7][0xe4]\[0x6]\[0xea][0xe]EF3[0x9a]P[0x96][0xd0]b[0xc9][0xb2]r[0xcc][0xca][0x93][0xfc]7O?[0xb5][0xf1][0x1f][0xb7][0xf3][0x88][0xa2][0xc0]$[0xcd]OT[0x2][0x5][0x8c][0x93][0xbc][0xa6][0xa7][0xc9][0x94]B[0x9d][0x14][0x13]:[0x99][0xd0]lz*e[0x94][0xf8][0xdc][0x1b][0xe5][0xf9][0xb5]5[0x1e][0x17]A[0x86][0xde][0x8b][0xb][0xe7][0xac][0x1b][0xb4][0x1c]T[0xf9][0xc1][0xed][0xa1][0xdc]-[0x83][0xde][0xcb][0x6][0xdf][0x82][0xca]*[0x14][0xd5]b[0x9c]S[0x9e][0xee][0x97][0xf8][0x1c]=8[0xbd][0x1e]f[0xc5][0xf2][0xf][0x12][0xbf];[0x0][0x1][0xdb][0xb7][0x8a][0x18][0x1b][0x88]C[0xb0]][0x17]oJ[0xa4][0xd9][0x92]W[0x7]Im[0x1d][0x9]C?[0xb6][0x8][0x1][0x15]Y;[0xab]z[0x8]>[0xfa][0xb1][0xcf][0x8c]&[0xc7][0xbb][0xe9][0xb0][0x15][0xb7]W[0xe7][0xf][0x83];/[0xe9][0x9b][0x8e][0x18][0xfd]w[0x85][0xf4][0xab][0xff]%[0x9e][0x0].[0xe4][0x11][0xa2][0xa0][0x2][0x0][0x0]"
+2020-01-08 18:21:34,337 [DEBUG] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-01-08 18:21:35,302 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51916<->173.38.30.199:443 closed
+2020-01-08 18:23:26,968 [DEBUG] net.sf.jxls.transformer.SheetTransformer  - Processing sheet: ReportTemplate
+2020-01-08 18:23:27,164 [DEBUG] net.sf.jxls.transformer.BaseRowTransformer  - ----collection-property--------->RD
+2020-01-08 18:23:27,182 [WARN ] org.apache.commons.jexl2.JexlEngine  - ![0,20]: 'RD_JxLsC_.b2bTagName;' inaccessible or unknown property RD_JxLsC_
+2020-01-08 18:23:27,183 [WARN ] org.apache.commons.jexl2.JexlEngine  - ![0,21]: 'RD_JxLsC_.b2bTagValue;' inaccessible or unknown property RD_JxLsC_
+2020-01-08 18:23:27,183 [WARN ] org.apache.commons.jexl2.JexlEngine  - ![0,26]: 'RD_JxLsC_.crossflowTagName;' inaccessible or unknown property RD_JxLsC_
+2020-01-08 18:23:27,184 [WARN ] org.apache.commons.jexl2.JexlEngine  - ![0,27]: 'RD_JxLsC_.crossflowTagValue;' inaccessible or unknown property RD_JxLsC_
+2020-01-08 18:23:27,185 [DEBUG] net.sf.jxls.transformer.ChainTransformer  - net.sf.jxls.transformer.SimpleRowTransformer, null
+2020-01-08 18:23:27,185 [WARN ] org.apache.commons.jexl2.JexlEngine  - ![0,20]: 'RD_JxLsC_.b2bTagName;' inaccessible or unknown property RD_JxLsC_
+2020-01-08 18:23:27,186 [WARN ] org.apache.commons.jexl2.JexlEngine  - ![0,21]: 'RD_JxLsC_.b2bTagValue;' inaccessible or unknown property RD_JxLsC_
+2020-01-08 18:23:27,186 [WARN ] org.apache.commons.jexl2.JexlEngine  - ![0,26]: 'RD_JxLsC_.crossflowTagName;' inaccessible or unknown property RD_JxLsC_
+2020-01-08 18:23:27,186 [WARN ] org.apache.commons.jexl2.JexlEngine  - ![0,27]: 'RD_JxLsC_.crossflowTagValue;' inaccessible or unknown property RD_JxLsC_
+2020-01-08 18:23:27,187 [DEBUG] net.sf.jxls.transformer.ChainTransformer  - net.sf.jxls.transformer.SimpleRowTransformer, null
