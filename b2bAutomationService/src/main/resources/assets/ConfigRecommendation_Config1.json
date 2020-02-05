@@ -20,7 +20,7 @@
          "itemName": "ASF-ESG-G-IEXP-DPS",
          "itemType": "NONCONFIGURABLE",
          "quantity": "1",
-         "unitListPrice": "72850.0",
+         "unitListPrice": "72850.00",
          "extendedListPrice": "72850.0",
          "description": "EMERGING SOLUTION GROUP Interactive Exp Dep Small(21-50)",
          "orignalUnitListPrice": "72850.0",
@@ -41,7 +41,7 @@
                },
                {
                   "@name": "SERVICE_TYPE",
-                  "#text": "AS_FIXED"
+                  "#text": "AS_FIXED1"
                },
                {
                   "@name": "BusinessService",
@@ -70,7 +70,7 @@
          "itemName": "ASF-ESG-G-IEXP-TRG",
          "itemType": "NONCONFIGURABLE",
          "quantity": "1",
-         "unitListPrice": "12550.0",
+         "unitListPrice": "12550.00",
          "extendedListPrice": "12550.0",
          "description": "EMERGING SOLUTION GROUP Interactive Exp Training Service",
          "orignalUnitListPrice": "12550.0",
@@ -120,7 +120,7 @@
          "itemName": "ASF-ESG-G-IEXP-TRE",
          "itemType": "NONCONFIGURABLE",
          "quantity": "1",
-         "unitListPrice": "8068.0",
+         "unitListPrice": "8068.10",
          "extendedListPrice": "8068.0",
          "description": "EMERGING SOLUTION GROUP Interactive Exp Trg Express Service",
          "orignalUnitListPrice": "8068.0",
