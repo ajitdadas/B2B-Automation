@@ -22,6 +22,8 @@ public class App {
 		ConfigResponse conResponse = new ConfigResponse();
 		response = getB2BResponse();
 		conResponse = getConfigResponse();
+		Map<String,Object> mapDiff = new HashMap<>();
+		List<CompareResult> compareResults = null;
 		for (ConfigurationLine configurationLine : response.getConfigurationLine()) {
 			MajorLine majorLine = null;
 			for (MajorLine line : conResponse.getMajorLine()) {
@@ -31,22 +33,19 @@ public class App {
 				}
 			}
 			if (majorLine != null) {
-				List<CompareResult> compareResults = ResponseComparator.compareConfigMajorLineResponse(majorLine,configurationLine);
+			    compareResults = ResponseComparator.compareConfigMajorLineResponse(majorLine,configurationLine);
 				if (!compareResults.isEmpty()) {
 					System.out.println("Found Difference");
 					for (CompareResult compareResult : compareResults) {
-						System.out.println(compareResult.getItemName());
-						System.out.println(compareResult.getPropertyName());
-						System.out.println(compareResult.getValue1());
-						System.out.println(compareResult.getValue2());
-						System.out.println("******************************************");
+						mapDiff.put(compareResult.getItemName(), compareResults);
 					}
 				}
 				
 			}
+			
 		}
-		
-		
+	    
+		System.out.println(mapDiff);
 		
 	}
 

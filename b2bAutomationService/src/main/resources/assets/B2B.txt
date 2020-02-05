@@ -116,12 +116,12 @@
             "AllowedDifferentialDuration": "false"
          },
          "ConfigurationRecommendationAttributes": {
-            "LifeCyclePhase": "BUILD1",
+            "LifeCyclePhase": "BUILD",
             "RecommendedServiceType": "AS_FIXED",
             "BusinessService": "DEPLOYMENT",
             "Architecture": "COLLABORATION",
             "Deliverables": "Evaluation Report;Final Training Materials",
-            "Timelines": "up to",
+            "Timelines": "up to 90 Days",
             "Rank": "129"
          }
       }

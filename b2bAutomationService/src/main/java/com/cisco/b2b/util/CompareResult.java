@@ -51,4 +51,12 @@ public class CompareResult {
 		this.result = result;
 	}
 
+	@Override
+	public String toString() {
+		return " [ propertyName=" + propertyName + ", value1=" + value1
+				+ ", value2=" + value2 + "]";
+	}
+	
+	
+
 }

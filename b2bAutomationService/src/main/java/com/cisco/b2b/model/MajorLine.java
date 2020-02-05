@@ -1,5 +1,7 @@
 package com.cisco.b2b.model;
 
+import java.math.BigDecimal;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MajorLine {
@@ -14,10 +16,10 @@ public class MajorLine {
 	private String quantity;
 
 	@JsonProperty("unitListPrice")
-	private String unitListPrice;
+	private BigDecimal unitListPrice;
 
 	@JsonProperty("extendedListPrice")
-	private String extendedListPrice;
+	private BigDecimal extendedListPrice;
 
 	@JsonProperty("description")
 	private String description;
@@ -70,19 +72,19 @@ public class MajorLine {
 		this.quantity = quantity;
 	}
 
-	public String getUnitListPrice() {
+	public BigDecimal getUnitListPrice() {
 		return unitListPrice;
 	}
 
-	public void setUnitListPrice(String unitListPrice) {
+	public void setUnitListPrice(BigDecimal unitListPrice) {
 		this.unitListPrice = unitListPrice;
 	}
 
-	public String getExtendedListPrice() {
+	public BigDecimal getExtendedListPrice() {
 		return extendedListPrice;
 	}
 
-	public void setExtendedListPrice(String extendedListPrice) {
+	public void setExtendedListPrice(BigDecimal extendedListPrice) {
 		this.extendedListPrice = extendedListPrice;
 	}
 

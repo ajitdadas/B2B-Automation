@@ -1,11 +1,13 @@
 package com.cisco.b2b.model;
 
+import java.math.BigDecimal;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PricingInformation {
 
 	@JsonProperty("UnitListPrice")
-	private String unitListPrice;
+	private BigDecimal unitListPrice;
 
 	@JsonProperty("CurrencyCode")
 	private String currencyCode;
@@ -14,14 +16,22 @@ public class PricingInformation {
 	private String perQuantity;
 
 	@JsonProperty("ExtendedListPrice")
-	private String extendedListPrice;
+	private BigDecimal extendedListPrice;
 
-	public String getUnitListPrice() {
+	public BigDecimal getUnitListPrice() {
 		return unitListPrice;
 	}
 
-	public void setUnitListPrice(String unitListPrice) {
+	public void setUnitListPrice(BigDecimal unitListPrice) {
 		this.unitListPrice = unitListPrice;
+	}
+
+	public BigDecimal getExtendedListPrice() {
+		return extendedListPrice;
+	}
+
+	public void setExtendedListPrice(BigDecimal extendedListPrice) {
+		this.extendedListPrice = extendedListPrice;
 	}
 
 	public String getCurrencyCode() {
@@ -40,13 +50,7 @@ public class PricingInformation {
 		this.perQuantity = perQuantity;
 	}
 
-	public String getExtendedListPrice() {
-		return extendedListPrice;
-	}
-
-	public void setExtendedListPrice(String extendedListPrice) {
-		this.extendedListPrice = extendedListPrice;
-	}
+	
 
 	public String toString() {
 		return "PricingInformation [unitListPrice=" + unitListPrice + ", currencyCode=" + currencyCode
