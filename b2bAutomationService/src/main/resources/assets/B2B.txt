@@ -116,7 +116,7 @@
             "AllowedDifferentialDuration": "false"
          },
          "ConfigurationRecommendationAttributes": {
-            "LifeCyclePhase": "BUILD",
+            "LifeCyclePhase": "BUILD1",
             "RecommendedServiceType": "AS_FIXED",
             "BusinessService": "DEPLOYMENT",
             "Architecture": "COLLABORATION",

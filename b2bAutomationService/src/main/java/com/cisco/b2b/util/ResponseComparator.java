@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.cisco.b2b.model.Address;
+import com.cisco.b2b.model.Attribute;
 import com.cisco.b2b.model.ConfigurationLine;
 import com.cisco.b2b.model.InstallSiteLocation;
 import com.cisco.b2b.model.MajorLine;
@@ -12,8 +13,7 @@ import com.cisco.b2b.model.ProductAttributes;
 
 public class ResponseComparator {
 
-	public static List<CompareResult> compareConfigMajorLineResponse(MajorLine majorLine,
-			ConfigurationLine configurationLine) {
+	public static List<CompareResult> compareConfigMajorLineResponse(MajorLine majorLine, ConfigurationLine configurationLine) {
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
 
 		if (!majorLine.getItemType().equals(configurationLine.getItemType())) {
@@ -69,7 +69,22 @@ public class ResponseComparator {
 						majorLine.getServiceable(), productAttribute.getServiceable(), false));
 			}
 		}
-
+		
+		if(majorLine.getExtendedAttributes() != null) {
+			for(Attribute attribute : majorLine.getExtendedAttributes().getAttribute()) {
+				if(attribute.getName().equals("LifeCyclePhase")) {
+					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getLifeCyclePhase())){
+						compareResults.add(createCompareResult(majorLine.getItemName(), "LifeCyclePhase", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getLifeCyclePhase(), false));
+					}
+				}
+				if(attribute.getName().equals("SERVICE_TYPE")) {
+					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getRecommendedServiceType())){
+						compareResults.add(createCompareResult(majorLine.getItemName(), "LifeCyclePhase", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getRecommendedServiceType(), false));
+					}
+				}
+			}
+		}
+		
 		return compareResults;
 	}
 

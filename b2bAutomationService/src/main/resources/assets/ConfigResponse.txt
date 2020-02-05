@@ -41,7 +41,7 @@
                },
                {
                   "@name": "SERVICE_TYPE",
-                  "#text": "AS_FIXED"
+                  "#text": "AS_FIXED1"
                },
                {
                   "@name": "BusinessService",
