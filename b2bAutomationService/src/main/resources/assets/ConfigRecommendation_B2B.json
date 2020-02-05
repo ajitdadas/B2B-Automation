@@ -1,0 +1,1395 @@
+{
+"Sender": {
+"LogicalID": "847291911",
+"ReferenceID": "Cisco Systems Inc."
+},
+"Receiver": {
+"LogicalID": "12",
+"ReferenceID": "Cisco Systems"
+},
+"CreationDateTime": "2019-07-24T05:48:15Z",
+"BODID": "d1ded4da-cfac-45e4-90cc-ce83cb1870e4",
+"ResponseStatus": "Success",
+"ConfigurationLine": [
+{
+"LineNumber": "1",
+"ParentID": "0",
+"Description": "Hybrid ESA Outbound SW Bundle (DLP, Encryption) License",
+"Quantity": "1",
+"ItemName": "L-H-ESA-ESO-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "2",
+"ParentID": "0",
+"Description": "Cisco Email, AMP, TG - Premium File Analysis, 6K Files/Day",
+"Quantity": "1",
+"ItemName": "L-ESAP-AT6K-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "3",
+"ParentID": "0",
+"Description": "Hybrid Email, AMP, TG - Premium File Analysis, 200 Files/Day",
+"Quantity": "1",
+"ItemName": "H-ESAP-AT200-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "4",
+"ParentID": "0",
+"Description": "Cisco Email, AMP, TG - Premium File Analysis, 2K Files/Day",
+"Quantity": "1",
+"ItemName": "L-ESAP-AT2K-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "5",
+"ParentID": "0",
+"Description": "ESA Outbreak Filters License",
+"Quantity": "1",
+"ItemName": "ESA-OF-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "6",
+"ParentID": "0",
+"Description": "ESA McAfee Anti-Malware License",
+"Quantity": "1",
+"ItemName": "ESA-MFE-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "7",
+"ParentID": "0",
+"Description": "ESA Premium SW Bundle (AS, AV, OF, DLP, ENC) License",
+"Quantity": "1",
+"ItemName": "ESA-ESP-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "8",
+"ParentID": "0",
+"Description": "ESA Inbound Essentials SW Bundle (AS, AV, OF) License",
+"Quantity": "1",
+"ItemName": "ESA-ESI-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "9",
+"ParentID": "0",
+"Description": "ESA Outbound SW Bundle (DLP, Encryption) License",
+"Quantity": "1",
+"ItemName": "ESA-ESO-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "10",
+"ParentID": "0",
+"Description": "Hybrid Email, AMP, TG - Premium File Analysis, 6K Files/Day",
+"Quantity": "1",
+"ItemName": "H-ESAP-AT6K-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "11",
+"ParentID": "0",
+"Description": "SMA Centralized Email Management Reporting License",
+"Quantity": "1",
+"ItemName": "SMA-EMGT-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "12",
+"ParentID": "0",
+"Description": "Cisco Advanced Services Email Practitioner",
+"Quantity": "1",
+"ItemName": "L-EML-DPAP-SVC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "13",
+"ParentID": "0",
+"Description": "Hybrid ESA Inbound Essentials SW Bundle (AS, AV, OF) License",
+"Quantity": "1",
+"ItemName": "L-H-ESA-ESI-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "14",
+"ParentID": "0",
+"Description": "Cisco ESA Advanced Phishing Protection with Cloud Sensor",
+"Quantity": "1",
+"ItemName": "L-ESA-APPC-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "15",
+"ParentID": "0",
+"Description": "Cisco Email, AMP, TG - Inbound File Analysis, 200 Files/Day",
+"Quantity": "1",
+"ItemName": "L-ESAI-AT200-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "16",
+"ParentID": "0",
+"Description": "Cisco ESA Graymail Safe-unsubscribe License",
+"Quantity": "1",
+"ItemName": "L-ESA-GSU-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "17",
+"ParentID": "0",
+"Description": "Security ELA 2.0 Email Sec. App. McAfee AV Lic",
+"Quantity": "1",
+"ItemName": "E2SC-E-ESA-MFE",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+},
+"Message": {
+"MessageCode": "CS401",
+"Description": "E2SC-E-ESA-MFE is eligible for rebates through program/s Value Incentive Program 33. DISCLAIMER: This message does not guarantee rebate payments. VIP Program criteria need to be met to qualify for rebates. For more information, click www.cisco.com/go/vip",
+"Severity": "INFO",
+"ReasonCode": "VALUE_INCENTIVE_PROGRAM"
+}
+},
+{
+"LineNumber": "18",
+"ParentID": "0",
+"Description": "ESA Advanced Phishing, 1 Year, Not-For-Resale-License",
+"Quantity": "1",
+"ItemName": "L-EAPP-NFR-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "19",
+"ParentID": "0",
+"Description": "Cisco Email, AMP, TG - Premium File Analysis, 200 Files/Day",
+"Quantity": "1",
+"ItemName": "L-ESAP-AT200-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "20",
+"ParentID": "0",
+"Description": "ESA Advanced Phishing Cloud, 1 Year, Not-For-Resale-License",
+"Quantity": "1",
+"ItemName": "L-EAPPC-NFR-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "21",
+"ParentID": "0",
+"Description": "ESA Intelligent Multi-Scan License",
+"Quantity": "1",
+"ItemName": "ESA-IMS-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "22",
+"ParentID": "0",
+"Description": "ESA Anti-Spam License",
+"Quantity": "1",
+"ItemName": "ESA-AS-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "23",
+"ParentID": "0",
+"Description": "Cisco Email, AMP, TG - Inbound File Analysis, 6K Files/Day",
+"Quantity": "1",
+"ItemName": "L-ESAI-AT6K-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "24",
+"ParentID": "0",
+"Description": "ESA PXE Encryption License",
+"Quantity": "1",
+"ItemName": "ESA-ENC-LIC-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "25",
+"ParentID": "0",
+"Description": "ESA Image Analyzer License",
+"Quantity": "1",
+"ItemName": "ESA-IA-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "26",
+"ParentID": "0",
+"Description": "Cisco ESA Advanced Phishing Protection w/ On-Premise Sensor",
+"Quantity": "1",
+"ItemName": "L-ESA-APP-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "27",
+"ParentID": "0",
+"Description": "ESA Domain Protection, 1 Year, Not-For-Resale-License",
+"Quantity": "1",
+"ItemName": "L-EDMP-NFR-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "28",
+"ParentID": "0",
+"Description": "Security ELA 2.0 Email Sec. App. IMS Lic",
+"Quantity": "1",
+"ItemName": "E2SC-E-ESA-IMS",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+},
+"Message": {
+"MessageCode": "CS401",
+"Description": "E2SC-E-ESA-IMS is eligible for rebates through program/s Value Incentive Program 33. DISCLAIMER: This message does not guarantee rebate payments. VIP Program criteria need to be met to qualify for rebates. For more information, click www.cisco.com/go/vip",
+"Severity": "INFO",
+"ReasonCode": "VALUE_INCENTIVE_PROGRAM"
+}
+},
+{
+"LineNumber": "29",
+"ParentID": "0",
+"Description": "Cisco Email, AMP, TG - Inbound File Analysis, 2K Files/Day",
+"Quantity": "1",
+"ItemName": "L-ESAI-AT2K-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "30",
+"ParentID": "0",
+"Description": "ESA Sophos Anti-Malware License",
+"Quantity": "1",
+"ItemName": "ESA-SO-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "31",
+"ParentID": "0",
+"Description": "Cisco ESA Domain Protection License",
+"Quantity": "1",
+"ItemName": "L-ESA-DMP-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "32",
+"ParentID": "0",
+"Description": "Hybrid Email, AMP, TG - Premium File Analysis, 2K Files/Day",
+"Quantity": "1",
+"ItemName": "H-ESAP-AT2K-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "33",
+"ParentID": "0",
+"Description": "Hybrid Email, AMP, TG - Inbound File Analysis, 6K Files/Day",
+"Quantity": "1",
+"ItemName": "H-ESAI-AT6K-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "34",
+"ParentID": "0",
+"Description": "Hybrid ESA Premium SW Bundle (AS, AV, OF, DLP, ENC) License",
+"Quantity": "1",
+"ItemName": "L-H-ESA-ESP-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "35",
+"ParentID": "0",
+"Description": "ESA Data Loss Prevention License",
+"Quantity": "1",
+"ItemName": "ESA-DLP-LIC=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "36",
+"ParentID": "0",
+"Description": "SMA Centralized Email Mgmnt Reporting Lic, Not for resale",
+"Quantity": "1",
+"ItemName": "L-SMA-EMGT-NFR=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "37",
+"ParentID": "0",
+"Description": "Hybrid Email, AMP, TG - Inbound File Analysis, 200 Files/Day",
+"Quantity": "1",
+"ItemName": "H-ESAI-AT200-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+},
+{
+"LineNumber": "38",
+"ParentID": "0",
+"Description": "Hybrid Email, AMP, TG - Inbound File Analysis, 2K Files/Day",
+"Quantity": "1",
+"ItemName": "H-ESAI-AT2K-K9=",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN",
+"PostalCode": "411014"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M7DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "true",
+"DistiOrderableIndicator": "N",
+"AllowedDifferentialDuration": "false"
+},
+"ConfigurationRecommendationAttributes": {
+"AssociatedHardwareProducts": {
+"Name": "ESA C190 Email Security Appliance",
+"ItemGroup": "Email Security Appliance",
+"Description": "ESA-C190-K9"
+}
+}
+}
+]
+}

@@ -1,0 +1,1052 @@
+{
+    "status": "VALID",
+    "currencyCode": "USD",
+    "majorLine": [
+        {
+            "bundleFlag": false,
+            "configPath": "CAT29XX-MODEL:PRODUCTNAME|C1-C2960X-24PD-L",
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "country": "US"
+            },
+            "configValidationTimeStamp": 1571904096607,
+            "productAttributes": {
+                "TAAFlag": "N",
+                "TEPFlag": "N",
+                "cryptoFlag": "N",
+                "smartAccountRequired": "Optional",
+                "smartLicense": "Y"
+            },
+            "serviceLine": [
+                {
+                    "serviceLevelName": "SSSNT",
+                    "durationListPrice": 1110.21,
+                    "servicePeriod": {
+                        "duration": "36"
+                    },
+                    "lessThanMinDur": "N",
+                    "hierarchy": "SERVICE",
+                    "userSelected": true,
+                    "taxMandatoryAttach": false,
+                    "durationList": [
+                        12,
+                        24,
+                        36,
+                        48,
+                        60
+                    ],
+                    "sourceLineId": [],
+                    "message": [],
+                    "serviceLine": [],
+                    "mnqAttributes": {
+                        "channelProgram": "CBR",
+                        "mnqDestEligFlag": "Y"
+                    },
+                    "serviceAttributes": {
+                        "serviceType": "PRIMARYSERVICE"
+                    },
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "Y",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            },
+                            {
+                                "value": "30",
+                                "name": "PRODUCT_OFFSET",
+                                "type": "int"
+                            }
+                        ]
+                    },
+                    "itemName": "CON-SSSNT-29X24PDL",
+                    "itemType": "SERVICE",
+                    "quantity": 1,
+                    "unitListPrice": 370.07,
+                    "extendedListPrice": 1110.21,
+                    "description": "SOLN SUPP 8X5XNBD Catalyst 2960-X 24 GigE PoE 370W 2 x 10G",
+                    "mandatoryService": false,
+                    "leadTime": 0,
+                    "serviceMapId": 2
+                }
+            ],
+            "minorLine": [
+                {
+                    "configPath": "CAT29XX-MODEL:PWR_CABLE_OPTION|CAB-NONE",
+                    "selectionFlag": "USER",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "CAB-NONE",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "Eco friendly green option. No power cable will be shipped.",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 0,
+                    "leadTime": 0,
+                    "serviceable": false,
+                    "deliveryOption": "PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 3,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:CISCO_ONE_CLASS:0:CISCO_ONE_CAT|C1FPCAT29003K9",
+                    "selectionFlag": "USER",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "Y",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            },
+                            {
+                                "value": "Y",
+                                "name": "CISCO_ONE_TRANSLATED",
+                                "type": "string"
+                            },
+                            {
+                                "value": "Y",
+                                "name": "C1_SOFTWARE_SKU",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "itemName": "C1FPCAT29003K9",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 1100,
+                    "extendedListPrice": 1100,
+                    "description": "Cisco ONE Foundation Perpetual - Catalyst 2900 24 Port",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 1100,
+                    "leadTime": 14,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 4,
+                    "sourceLineId": [
+                        null
+                    ],
+                    "message": [
+                        {
+                            "code": "CS738",
+                            "description": "DNA subscriptions ordered with Cisco ONE Licenses include the support coverage for DNA, Cisco ONE Foundation and Advanced licenses. You no longer need to purchase a separate Software Support (SWSS) contract for Cisco ONE licenses.",
+                            "severity": "INFO",
+                            "cause": "SERVICECONFIGERROR",
+                            "subCause": "PERPLIC_COVERED_UNDER_DNA_SUB"
+                        }
+                    ]
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:CISCO_ONE_CLASS:0:CISCO_ONE_FND_EXP|C1-NAAS-24P-RTU",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C1-NAAS-24P-RTU",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "Cisco One C2900 24-ports NaaS RTU",
+                    "mandatoryService": false,
+                    "leadTime": 14,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 5,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:CISCO_ONE_CLASS:0:CISCO_ONE_FND_EXP|C1-LC-25-1Y",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C1-LC-25-1Y",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "Cisco ONE StealthWatch 25 FPS Lic 1 YR",
+                    "mandatoryService": false,
+                    "leadTime": 21,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 6,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:CISCO_ONE_CLASS:0:CISCO_ONE_FND_EXP|C1-PI-LFAS-2K3K-K9",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Optional"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C1-PI-LFAS-2K3K-K9",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "Cisco ONE PI Device License for LF & AS  for Cat 2k, 3k",
+                    "mandatoryService": false,
+                    "leadTime": 35,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 7,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:CISCO_ONE_CLASS:0:CISCO_ONE_FND_EXP|C1-ISE-BASE-24P",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "Y",
+                        "smartAccountRequired": "Optional"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C1-ISE-BASE-24P",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "Cisco ONE Identity Services Engine 50 EndPoint Base Lic",
+                    "mandatoryService": false,
+                    "leadTime": 21,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 8,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:SW_SUBS_CLASS:0:SW_SUBS_CAT|C29603-DNAC1E",
+                    "selectionFlag": "USER",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Mandatory"
+                    },
+                    "serviceLine": [
+                        {
+                            "serviceLevelName": "SSTC",
+                            "durationListPrice": 1226,
+                            "servicePeriod": {
+                                "duration": "60"
+                            },
+                            "lessThanMinDur": "N",
+                            "hierarchy": "PRODUCT",
+                            "userSelected": true,
+                            "taxMandatoryAttach": false,
+                            "durationList": [],
+                            "sourceLineId": [
+                                null
+                            ],
+                            "message": [],
+                            "serviceLine": [],
+                            "serviceAttributes": {},
+                            "extendedAttributes": {
+                                "attribute": [
+                                    {
+                                        "value": "N",
+                                        "name": "USER_SPECIFIED_START_DATE",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "value": "7",
+                                        "name": "PRODUCT_OFFSET",
+                                        "type": "int"
+                                    }
+                                ]
+                            },
+                            "itemName": "C29603-DNAC1E-5Y",
+                            "itemType": "SUBSCRIPTION",
+                            "quantity": 1,
+                            "unitListPrice": 1226,
+                            "extendedListPrice": 1226,
+                            "description": "DNAC1 Essentials Term C2960X/XR 24P 5Y",
+                            "mandatoryService": true,
+                            "orignalUnitListPrice": 1226,
+                            "leadTime": 30,
+                            "serviceMapId": 10
+                        }
+                    ],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            },
+                            {
+                                "value": "Y",
+                                "name": "CISCO_ONE_TRANSLATED",
+                                "type": "string"
+                            },
+                            {
+                                "value": "Y",
+                                "name": "C1_SOFTWARE_SKU",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "itemName": "C29603-DNAC1E",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "DNAC1 Essentials Term C2960X/XR 24P",
+                    "mandatoryService": true,
+                    "orignalUnitListPrice": 0,
+                    "leadTime": 14,
+                    "serviceable": true,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "additionalItemInfo": "TERM",
+                    "validationMessages": [],
+                    "serviceMapId": 9,
+                    "sourceLineId": [
+                        null
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:SW_SUBS_CLASS:0:SW_SUB_EXPANSION|C2960X-24-DNA-E",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Mandatory"
+                    },
+                    "serviceLine": [
+                        {
+                            "serviceLevelName": "SSTC",
+                            "durationListPrice": 0,
+                            "servicePeriod": {
+                                "duration": "60"
+                            },
+                            "lessThanMinDur": "N",
+                            "hierarchy": "PRODUCT",
+                            "userSelected": true,
+                            "taxMandatoryAttach": false,
+                            "durationList": [],
+                            "sourceLineId": [
+                                null
+                            ],
+                            "message": [],
+                            "serviceLine": [],
+                            "serviceAttributes": {},
+                            "extendedAttributes": {
+                                "attribute": [
+                                    {
+                                        "value": "N",
+                                        "name": "USER_SPECIFIED_START_DATE",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "value": "7",
+                                        "name": "PRODUCT_OFFSET",
+                                        "type": "int"
+                                    }
+                                ]
+                            },
+                            "itemName": "C2K-DNAC1-TRK-5Y",
+                            "itemType": "SUBSCRIPTION",
+                            "quantity": 1,
+                            "unitListPrice": 0,
+                            "extendedListPrice": 0,
+                            "description": "DNAC1 Support Only Tracker Term SKU 5Y",
+                            "mandatoryService": true,
+                            "orignalUnitListPrice": 0,
+                            "leadTime": 30,
+                            "serviceMapId": 12
+                        }
+                    ],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C2960X-24-DNA-E",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "DNA Essentials C2960X/XR 24P Term Lic",
+                    "mandatoryService": true,
+                    "leadTime": 14,
+                    "serviceable": true,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "additionalItemInfo": "TERM",
+                    "validationMessages": [],
+                    "serviceMapId": 11,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:SW_SUBS_CLASS:0:SW_SUB_EXPANSION|C1-PI-LFAS-2K3K-D",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Optional"
+                    },
+                    "serviceLine": [
+                        {
+                            "serviceLevelName": "SSTC",
+                            "durationListPrice": 0,
+                            "servicePeriod": {
+                                "duration": "60"
+                            },
+                            "lessThanMinDur": "N",
+                            "hierarchy": "PRODUCT",
+                            "userSelected": true,
+                            "taxMandatoryAttach": false,
+                            "durationList": [],
+                            "sourceLineId": [
+                                null
+                            ],
+                            "message": [],
+                            "serviceLine": [],
+                            "serviceAttributes": {},
+                            "extendedAttributes": {
+                                "attribute": [
+                                    {
+                                        "value": "N",
+                                        "name": "USER_SPECIFIED_START_DATE",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "value": "7",
+                                        "name": "PRODUCT_OFFSET",
+                                        "type": "int"
+                                    }
+                                ]
+                            },
+                            "itemName": "PI-DNAC1-TRK-5Y",
+                            "itemType": "SUBSCRIPTION",
+                            "quantity": 1,
+                            "unitListPrice": 0,
+                            "extendedListPrice": 0,
+                            "description": "DNA4C1 PI LFAS Tracker SKU 5Y",
+                            "mandatoryService": true,
+                            "orignalUnitListPrice": 0,
+                            "leadTime": 30,
+                            "serviceMapId": 14
+                        }
+                    ],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C1-PI-LFAS-2K3K-D",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "PI Lifecycle & Assurance C2K/3K for Support only (No Lic)",
+                    "mandatoryService": true,
+                    "leadTime": 35,
+                    "serviceable": true,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "additionalItemInfo": "TERM",
+                    "validationMessages": [],
+                    "serviceMapId": 13,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:SW_SUBS_CLASS:0:SW_SUB_EXPANSION|C1-ISE-BASE-24P-D",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Optional"
+                    },
+                    "serviceLine": [
+                        {
+                            "serviceLevelName": "SSTC",
+                            "durationListPrice": 0,
+                            "servicePeriod": {
+                                "duration": "60"
+                            },
+                            "lessThanMinDur": "N",
+                            "hierarchy": "PRODUCT",
+                            "userSelected": true,
+                            "taxMandatoryAttach": false,
+                            "durationList": [],
+                            "sourceLineId": [
+                                null
+                            ],
+                            "message": [],
+                            "serviceLine": [],
+                            "serviceAttributes": {},
+                            "extendedAttributes": {
+                                "attribute": [
+                                    {
+                                        "value": "N",
+                                        "name": "USER_SPECIFIED_START_DATE",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "value": "7",
+                                        "name": "PRODUCT_OFFSET",
+                                        "type": "int"
+                                    }
+                                ]
+                            },
+                            "itemName": "ISE-B-DNAC1-TRK-5Y",
+                            "itemType": "SUBSCRIPTION",
+                            "quantity": 1,
+                            "unitListPrice": 0,
+                            "extendedListPrice": 0,
+                            "description": "DNA4C1 ISE BASE Tracker SKU 5Y",
+                            "mandatoryService": true,
+                            "orignalUnitListPrice": 0,
+                            "leadTime": 30,
+                            "serviceMapId": 16
+                        }
+                    ],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C1-ISE-BASE-24P-D",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "ISE 50 EndPoint Base Support only (No Lic)",
+                    "mandatoryService": true,
+                    "leadTime": 21,
+                    "serviceable": true,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "additionalItemInfo": "TERM",
+                    "validationMessages": [],
+                    "serviceMapId": 15,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:SW_SUBS_CLASS:0:SW_SUB_EXPANSION|C1-NAAS-24P-RTU-D",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Optional"
+                    },
+                    "serviceLine": [
+                        {
+                            "serviceLevelName": "SSTC",
+                            "durationListPrice": 0,
+                            "servicePeriod": {
+                                "duration": "60"
+                            },
+                            "lessThanMinDur": "N",
+                            "hierarchy": "PRODUCT",
+                            "userSelected": true,
+                            "taxMandatoryAttach": false,
+                            "durationList": [],
+                            "sourceLineId": [
+                                null
+                            ],
+                            "message": [],
+                            "serviceLine": [],
+                            "serviceAttributes": {},
+                            "extendedAttributes": {
+                                "attribute": [
+                                    {
+                                        "value": "N",
+                                        "name": "USER_SPECIFIED_START_DATE",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "value": "7",
+                                        "name": "PRODUCT_OFFSET",
+                                        "type": "int"
+                                    }
+                                ]
+                            },
+                            "itemName": "C2K-DNAC1-TRK-5Y",
+                            "itemType": "SUBSCRIPTION",
+                            "quantity": 1,
+                            "unitListPrice": 0,
+                            "extendedListPrice": 0,
+                            "description": "DNAC1 Support Only Tracker Term SKU 5Y",
+                            "mandatoryService": true,
+                            "orignalUnitListPrice": 0,
+                            "leadTime": 30,
+                            "serviceMapId": 18
+                        }
+                    ],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C1-NAAS-24P-RTU-D",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "C2960X 24-PORT NAAS RTU Supporet Only (No Lic)",
+                    "mandatoryService": true,
+                    "leadTime": 14,
+                    "serviceable": true,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "additionalItemInfo": "TERM",
+                    "validationMessages": [],
+                    "serviceMapId": 17,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "CAT29XX-MODEL:SW_SUBS_CLASS:0:SW_SUB_EXPANSION|C1-LC-25-1Y-D",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Optional"
+                    },
+                    "serviceLine": [
+                        {
+                            "serviceLevelName": "SSTC",
+                            "durationListPrice": 0,
+                            "servicePeriod": {
+                                "duration": "60"
+                            },
+                            "lessThanMinDur": "N",
+                            "hierarchy": "PRODUCT",
+                            "userSelected": true,
+                            "taxMandatoryAttach": false,
+                            "durationList": [],
+                            "sourceLineId": [
+                                null
+                            ],
+                            "message": [],
+                            "serviceLine": [],
+                            "serviceAttributes": {},
+                            "extendedAttributes": {
+                                "attribute": [
+                                    {
+                                        "value": "N",
+                                        "name": "USER_SPECIFIED_START_DATE",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "value": "7",
+                                        "name": "PRODUCT_OFFSET",
+                                        "type": "int"
+                                    }
+                                ]
+                            },
+                            "itemName": "LC-DNAC1-TRK-5Y",
+                            "itemType": "SUBSCRIPTION",
+                            "quantity": 1,
+                            "unitListPrice": 0,
+                            "extendedListPrice": 0,
+                            "description": "DNA4C1 PI LFAS Tracker SKU 5Y",
+                            "mandatoryService": true,
+                            "orignalUnitListPrice": 0,
+                            "leadTime": 30,
+                            "serviceMapId": 20
+                        }
+                    ],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C1-LC-25-1Y-D",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "StealthWatch 25 FPS Lic 1 YR Support only (No Lic)",
+                    "mandatoryService": true,
+                    "leadTime": 21,
+                    "serviceable": true,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "additionalItemInfo": "TERM",
+                    "validationMessages": [],
+                    "serviceMapId": 19,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                }
+            ],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "N",
+                        "name": "CONFIG_PROD_MANDATORY",
+                        "type": "string"
+                    },
+                    {
+                        "value": "Y",
+                        "name": "USER_SPECIFIED_START_DATE",
+                        "type": "string"
+                    },
+                    {
+                        "value": "Y",
+                        "name": "MSA_FLAG",
+                        "type": "string"
+                    },
+                    {
+                        "value": "Y",
+                        "name": "CISCO_ONE_TRANSLATED",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "actionTag": "NEW",
+            "lineId": 1,
+            "itemName": "C1-C2960X-24PD-L",
+            "itemType": "CONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 4790,
+            "extendedListPrice": 4790,
+            "description": "Catalyst 2960-X 24 GigE PoE 370W, 2 x 10G SFP+, LAN Base",
+            "mandatoryService": false,
+            "orignalUnitListPrice": 4790,
+            "leadTime": 14,
+            "serviceable": true,
+            "deliveryOption": "PHYSICAL",
+            "uiHide": false,
+            "distiOnly": false,
+            "allowedDifferentialDuration": false,
+            "validationMessages": [
+                {
+                    "severity": "WARNING",
+                    "message": "Please note: Customers with net fixed price Service Assurance Agreement that opt to detach Software Support Services (SWSS), will no longer be eligible for portability rights for Cisco ONE Software",
+                    "code": "CE201729"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "Customers require SWSS to get access to software updates, upgrades, TAC support, ongoing innovation and license portability. SWSS is required for the first year when purchasing Cisco ONE software suites.",
+                    "code": "CE201864"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "Technical Services on hardware devices may default to SWSS which provides no hardware or base operating system technical support. To add hardware and base operating system technical support please edit services and make a selection from the list of available Smart Net Total Care service programs. For Services ordering support, please contact your Cisco representative.",
+                    "code": "CE201870"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "Have you considered SKU NETWORK-PNP-LIC which simplifies day0 provisioning of network devices - https://www.cisco.com/c/en/us/buy/smart-accounts/plug-play-connect.html for this order?",
+                    "code": "CE201867"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "Please Note: Have you considered purchasing the Cisco Catalyst 9200 Series Switches that provide better value? Please visit - https://www.cisco.com/c/en/us/products/switches/catalyst-9200-series-switches/index.html?dtid=osscdc000283 for more information.",
+                    "code": "CE202322"
+                }
+            ],
+            "serviceMapId": 1,
+            "sourceLineId": [
+                1
+            ],
+            "message": [],
+            "configId": 1,
+            "autoAddC1": false
+        }
+    ],
+    "xaasMajorLine": [],
+    "asMajorLine": [],
+    "metadata": [
+        "{\"page\":{\"name\":\"Cisco ONE Benefits\",\"alcHwSwTotal\":null,\"alcServTotal\":null,\"c1HwServTotal\":null,\"category\":{\"ACCESS-SWITCHING FOUNDATION\":{\"name\":\"ACCESS-SWITCHING FOUNDATION\",\"component\":{\"Network As a Sensor (NAAS)\":{\"name\":\"Network As a Sensor (NAAS)\",\"price\":\"900\",\"url\":\"https://www.cisco.com/c/en/us/solutions/enterprise-networks/enterprise-network-security/net-sensor.html?dtid=osscdc000283\",\"supportPercentage\":\"0.0\"},\"ISE Base Endpoints (25 CAT 9300/9500/AIR AP, 50 CAT 2K/3K/IE, 100 CAT 9400, 150 CAT 4K/6K)\":{\"name\":\"ISE Base Endpoints (25 CAT 9300/9500/AIR AP, 50 CAT 2K/3K/IE, 100 CAT 9400, 150 CAT 4K/6K)\",\"price\":\"250\",\"url\":\"http://cisco.com/go/ise\",\"supportPercentage\":\"0.0\"},\"Stealthwatch (25 Flows/sec per Cat 2K/3K/9300/9500, 100 per 9400)\":{\"name\":\"Stealthwatch (25 Flows/sec per Cat 2K/3K/9300/9500, 100 per 9400)\",\"price\":\"207.500000000000028421709430404007434844970703125\",\"url\":\"http://www.cisco.com/c/en/us/products/collateral/security/stealthwatch/datasheet-c78-736512.html?cachemode=refresh\",\"supportPercentage\":\"0.0\"},\"Prime Infrastructure (Lifecycle & Assurance)\":{\"name\":\"Prime Infrastructure (Lifecycle & Assurance)\",\"price\":\"105\",\"url\":\"http://cisco.com/go/primeinfrastructure\",\"supportPercentage\":\"20.0\"}}},\"ACCESS-SWITCHING DNA ESSENTIALS\":{\"name\":\"ACCESS-SWITCHING DNA ESSENTIALS\",\"component\":{\"DNA Essentials\":{\"name\":\"DNA Essentials\",\"price\":\"1226\",\"url\":\"http://www.cisco.com/c/en/us/solutions/enterprise-networks/index.html?stickynav=4\",\"supportPercentage\":\"0.0\"}}}}}}"
+    ],
+    "requestId": "c1b08c44-1add-402b-ab3a-5740613bda01",
+    "errorFlag": false,
+    "stats": [
+        {
+            "key": "ServiceValidationTimeTaken",
+            "value": "147"
+        },
+        {
+            "key": "OrderabilityTimeTaken",
+            "value": "52"
+        },
+        {
+            "key": "ProductValidationTimeTaken",
+            "value": "8"
+        },
+        {
+            "key": "PricingValidationTimeTaken",
+            "value": "29"
+        },
+        {
+            "key": "ResolveConfigs TimeTaken",
+            "value": "397"
+        },
+        {
+            "key": "CoreEngine TimeTaken",
+            "value": "970"
+        },
+        {
+            "key": "FindServices TimeTaken",
+            "value": "413"
+        },
+        {
+            "key": "ValidateConfigs TimeTaken",
+            "value": "411"
+        },
+        {
+            "key": "Generate TransactionId TimeTaken",
+            "value": "1683"
+        },
+        {
+            "key": "Generate TransactionId Breakup --> Excel Generation TimeTaken",
+            "value": "1677"
+        },
+        {
+            "key": "Excel Generation Breakup --> Fill Up Data TimeTaken",
+            "value": "149"
+        },
+        {
+            "key": "Excel Generation Breakup --> Formula Evaluator TimeTaken",
+            "value": "460"
+        },
+        {
+            "key": "Excel Generation Breakup --> Populate Totals TimeTaken",
+            "value": "276"
+        },
+        {
+            "key": "CiscOne Value Tab data TimeTaken",
+            "value": "11"
+        },
+        {
+            "key": "instance",
+            "value": "[cs1bws-wstg-int-rtp-6bd565c797-42htm]"
+        },
+        {
+            "key": "timeStamp",
+            "value": "Thu Oct 24 01:01:38 PDT 2019"
+        },
+        {
+            "key": "totalTimetaken",
+            "value": "3927"
+        }
+    ]
+}

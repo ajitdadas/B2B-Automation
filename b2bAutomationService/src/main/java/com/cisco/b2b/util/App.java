@@ -52,14 +52,14 @@ public class App {
 	private static B2BResponse getB2BResponse() throws JsonParseException, JsonMappingException, IOException {
 		B2BResponse b2BResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
-		b2BResponse = mapper.readValue(getFileFromResources("B2B.txt"), B2BResponse.class);
+		b2BResponse = mapper.readValue(getFileFromResources("ConfigRecommendation_B2B1.json"), B2BResponse.class);
 		return b2BResponse;
 	}
 
 	private static ConfigResponse getConfigResponse() throws JsonParseException, JsonMappingException, IOException {
 		ConfigResponse configResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
-		configResponse = mapper.readValue(getFileFromResources("ConfigResponse.txt"), ConfigResponse.class);
+		configResponse = mapper.readValue(getFileFromResources("ConfigRecommendation_Config1.json"), ConfigResponse.class);
 		return configResponse;
 	}
 	

@@ -1,0 +1,748 @@
+{
+    "status": "VALID",
+    "currencyCode": "USD",
+    "majorLine": [
+        {
+            "bundleFlag": false,
+            "configPath": "C9300-MODEL:PRODUCTNAME|C9300-48P-E",
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "country": "US"
+            },
+            "configValidationTimeStamp": 1571823552200,
+            "productAttributes": {
+                "TAAFlag": "Y",
+                "TEPFlag": "N",
+                "cryptoFlag": "Y",
+                "smartAccountRequired": "Mandatory",
+                "smartLicense": "Y"
+            },
+            "serviceLine": [
+                {
+                    "serviceLevelName": "SSSNT",
+                    "durationListPrice": 3879.7,
+                    "servicePeriod": {
+                        "duration": "60"
+                    },
+                    "lessThanMinDur": "N",
+                    "hierarchy": "SERVICE",
+                    "userSelected": true,
+                    "taxMandatoryAttach": false,
+                    "durationList": [
+                        12,
+                        24,
+                        36,
+                        48,
+                        60
+                    ],
+                    "sourceLineId": [],
+                    "message": [],
+                    "serviceLine": [],
+                    "mnqAttributes": {
+                        "channelProgram": "CBR",
+                        "mnqDestEligFlag": "Y"
+                    },
+                    "serviceAttributes": {
+                        "serviceType": "PRIMARYSERVICE"
+                    },
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "Y",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            },
+                            {
+                                "value": "30",
+                                "name": "PRODUCT_OFFSET",
+                                "type": "int"
+                            }
+                        ]
+                    },
+                    "itemName": "CON-SSSNT-C93004PE",
+                    "itemType": "SERVICE",
+                    "quantity": 1,
+                    "unitListPrice": 775.94,
+                    "extendedListPrice": 3879.7,
+                    "description": "SOLN SUPP 8X5XNBD Catalyst 9300 48-port PoE+, Network Esse",
+                    "mandatoryService": false,
+                    "leadTime": 0,
+                    "serviceMapId": 2
+                }
+            ],
+            "minorLine": [
+                {
+                    "configPath": "C9300-MODEL:NETWORK_LICENSE|C9300-NW-E-48",
+                    "selectionFlag": "SYSTEM",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "Y",
+                        "smartAccountRequired": "Mandatory"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "C9300-NW-E-48",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "C9300 Network Essentials, 48-port license",
+                    "mandatoryService": false,
+                    "leadTime": 14,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 3,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:SOFTWARE|S9300UK9-166",
+                    "selectionFlag": "USER",
+                    "default": true,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "S9300UK9-166",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "CAT9300 Universal image",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 0,
+                    "leadTime": 0,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 4,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:PRIMARY_POWER_SUPPLY|PWR-C1-715WAC-P",
+                    "selectionFlag": "USER",
+                    "default": true,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "PWR-C1-715WAC-P",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "715W AC 80+ platinum Config 1 Power Supply",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 0,
+                    "leadTime": 14,
+                    "serviceable": false,
+                    "deliveryOption": "PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 5,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:POWER_CABLES|CAB-OPTOUT",
+                    "selectionFlag": "USER",
+                    "default": false,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "CAB-OPTOUT",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 2,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "Eco friendly green option. No power cable will be shipped.",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 0,
+                    "leadTime": 0,
+                    "serviceable": false,
+                    "deliveryOption": "PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 6,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:SECOND_POWER_SUPPLY|PWR-C1-715WAC-P/2",
+                    "selectionFlag": "USER",
+                    "default": true,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "PWR-C1-715WAC-P/2",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 1250,
+                    "extendedListPrice": 1250,
+                    "description": "715W AC 80+ platinum Config 1 SecondaryPower Supply",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 1250,
+                    "leadTime": 14,
+                    "serviceable": false,
+                    "deliveryOption": "PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 7,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:STACKWISE_CABLES|STACK-T1-50CM",
+                    "selectionFlag": "USER",
+                    "default": true,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "STACK-T1-50CM",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 100,
+                    "extendedListPrice": 100,
+                    "description": "50CM Type 1 Stacking Cable",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 100,
+                    "leadTime": 0,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 8,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:STACK_POWER_CABLES|CAB-SPWR-30CM",
+                    "selectionFlag": "USER",
+                    "default": true,
+                    "productAttributes": {
+                        "cryptoFlag": "N",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "lineId": 0,
+                    "itemName": "CAB-SPWR-30CM",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 95,
+                    "extendedListPrice": 95,
+                    "description": "Catalyst Stack Power Cable 30 CM",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 95,
+                    "leadTime": 0,
+                    "serviceable": false,
+                    "deliveryOption": "PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 9,
+                    "sourceLineId": [
+                        0
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:SUBSCRIPTION_SW_CLAS:0:CISCO_ONE_AND_DNA|C9300-DNA-E-48",
+                    "selectionFlag": "USER",
+                    "default": true,
+                    "productAttributes": {
+                        "cryptoFlag": "Y",
+                        "smartAccountRequired": "Mandatory"
+                    },
+                    "serviceLine": [
+                        {
+                            "serviceLevelName": "SSTC",
+                            "durationListPrice": 1760,
+                            "servicePeriod": {
+                                "duration": "60"
+                            },
+                            "lessThanMinDur": "N",
+                            "hierarchy": "PRODUCT",
+                            "userSelected": true,
+                            "taxMandatoryAttach": false,
+                            "durationList": [],
+                            "sourceLineId": [
+                                null
+                            ],
+                            "message": [],
+                            "serviceLine": [],
+                            "serviceAttributes": {},
+                            "extendedAttributes": {
+                                "attribute": [
+                                    {
+                                        "value": "N",
+                                        "name": "USER_SPECIFIED_START_DATE",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "value": "7",
+                                        "name": "PRODUCT_OFFSET",
+                                        "type": "int"
+                                    }
+                                ]
+                            },
+                            "itemName": "C9300-DNA-E-48-5Y",
+                            "itemType": "SUBSCRIPTION",
+                            "quantity": 1,
+                            "unitListPrice": 1760,
+                            "extendedListPrice": 1760,
+                            "description": "C9300 DNA Essentials, 48-Port, 5 Year Term License",
+                            "mandatoryService": true,
+                            "orignalUnitListPrice": 1760,
+                            "leadTime": 30,
+                            "serviceMapId": 11
+                        }
+                    ],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "itemName": "C9300-DNA-E-48",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "C9300 DNA Essentials, 48-Port Term Licenses",
+                    "mandatoryService": true,
+                    "orignalUnitListPrice": 0,
+                    "leadTime": 14,
+                    "serviceable": true,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "additionalItemInfo": "TERM",
+                    "validationMessages": [],
+                    "serviceMapId": 10,
+                    "sourceLineId": [
+                        null
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:NETWORK_MODULES:0:NETWORK_MODULES_CAT|C9300-NM-8X",
+                    "selectionFlag": "USER",
+                    "default": true,
+                    "productAttributes": {
+                        "cryptoFlag": "Y",
+                        "smartAccountRequired": "Blank / Not Enabled"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "itemName": "C9300-NM-8X",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 2550,
+                    "extendedListPrice": 2550,
+                    "description": "Catalyst 9300 8 x 10GE Network Module",
+                    "mandatoryService": false,
+                    "orignalUnitListPrice": 2550,
+                    "leadTime": 0,
+                    "serviceable": false,
+                    "deliveryOption": "PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 12,
+                    "sourceLineId": [
+                        null
+                    ],
+                    "message": []
+                },
+                {
+                    "configPath": "C9300-MODEL:NTWK_PNP_CLASS:0:PNP_CAT|NETWORK-PNP-LIC",
+                    "selectionFlag": "SYSTEM",
+                    "default": true,
+                    "productAttributes": {
+                        "cryptoFlag": "Y",
+                        "smartAccountRequired": "Mandatory"
+                    },
+                    "serviceLine": [],
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "CONFIG_PROD_MANDATORY",
+                                "type": "string"
+                            },
+                            {
+                                "value": "N",
+                                "name": "USER_SPECIFIED_START_DATE",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "itemName": "NETWORK-PNP-LIC",
+                    "itemType": "NONCONFIGURABLE",
+                    "quantity": 1,
+                    "unitListPrice": 0,
+                    "extendedListPrice": 0,
+                    "description": "Network Plug-n-Play License for zero-touch device deployment",
+                    "mandatoryService": false,
+                    "leadTime": 0,
+                    "serviceable": false,
+                    "deliveryOption": "ELECTRONIC OR PHYSICAL",
+                    "uiHide": false,
+                    "distiOnly": false,
+                    "allowedDifferentialDuration": false,
+                    "validationMessages": [],
+                    "serviceMapId": 13,
+                    "sourceLineId": [
+                        null
+                    ],
+                    "message": []
+                }
+            ],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "N",
+                        "name": "CONFIG_PROD_MANDATORY",
+                        "type": "string"
+                    },
+                    {
+                        "value": "Y",
+                        "name": "USER_SPECIFIED_START_DATE",
+                        "type": "string"
+                    },
+                    {
+                        "value": "Y",
+                        "name": "MSA_FLAG",
+                        "type": "string"
+                    },
+                    {
+                        "value": "Y",
+                        "name": "HARDWARE_UPGRADE",
+                        "type": "string"
+                    },
+                    {
+                        "value": "CAT3K9K",
+                        "name": "UPGRADE_CATEGORY",
+                        "type": "string"
+                    },
+                    {
+                        "value": "Dummy Legacy Hardware Category",
+                        "name": "LEGACY_HARDWARE_CATEGORY",
+                        "type": "string"
+                    },
+                    {
+                        "value": "Dummy Nextgen Hardware Category",
+                        "name": "NEXTEGN_HARDWARE_CATEGORY",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [
+                {
+                    "skuName": "C9300-48P-E-RF",
+                    "unitListPrice": 7592
+                }
+            ],
+            "ciscoOneSKU": "C9300-48P-A",
+            "actionTag": "NEW",
+            "lineId": 1,
+            "itemName": "C9300-48P-E",
+            "itemType": "CONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 10005,
+            "extendedListPrice": 10005,
+            "description": "Catalyst 9300 48-port PoE+, Network Essentials",
+            "mandatoryService": false,
+            "orignalUnitListPrice": 10005,
+            "leadTime": 14,
+            "serviceable": true,
+            "deliveryOption": "PHYSICAL",
+            "uiHide": false,
+            "distiOnly": false,
+            "allowedDifferentialDuration": false,
+            "validationMessages": [
+                {
+                    "severity": "WARNING",
+                    "message": "A minimum of 3 Year DNA Term License is required",
+                    "code": "CE201302"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "It is recommended that the user purchase C9300-48P-A.",
+                    "code": "CE202155"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "Please note that we highly recommend to buy Solution Support with this product. This provides coverage for additional ecosystem for network solutions that include Cisco products with Cisco DNA or Cisco ONE software license subscriptions at http://www.cisco.com/c/en/us/services/technical/solution-support.html.",
+                    "code": "CE201302"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "We strongly recommend the term of the hardware support contract match the software subscription license term.",
+                    "code": "CE201302"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "Deselection of Solution Support will eliminate solution coverage of your Cisco DNA or Cisco ONE software subscriptions.",
+                    "code": "CE201302"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "Please note that Network Plug-n-Play (PnP) enables automated controller discovery and day0 provisioning of cisco devices.Please enter Smart Account details to enable PnP features. This is only available for Smart Account and If you do not have a Smart Account,you can request a new Smart Account for your organization using https://software.cisco.com/software/company/smartaccounts/home#accountcreation-account.If you have a Smart Account,you can manage your devices at https://software.cisco.com/#pnp-devices. For information on PnP,please refer to http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Plug-and-Play/solution/guidexml/b_pnp-solution-guide.html",
+                    "code": "CE200928"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "CAB-SPWR-30CM is defaulted under Stack Power Cables.",
+                    "code": "CE100033"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "STACK-T1-50CM is defaulted under StackWise Cable.",
+                    "code": "CE100033"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "S9300UK9-166 is defaulted under Software.",
+                    "code": "CE100033"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "C9300-DNA-E-48 is defaulted under Subscription Software.",
+                    "code": "CE100033"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "C9300-NM-8X is defaulted under Network Modules.",
+                    "code": "CE100033"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "PWR-C1-715WAC-P is defaulted under Primary Power Supply.",
+                    "code": "CE100033"
+                },
+                {
+                    "severity": "WARNING",
+                    "message": "PWR-C1-715WAC-P/2 is defaulted under Secondary Power Supply.",
+                    "code": "CE100033"
+                }
+            ],
+            "serviceMapId": 1,
+            "sourceLineId": [
+                1
+            ],
+            "message": [
+                {
+                    "description": "Info message for Hardware Upgrade - 1",
+                    "severity": "INFO"
+                },
+                {
+                    "description": "Info message for Hardware Upgrade - 2",
+                    "severity": "INFO"
+                }
+            ],
+            "configId": 1,
+            "autoAddC1": false
+        }
+    ],
+    "xaasMajorLine": [],
+    "asMajorLine": [],
+    "ciscoOneLogId": "757655",
+    "requestId": "3e66ef5d-0358-4172-bb38-85736b9de8e6",
+    "errorFlag": false,
+    "stats": [
+        {
+            "key": "ServiceValidationTimeTaken",
+            "value": "88"
+        },
+        {
+            "key": "OrderabilityTimeTaken",
+            "value": "37"
+        },
+        {
+            "key": "ProductValidationTimeTaken",
+            "value": "6"
+        },
+        {
+            "key": "PricingValidationTimeTaken",
+            "value": "20"
+        },
+        {
+            "key": "instance",
+            "value": "[cs1bws-wstg-int-rtp-5fd99898bf-spl95]"
+        },
+        {
+            "key": "timeStamp",
+            "value": "Wed Oct 23 02:39:15 PDT 2019"
+        },
+        {
+            "key": "totalTimetaken",
+            "value": "3869"
+        }
+    ]
+}

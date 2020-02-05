@@ -48,6 +48,25 @@ public class MajorLine {
 	@JsonProperty("extendedAttributes")
 	private ExtendedAttributes extendedAttributes;
 
+	@JsonProperty("Message")
+	private String message;
+
+	public InstallSite getInstallSiteLocation() {
+		return installSiteLocation;
+	}
+
+	public void setInstallSiteLocation(InstallSite installSiteLocation) {
+		this.installSiteLocation = installSiteLocation;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
 	public String getItemName() {
 		return itemName;
 	}
@@ -134,14 +153,6 @@ public class MajorLine {
 
 	public void setStatus(String status) {
 		this.status = status;
-	}
-
-	public InstallSite getInstallSite() {
-		return installSiteLocation;
-	}
-
-	public void setInstallSite(InstallSite installSite) {
-		this.installSiteLocation = installSite;
 	}
 
 	public String getFlexServiceDuration() {
