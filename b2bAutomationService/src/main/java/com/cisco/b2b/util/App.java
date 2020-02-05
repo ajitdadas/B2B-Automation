@@ -3,7 +3,9 @@ package com.cisco.b2b.util;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.cisco.b2b.model.B2BResponse;
 import com.cisco.b2b.model.ConfigResponse;
@@ -40,8 +42,12 @@ public class App {
 						System.out.println("******************************************");
 					}
 				}
+				
 			}
 		}
+		
+		
+		
 	}
 
 	private static B2BResponse getB2BResponse() throws JsonParseException, JsonMappingException, IOException {
