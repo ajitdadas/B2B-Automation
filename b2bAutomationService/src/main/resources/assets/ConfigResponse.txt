@@ -1,0 +1,170 @@
+{
+   "requestId": "0abbf945-12a2-4fee-8588-5e53a5fed343",
+   "errorFlag": "false",
+   "stats": [
+      {
+         "@value": "[cs1srvprdlae-z5q1m34ipoe-1]",
+         "@key": "instance"
+      },
+      {
+         "@value": "Mon Jan 07 04:42:06 PST 2019",
+         "@key": "timeStamp"
+      },
+      {
+         "@value": "642",
+         "@key": "totalTimetaken"
+      }
+   ],
+   "majorLine": [
+      {
+         "itemName": "ASF-ESG-G-IEXP-DPS",
+         "itemType": "NONCONFIGURABLE",
+         "quantity": "1",
+         "unitListPrice": "72850.00",
+         "extendedListPrice": "72850.0",
+         "description": "EMERGING SOLUTION GROUP Interactive Exp Dep Small(21-50)",
+         "orignalUnitListPrice": "72850.0",
+         "serviceable": "false",
+         "additionalItemInfo": "ASF-GROUP",
+         "selectionFlag": "USER",
+         "status": "VALID",
+         "installSite": {
+            "zipcode": null,
+            "country": "IN"
+         },
+         "flexServiceDuration": "N",
+         "extendedAttributes": {
+            "attribute": [
+               {
+                  "@name": "LifeCyclePhase",
+                  "#text": "BUILD"
+               },
+               {
+                  "@name": "SERVICE_TYPE",
+                  "#text": "AS_FIXED"
+               },
+               {
+                  "@name": "BusinessService",
+                  "#text": "DEPLOYMENT"
+               },
+               {
+                  "@name": "Architecture",
+                  "#text": "COLLABORATION"
+               },
+               {
+                  "@name": "Deliverables",
+                  "#text": "Acceptance Test Plan;As-Built Document;Assessment Report;Detailed Design Document;Implementation Plan;Knowledge Transfer Materials;Project Management Plan"
+               },
+               {
+                  "@name": "Timelines",
+                  "#text": "up to 90 Days"
+               },
+               {
+                  "@name": "Rank",
+                  "#text": "18"
+               }
+            ]
+         }
+      },
+      {
+         "itemName": "ASF-ESG-G-IEXP-TRG",
+         "itemType": "NONCONFIGURABLE",
+         "quantity": "1",
+         "unitListPrice": "12550.00",
+         "extendedListPrice": "12550.0",
+         "description": "EMERGING SOLUTION GROUP Interactive Exp Training Service",
+         "orignalUnitListPrice": "12550.0",
+         "serviceable": "false",
+         "additionalItemInfo": "ASF-GROUP",
+         "selectionFlag": "USER",
+         "status": "VALID",
+         "installSite": {
+            "zipcode": null,
+            "country": "IN"
+         },
+         "flexServiceDuration": "N",
+         "extendedAttributes": {
+            "attribute": [
+               {
+                  "@name": "LifeCyclePhase",
+                  "#text": "BUILD"
+               },
+               {
+                  "@name": "SERVICE_TYPE",
+                  "#text": "AS_FIXED"
+               },
+               {
+                  "@name": "BusinessService",
+                  "#text": "DEPLOYMENT"
+               },
+               {
+                  "@name": "Architecture",
+                  "#text": "COLLABORATION"
+               },
+               {
+                  "@name": "Deliverables",
+                  "#text": "Evaluation Report;Final Training Materials"
+               },
+               {
+                  "@name": "Timelines",
+                  "#text": "up to 90 Days"
+               },
+               {
+                  "@name": "Rank",
+                  "#text": "96"
+               }
+            ]
+         }
+      },
+      {
+         "itemName": "ASF-ESG-G-IEXP-TRE",
+         "itemType": "NONCONFIGURABLE",
+         "quantity": "1",
+         "unitListPrice": "8068.10",
+         "extendedListPrice": "8068.0",
+         "description": "EMERGING SOLUTION GROUP Interactive Exp Trg Express Service",
+         "orignalUnitListPrice": "8068.0",
+         "serviceable": "false",
+         "additionalItemInfo": "ASF-GROUP",
+         "selectionFlag": "USER",
+         "status": "VALID",
+         "installSite": {
+            "zipcode": null,
+            "country": "IN"
+         },
+         "flexServiceDuration": "N",
+         "extendedAttributes": {
+            "attribute": [
+               {
+                  "@name": "LifeCyclePhase",
+                  "#text": "BUILD"
+               },
+               {
+                  "@name": "SERVICE_TYPE",
+                  "#text": "AS_FIXED"
+               },
+               {
+                  "@name": "BusinessService",
+                  "#text": "DEPLOYMENT"
+               },
+               {
+                  "@name": "Architecture",
+                  "#text": "COLLABORATION"
+               },
+               {
+                  "@name": "Deliverables",
+                  "#text": "Evaluation Report;Final Training Materials"
+               },
+               {
+                  "@name": "Timelines",
+                  "#text": "up to 90 Days"
+               },
+               {
+                  "@name": "Rank",
+                  "#text": "129"
+               }
+            ]
+         }
+      }
+   ]
+}

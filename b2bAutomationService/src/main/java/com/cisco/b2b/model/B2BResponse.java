@@ -21,11 +21,6 @@ public class B2BResponse {
 		this.configurationLine = configurationLine;
 	}
 
-	public B2BResponse withConfigurationLine(List<ConfigurationLine> configurationLine) {
-		this.configurationLine = configurationLine;
-		return this;
-	}
-
 	@Override
 	public String toString() {
 		return "B2BResponse [configurationLine=" + configurationLine + "]";
