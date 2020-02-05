@@ -28,6 +28,9 @@ public class ConfigurationLine {
 	@JsonProperty("ConfigurationRecommendationAttributes")
 	private ConfigurationRecommendationAttributes configurationRecommendationAttributes;
 
+	@JsonProperty("Message")
+	private Message message;
+
 	public String getLineNumber() {
 		return lineNumber;
 	}
@@ -120,6 +123,14 @@ public class ConfigurationLine {
 	public void setConfigurationRecommendationAttributes(
 			ConfigurationRecommendationAttributes configurationRecommendationAttributes) {
 		this.configurationRecommendationAttributes = configurationRecommendationAttributes;
+	}
+
+	public Message getMessage() {
+		return message;
+	}
+
+	public void setMessage(Message message) {
+		this.message = message;
 	}
 
 	@Override

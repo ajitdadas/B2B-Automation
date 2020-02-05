@@ -1,0 +1,199 @@
+{
+    "status": "VALID",
+    "currencyCode": "USD",
+    "majorLine": [
+        {
+            "bundleFlag": false,
+            "displayConfig": false,
+            "configPath": "N9K-MCR-MODEL:PRODUCTNAME|C1-N9K-ADD-T",
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "country": "IN"
+            },
+            "flexTermsPayments": "Y",
+            "configValidationTimeStamp": 1565779887828,
+            "productAttributes": {
+                "TAAFlag": "Y",
+                "TEPFlag": "N",
+                "cryptoFlag": "N",
+                "smartAccountRequired": "Blank / Not Enabled",
+                "smartLicense": "Y"
+            },
+            "serviceLine": [],
+            "servicePreference": {},
+            "minorLine": [],
+            "xaasMinorLine": [
+                {
+                    "actionTag": "ADD",
+                    "usageQuantity": 0,
+                    "uom": "License",
+                    "billingType": "1",
+                    "chargeType": "Recurring",
+                    "xaasTermPayment": {
+                        "requestedStartDate": 1566975600000,
+                        "startDate": 1566975600000,
+                        "endDate": 1661583600000,
+                        "initialTerm": "36",
+                        "defaultInitialTerm": "36",
+                        "autoRenewalTerm": "0",
+                        "defaultAutoRenewalTerm": "0",
+                        "prepayTerm": "12",
+                        "billingModel": "Annual Billing"
+                    },
+                    "subscriptionUnit": "C1 ADVANTAGE 1G",
+                    "groupDescription": "C1 Advantage ACI + NXOS 1G Fixed",
+                    "lineId": 2,
+                    "itemName": "C1A1TN9300GF-3Y",
+                    "quantity": 1,
+                    "configPath": "N9K-MCR-MODEL:C1_ADV_1G:0:C1_ADV_1G_FIXD|C1A1TN9300GF-3Y",
+                    "selectionFlag": "USER",
+                    "description": "Cisco ACI  Advantage Term N9300 GF, 3Y",
+                    "leadTime": 0,
+                    "pricingInfo": {
+                        "unitListPrice": 219.06,
+                        "unitListPriceQty": 219.06,
+                        "durationListPrice": 7886.16,
+                        "extendedListPrice": 7886.16,
+                        "orignalUnitListPrice": 219.06,
+                        "decimalExp": 2,
+                        "listPriceVersion": "1",
+                        "pricingTerm": 1
+                    },
+                    "uiHide": false,
+                    "additionalItemInfo": "XAAS",
+                    "deliveryOption": "ELECTRONIC",
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "nonStandard",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "smartAccountRequired": "Optional",
+                    "sourceLineId": [
+                        2
+                    ],
+                    "message": [],
+                    "serviceMapId": 2
+                },
+                {
+                    "actionTag": "ADD",
+                    "usageQuantity": 0,
+                    "uom": "License",
+                    "billingType": "1",
+                    "chargeType": "Recurring",
+                    "xaasTermPayment": {
+                        "requestedStartDate": 1566975600000,
+                        "startDate": 1566975600000,
+                        "endDate": 1661583600000,
+                        "initialTerm": "36",
+                        "defaultInitialTerm": "12",
+                        "autoRenewalTerm": "0",
+                        "defaultAutoRenewalTerm": "0",
+                        "prepayTerm": "12",
+                        "billingModel": "Annual Billing"
+                    },
+                    "subscriptionUnit": "C1 ADVANTAGE 1G",
+                    "groupDescription": "C1 Advantage ACI + NXOS 1G Fixed",
+                    "lineId": 3,
+                    "itemName": "SVS-B-N9K-ADV-GF",
+                    "quantity": 1,
+                    "configPath": "N9K-MCR-MODEL:C1_ADV_1G:0:C1_ADV_1G_SUP|SVS-B-N9K-ADV-GF",
+                    "selectionFlag": "USER",
+                    "description": "EMBEDDED SOLN SUPPORT SWSS FOR ACI NEXUS 9K",
+                    "leadTime": 0,
+                    "pricingInfo": {
+                        "unitListPrice": 0,
+                        "unitListPriceQty": 0,
+                        "durationListPrice": 0,
+                        "extendedListPrice": 0,
+                        "orignalUnitListPrice": 0,
+                        "decimalExp": 2,
+                        "listPriceVersion": "1",
+                        "pricingTerm": 1
+                    },
+                    "uiHide": false,
+                    "additionalItemInfo": "XAAS",
+                    "deliveryOption": "CLOUD",
+                    "extendedAttributes": {
+                        "attribute": [
+                            {
+                                "value": "N",
+                                "name": "nonStandard",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "smartAccountRequired": "Blank / Not Enabled",
+                    "sourceLineId": [
+                        3
+                    ],
+                    "message": [],
+                    "serviceMapId": 3
+                }
+            ],
+            "referenceSKU": [],
+            "actionTag": "NEW",
+            "lineId": 1,
+            "itemName": "C1-N9K-ADD-T",
+            "itemType": "CONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco ONE Subscription for Nexus 9000 - CHOOSE QTY 1 HERE",
+            "mandatoryService": false,
+            "orignalUnitListPrice": 0,
+            "leadTime": 0,
+            "serviceable": false,
+            "deliveryOption": "ELECTRONIC",
+            "uiHide": false,
+            "distiOnly": false,
+            "allowedDifferentialDuration": false,
+            "additionalItemInfo": "SW BASED",
+            "validationMessages": [],
+            "serviceMapId": 1,
+            "sourceLineId": [
+                1
+            ],
+            "message": [],
+            "configId": 1
+        }
+    ],
+    "xaasMajorLine": [],
+    "asMajorLine": [],
+    "requestId": "4895228f-8534-41ae-89a3-acfca02ec278",
+    "errorFlag": false,
+    "stats": [
+        {
+            "key": "instance",
+            "value": "[cs1srv-wstg-int-rtp-555747c4c7-6j6cj]"
+        },
+        {
+            "key": "timeStamp",
+            "value": "Wed Aug 14 03:51:27 PDT 2019"
+        },
+        {
+            "key": "totalTimetaken",
+            "value": "695"
+        },
+        {
+            "key": "ResolveProductTimeTaken",
+            "value": "146"
+        },
+        {
+            "key": "OrderabilityTimeTaken",
+            "value": "423"
+        },
+        {
+            "key": "ProductValidationTimeTaken",
+            "value": "142"
+        },
+        {
+            "key": "PricingValidationTimeTaken",
+            "value": "126"
+        }
+    ]
+}

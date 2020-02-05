@@ -50,15 +50,15 @@ public class ResponseComparator {
 		Address address = installSiteLocation.getAddress();
 		if (address != null) {
 			if (address.getPostalCode() != null) {
-				if (!address.getPostalCode().equals(majorLine.getInstallSite().getZipcode())) {
+				if (!address.getPostalCode().equals(majorLine.getInstallSiteLocation().getZipcode())) {
 					compareResults.add(createCompareResult(majorLine.getItemName(), "MajorLine|InstallSite|Zipcode",
-							majorLine.getInstallSite().getZipcode(), installSiteLocation.getAddress().getPostalCode(),
+							majorLine.getInstallSiteLocation().getZipcode(), installSiteLocation.getAddress().getPostalCode(),
 							false));
 				}
 			}
-			if (!installSiteLocation.getAddress().getCountryCode().equals(majorLine.getInstallSite().getCountry())) {
+			if (!installSiteLocation.getAddress().getCountryCode().equals(majorLine.getInstallSiteLocation().getCountry())) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "MajorLine|InstallSite|Country",
-						majorLine.getInstallSite().getCountry(), installSiteLocation.getAddress().getCountryCode(),
+						majorLine.getInstallSiteLocation().getCountry(), installSiteLocation.getAddress().getCountryCode(),
 						false));
 			}
 		}

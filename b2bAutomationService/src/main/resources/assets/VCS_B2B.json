@@ -1,0 +1,161 @@
+{
+"Sender": {
+"LogicalID": "847291911",
+"ReferenceID": "Cisco Systems Inc."
+},
+"Receiver": {
+"LogicalID": "12",
+"ReferenceID": "Cisco Systems"
+},
+"CreationDateTime": "2019-08-14T10:51:27Z",
+"BODID": "4895228f-8534-41ae-89a3-acfca02ec278",
+"ResponseStatus": "Success",
+"ConfigurationHeader": {
+"Status": "VALID",
+"LeadTime": {
+"Duration": "P0Y0M0DT0H0M"
+}
+},
+"ConfigurationLine": [
+{
+"LineNumber": "1",
+"ParentID": "0",
+"SourceLineID": "1",
+"Description": "Cisco ONE Subscription for Nexus 9000 - CHOOSE QTY 1 HERE",
+"Quantity": "1",
+"ItemName": "C1-N9K-ADD-T",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "CONFIGURABLE",
+"ConfigReference": "C41967190",
+"ConfigPath": "N9K-MCR-MODEL:PRODUCTNAME|C1-N9K-ADD-T",
+"SelectionCode": "USER",
+"Status": "VALID",
+"InstallSiteLocation": {
+"Address": {
+"CountryCode": "IN"
+}
+},
+"LeadTime": {
+"Duration": "P0Y0M0DT0H0M"
+},
+"ProductAttributes": {
+"BundleFlag": "false",
+"Serviceable": "false",
+"DistiOrderableIndicator": "N",
+"TAAIndicator": "Y",
+"TEPIndicator": "N",
+"AllowedDifferentialDuration": "false",
+"SmartAccountRequired": "Blank / Not Enabled",
+"SmartEnabled": "Y"
+},
+"XaasAttributes": {
+"ActionCode": "NEW"
+}
+},
+{
+"LineNumber": "2",
+"ParentID": "1",
+"SourceLineID": "2",
+"Description": "Cisco ACI  Advantage Term N9300 GF, 3Y",
+"Quantity": "1",
+"ItemName": "C1A1TN9300GF-3Y",
+"PricingInformation": {
+"UnitListPrice": "7886.16",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "7886.16"
+},
+"ItemType": "NONCONFIGURABLE",
+"ConfigReference": "C54459383",
+"ConfigPath": "N9K-MCR-MODEL:C1_ADV_1G:0:C1_ADV_1G_FIXD|C1A1TN9300GF-3Y",
+"SelectionCode": "USER",
+"LeadTime": {
+"Duration": "P0Y0M0DT0H0M"
+},
+"ProductAttributes": {
+"Serviceable": "false",
+"AllowedDifferentialDuration": "false",
+"SmartAccountRequired": "Optional"
+},
+"XaasAttributes": {
+"ActionCode": "ADD",
+"RequestedStartDate": "2019-08-28T00:00:00Z",
+"RequestedEndDate": "2022-08-27T00:00:00Z",
+"InitialTerm": "36",
+"PrepayTerm": "12",
+"AutoRenewalTerm": "0",
+"BillingModel": "Annual Billing",
+"UsageQuantity": "0",
+"ChargeType": "Recurring",
+"BillingType": "1",
+"UnitOfMeasure": "License"
+},
+"Message": [
+{
+"Description": "Following attributes are defaulted like InitialTerm.",
+"Severity": "INFO"
+},
+{
+"MessageCode": "WSCV023",
+"Description": "Provided requestedStartDate or requestedEndDate will truncate the offset for additional validations.",
+"Severity": "INFO"
+}
+]
+},
+{
+"LineNumber": "3",
+"ParentID": "1",
+"SourceLineID": "3",
+"Description": "EMBEDDED SOLN SUPPORT SWSS FOR ACI NEXUS 9K",
+"Quantity": "1",
+"ItemName": "SVS-B-N9K-ADV-GF",
+"PricingInformation": {
+"UnitListPrice": "0.00",
+"CurrencyCode": "USD",
+"PerQuantity": "1",
+"ExtendedListPrice": "0.00"
+},
+"ItemType": "NONCONFIGURABLE",
+"ConfigReference": "C36539462",
+"ConfigPath": "N9K-MCR-MODEL:C1_ADV_1G:0:C1_ADV_1G_SUP|SVS-B-N9K-ADV-GF",
+"SelectionCode": "USER",
+"LeadTime": {
+"Duration": "P0Y0M0DT0H0M"
+},
+"ProductAttributes": {
+"Serviceable": "false",
+"AllowedDifferentialDuration": "false",
+"SmartAccountRequired": "Blank / Not Enabled"
+},
+"XaasAttributes": {
+"ActionCode": "ADD",
+"RequestedStartDate": "2019-08-28T00:00:00Z",
+"RequestedEndDate": "2022-08-27T00:00:00Z",
+"InitialTerm": "36",
+"PrepayTerm": "12",
+"AutoRenewalTerm": "0",
+"BillingModel": "Annual Billing",
+"UsageQuantity": "0",
+"ChargeType": "Recurring",
+"BillingType": "1",
+"UnitOfMeasure": "License"
+},
+"Message": [
+{
+"Description": "Following attributes are defaulted like InitialTerm.",
+"Severity": "INFO"
+},
+{
+"MessageCode": "WSCV023",
+"Description": "Provided requestedStartDate or requestedEndDate will truncate the offset for additional validations.",
+"Severity": "INFO"
+}
+]
+}
+]
+}

@@ -1,0 +1,1612 @@
+{
+    "majorLine": [
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-H-ESA-ESO-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid ESA Outbound SW Bundle (DLP, Encryption) License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESAP-AT6K-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco Email, AMP, TG - Premium File Analysis, 6K Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "H-ESAP-AT200-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid Email, AMP, TG - Premium File Analysis, 200 Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESAP-AT2K-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco Email, AMP, TG - Premium File Analysis, 2K Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-OF-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Outbreak Filters License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-MFE-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA McAfee Anti-Malware License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-ESP-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Premium SW Bundle (AS, AV, OF, DLP, ENC) License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-ESI-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Inbound Essentials SW Bundle (AS, AV, OF) License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-ESO-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Outbound SW Bundle (DLP, Encryption) License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "H-ESAP-AT6K-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid Email, AMP, TG - Premium File Analysis, 6K Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "SMA-EMGT-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "SMA Centralized Email Management Reporting License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-EML-DPAP-SVC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco Advanced Services Email Practitioner",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-H-ESA-ESI-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid ESA Inbound Essentials SW Bundle (AS, AV, OF) License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESA-APPC-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco ESA Advanced Phishing Protection with Cloud Sensor",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESAI-AT200-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco Email, AMP, TG - Inbound File Analysis, 200 Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESA-GSU-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco ESA Graymail Safe-unsubscribe License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "E2SC-E-ESA-MFE",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Security ELA 2.0 Email Sec. App. McAfee AV Lic",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": [
+                {
+                    "code": "CS401",
+                    "description": "E2SC-E-ESA-MFE is eligible for rebates through program/s Value Incentive Program 33. DISCLAIMER: This message does not guarantee rebate payments. VIP Program criteria need to be met to qualify for rebates. For more information, click www.cisco.com/go/vip",
+                    "severity": "OKAY",
+                    "cause": "VALUE_INCENTIVE_PROGRAM",
+                    "messageToken": [
+                        {
+                            "name": "PRODUCT_NAME",
+                            "value": "E2SC-E-ESA-MFE"
+                        },
+                        {
+                            "name": "PROGRAM_1",
+                            "value": "Value Incentive Program 33"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-EAPP-NFR-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Advanced Phishing, 1 Year, Not-For-Resale-License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TERM",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESAP-AT200-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco Email, AMP, TG - Premium File Analysis, 200 Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-EAPPC-NFR-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Advanced Phishing Cloud, 1 Year, Not-For-Resale-License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TERM",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-IMS-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Intelligent Multi-Scan License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-AS-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Anti-Spam License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESAI-AT6K-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco Email, AMP, TG - Inbound File Analysis, 6K Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-ENC-LIC-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA PXE Encryption License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-IA-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Image Analyzer License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESA-APP-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco ESA Advanced Phishing Protection w/ On-Premise Sensor",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-EDMP-NFR-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Domain Protection, 1 Year, Not-For-Resale-License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TERM",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "E2SC-E-ESA-IMS",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Security ELA 2.0 Email Sec. App. IMS Lic",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": [
+                {
+                    "code": "CS401",
+                    "description": "E2SC-E-ESA-IMS is eligible for rebates through program/s Value Incentive Program 33. DISCLAIMER: This message does not guarantee rebate payments. VIP Program criteria need to be met to qualify for rebates. For more information, click www.cisco.com/go/vip",
+                    "severity": "OKAY",
+                    "cause": "VALUE_INCENTIVE_PROGRAM",
+                    "messageToken": [
+                        {
+                            "name": "PRODUCT_NAME",
+                            "value": "E2SC-E-ESA-IMS"
+                        },
+                        {
+                            "name": "PROGRAM_1",
+                            "value": "Value Incentive Program 33"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESAI-AT2K-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco Email, AMP, TG - Inbound File Analysis, 2K Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-SO-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Sophos Anti-Malware License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-ESA-DMP-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Cisco ESA Domain Protection License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "H-ESAP-AT2K-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid Email, AMP, TG - Premium File Analysis, 2K Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "H-ESAI-AT6K-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid Email, AMP, TG - Inbound File Analysis, 6K Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-H-ESA-ESP-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid ESA Premium SW Bundle (AS, AV, OF, DLP, ENC) License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "ESA-DLP-LIC=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "ESA Data Loss Prevention License",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "L-SMA-EMGT-NFR=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "SMA Centralized Email Mgmnt Reporting Lic, Not for resale",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TERM",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "H-ESAI-AT200-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid Email, AMP, TG - Inbound File Analysis, 200 Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        },
+        {
+            "selectionFlag": "USER",
+            "status": "VALID",
+            "installSite": {
+                "zipcode": "411014",
+                "country": "IN"
+            },
+            "flexServiceDuration": "N",
+            "serviceLine": [],
+            "minorLine": [],
+            "xaasMinorLine": [],
+            "extendedAttributes": {
+                "attribute": [
+                    {
+                        "value": "Email Security License",
+                        "name": "ITEM_GROUP",
+                        "type": "string"
+                    }
+                ]
+            },
+            "referenceSKU": [],
+            "associatedHWProducts": [
+                {
+                    "itemName": "ESA C190 Email Security Appliance",
+                    "itemGroup": "Email Security Appliance",
+                    "description": "ESA-C190-K9"
+                }
+            ],
+            "itemName": "H-ESAI-AT2K-K9=",
+            "itemType": "NONCONFIGURABLE",
+            "quantity": 1,
+            "unitListPrice": 0,
+            "extendedListPrice": 0,
+            "description": "Hybrid Email, AMP, TG - Inbound File Analysis, 2K Files/Day",
+            "orignalUnitListPrice": 0,
+            "leadTime": 7,
+            "serviceable": true,
+            "deliveryOption": "ELECTRONIC",
+            "additionalItemInfo": "TIERED",
+            "message": []
+        }
+    ],
+    "requestId": "d1ded4da-cfac-45e4-90cc-ce83cb1870e4",
+    "errorFlag": false,
+    "stats": [
+        {
+            "key": "instance",
+            "value": "[cs1bws-wstg-int-rtp-76f88c87b8-z9vnf]"
+        },
+        {
+            "key": "timeStamp",
+            "value": "Tue Jul 23 22:48:15 PDT 2019"
+        },
+        {
+            "key": "totalTimetaken",
+            "value": "1189"
+        }
+    ]
+}
