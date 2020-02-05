@@ -1,0 +1,129 @@
+{
+   "Sender": {
+      "LogicalID": "847291911",
+      "ReferenceID": "Cisco Systems Inc."
+   },
+   "Receiver": {
+      "LogicalID": "12",
+      "ReferenceID": "Cisco Systems"
+   },
+   "CreationDateTime": "2019-01-07T12:42:06Z",
+   "BODID": "0abbf945-12a2-4fee-8588-5e53a5fed343",
+   "ResponseStatus": "Success",
+   "ConfigurationLine": [
+      {
+         "LineNumber": "1",
+         "ParentID": "0",
+         "Description": "EMERGING SOLUTION GROUP Interactive Exp Dep Small(21-50)",
+         "Quantity": "1",
+         "ItemName": "ASF-ESG-G-IEXP-DPS",
+         "PricingInformation": {
+            "UnitListPrice": "72850.00",
+            "CurrencyCode": "USD",
+            "PerQuantity": "1",
+            "ExtendedListPrice": "72850.00"
+         },
+         "ItemType": "NONCONFIGURABLE",
+         "InstallSiteLocation": {
+            "Address": {
+               "CountryCode": "IN",
+               "PostalCode": null
+            }
+         },
+         "LeadTime": {
+            "Duration": "P0Y0M0DT0H0M"
+         },
+         "ProductAttributes": {
+            "BundleFlag": "false",
+            "Serviceable": "false",
+            "DistiOrderableIndicator": "N",
+            "AllowedDifferentialDuration": "false"
+         },
+         "ConfigurationRecommendationAttributes": {
+            "LifeCyclePhase": "BUILD",
+            "RecommendedServiceType": "AS_FIXED",
+            "BusinessService": "DEPLOYMENT",
+            "Architecture": "COLLABORATION",
+            "Deliverables": "Acceptance Test Plan;As-Built Document;Assessment Report;Detailed Design Document;Implementation Plan;Knowledge Transfer Materials;Project Management Plan",
+            "Timelines": "up to 90 Days",
+            "Rank": "18"
+         }
+      },
+      {
+         "LineNumber": "2",
+         "ParentID": "0",
+         "Description": "EMERGING SOLUTION GROUP Interactive Exp Training Service",
+         "Quantity": "1",
+         "ItemName": "ASF-ESG-G-IEXP-TRG",
+         "PricingInformation": {
+            "UnitListPrice": "12550.00",
+            "CurrencyCode": "USD",
+            "PerQuantity": "1",
+            "ExtendedListPrice": "12550.00"
+         },
+         "ItemType": "NONCONFIGURABLE",
+         "InstallSiteLocation": {
+            "Address": {
+               "CountryCode": "IN",
+               "PostalCode": null
+            }
+         },
+         "LeadTime": {
+            "Duration": "P0Y0M0DT0H0M"
+         },
+         "ProductAttributes": {
+            "BundleFlag": "false",
+            "Serviceable": "false",
+            "DistiOrderableIndicator": "N",
+            "AllowedDifferentialDuration": "false"
+         },
+         "ConfigurationRecommendationAttributes": {
+            "LifeCyclePhase": "BUILD",
+            "RecommendedServiceType": "AS_FIXED",
+            "BusinessService": "DEPLOYMENT",
+            "Architecture": "COLLABORATION",
+            "Deliverables": "Evaluation Report;Final Training Materials",
+            "Timelines": "up to 90 Days",
+            "Rank": "96"
+         }
+      },
+      {
+         "LineNumber": "3",
+         "ParentID": "0",
+         "Description": "EMERGING SOLUTION GROUP Interactive Exp Trg Express Service",
+         "Quantity": "1",
+         "ItemName": "ASF-ESG-G-IEXP-TRE",
+         "PricingInformation": {
+            "UnitListPrice": "8068.00",
+            "CurrencyCode": "USD",
+            "PerQuantity": "1",
+            "ExtendedListPrice": "8068.00"
+         },
+         "ItemType": "NONCONFIGURABLE",
+         "InstallSiteLocation": {
+            "Address": {
+               "CountryCode": "IN",
+               "PostalCode": null
+            }
+         },
+         "LeadTime": {
+            "Duration": "P0Y0M0DT0H0M"
+         },
+         "ProductAttributes": {
+            "BundleFlag": "false",
+            "Serviceable": "false",
+            "DistiOrderableIndicator": "N",
+            "AllowedDifferentialDuration": "false"
+         },
+         "ConfigurationRecommendationAttributes": {
+            "LifeCyclePhase": "BUILD",
+            "RecommendedServiceType": "AS_FIXED",
+            "BusinessService": "DEPLOYMENT",
+            "Architecture": "COLLABORATION",
+            "Deliverables": "Evaluation Report;Final Training Materials",
+            "Timelines": "up to",
+            "Rank": "129"
+         }
+      }
+   ]
+}
