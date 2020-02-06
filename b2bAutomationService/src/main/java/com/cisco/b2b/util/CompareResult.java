@@ -3,8 +3,8 @@ package com.cisco.b2b.util;
 public class CompareResult {
 	private String itemName;
 	private String propertyName;
-	private Object value1;
-	private Object value2;
+	private Object configValue;
+	private Object b2bValue;
 	private boolean result;
 
 	public CompareResult() {
@@ -27,20 +27,20 @@ public class CompareResult {
 		this.propertyName = propertyName;
 	}
 
-	public Object getValue1() {
-		return value1;
+	public Object getConfigValue() {
+		return configValue;
 	}
 
-	public void setValue1(Object value1) {
-		this.value1 = value1;
+	public void setConfigValue(Object configValue) {
+		this.configValue = configValue;
 	}
 
-	public Object getValue2() {
-		return value2;
+	public Object getB2bValue() {
+		return b2bValue;
 	}
 
-	public void setValue2(Object value2) {
-		this.value2 = value2;
+	public void setB2bValue(Object b2bValue) {
+		this.b2bValue = b2bValue;
 	}
 
 	public boolean isResult() {
@@ -53,10 +53,8 @@ public class CompareResult {
 
 	@Override
 	public String toString() {
-		return " [ propertyName=" + propertyName + ", value1=" + value1
-				+ ", value2=" + value2 + "]";
+		return "CompareResult [itemName=" + itemName + ", propertyName=" + propertyName + ", configValue=" + configValue
+				+ ", b2bValue=" + b2bValue + ", result=" + result + "]";
 	}
-	
-	
 
 }
