@@ -17,6 +17,19 @@ public class PricingInformation {
 
 	@JsonProperty("ExtendedListPrice")
 	private BigDecimal extendedListPrice;
+	
+	public BigDecimal getDurationListPrice() {
+		return durationListPrice;
+	}
+
+	public void setDurationListPrice(BigDecimal durationListPrice) {
+		this.durationListPrice = durationListPrice;
+	}
+
+
+
+	@JsonProperty("DurationListPrice")
+	private BigDecimal durationListPrice;
 
 	public BigDecimal getUnitListPrice() {
 		return unitListPrice;

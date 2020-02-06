@@ -1,7 +1,10 @@
 
 package com.cisco.b2b.model;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.JsonNode;
 
 public class ConfigurationLine {
 
@@ -28,8 +31,96 @@ public class ConfigurationLine {
 	@JsonProperty("ConfigurationRecommendationAttributes")
 	private ConfigurationRecommendationAttributes configurationRecommendationAttributes;
 
+	@JsonProperty("ConfigPath")
+	private String configPath;
+	
+	@JsonProperty("SourceLineID")
+	private String sourceLineID;
+	
+	@JsonProperty("ConfigReference")
+	private String configReference;
+	
 	@JsonProperty("Message")
-	private Message message;
+	private JsonNode message;
+	
+	@JsonProperty("SelectionCode")
+	private String selectionCode;
+	
+	@JsonProperty("Status")
+	private String status;
+	
+	@JsonProperty("ServiceAttributes")
+	private ServiceAttributes serviceAttributes;
+	
+	@JsonProperty("Default")
+	private String default_;
+	
+	@JsonProperty("XaasAttributes")
+	private XaasAttributes xaasAttributes;
+
+	public String getConfigPath() {
+		return configPath;
+	}
+
+	public void setConfigPath(String configPath) {
+		this.configPath = configPath;
+	}
+
+	public String getSourceLineID() {
+		return sourceLineID;
+	}
+
+	public void setSourceLineID(String sourceLineID) {
+		this.sourceLineID = sourceLineID;
+	}
+
+	public String getConfigReference() {
+		return configReference;
+	}
+
+	public void setConfigReference(String configReference) {
+		this.configReference = configReference;
+	}
+
+	public String getSelectionCode() {
+		return selectionCode;
+	}
+
+	public void setSelectionCode(String selectionCode) {
+		this.selectionCode = selectionCode;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public ServiceAttributes getServiceAttributes() {
+		return serviceAttributes;
+	}
+
+	public void setServiceAttributes(ServiceAttributes serviceAttributes) {
+		this.serviceAttributes = serviceAttributes;
+	}
+
+	public String getDefault_() {
+		return default_;
+	}
+
+	public void setDefault_(String default_) {
+		this.default_ = default_;
+	}
+
+	public XaasAttributes getXaasAttributes() {
+		return xaasAttributes;
+	}
+
+	public void setXaasAttributes(XaasAttributes xaasAttributes) {
+		this.xaasAttributes = xaasAttributes;
+	}
 
 	public String getLineNumber() {
 		return lineNumber;
@@ -125,11 +216,11 @@ public class ConfigurationLine {
 		this.configurationRecommendationAttributes = configurationRecommendationAttributes;
 	}
 
-	public Message getMessage() {
+	public JsonNode getMessage() {
 		return message;
 	}
 
-	public void setMessage(Message message) {
+	public void setMessage(JsonNode message) {
 		this.message = message;
 	}
 

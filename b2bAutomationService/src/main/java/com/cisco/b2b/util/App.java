@@ -33,7 +33,7 @@ public class App {
 				}
 			}
 			if (majorLine != null) {
-			    compareResults = ResponseComparator.compareConfigMajorLineResponse(majorLine,configurationLine);
+			    compareResults = RecommendationResponseComparator.compareConfigMajorLineResponse(majorLine,configurationLine);
 				if (!compareResults.isEmpty()) {
 					System.out.println("Found Difference");
 					for (CompareResult compareResult : compareResults) {
@@ -52,14 +52,15 @@ public class App {
 	private static B2BResponse getB2BResponse() throws JsonParseException, JsonMappingException, IOException {
 		B2BResponse b2BResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
-		b2BResponse = mapper.readValue(getFileFromResources("ConfigRecommendation_B2B1.json"), B2BResponse.class);
+		b2BResponse = mapper.readValue(getFileFromResources("HardwareUpgrade_B2B.json"), B2BResponse.class);
+			
 		return b2BResponse;
 	}
 
 	private static ConfigResponse getConfigResponse() throws JsonParseException, JsonMappingException, IOException {
 		ConfigResponse configResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
-		configResponse = mapper.readValue(getFileFromResources("ConfigRecommendation_Config1.json"), ConfigResponse.class);
+		configResponse = mapper.readValue(getFileFromResources("HardwareUpgrade_Config.json"), ConfigResponse.class);
 		return configResponse;
 	}
 	
