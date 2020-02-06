@@ -5,14 +5,34 @@ import java.util.List;
 
 import com.cisco.b2b.model.Address;
 import com.cisco.b2b.model.Attribute;
+import com.cisco.b2b.model.B2BResponse;
+import com.cisco.b2b.model.ConfigResponse;
 import com.cisco.b2b.model.ConfigurationLine;
 import com.cisco.b2b.model.InstallSiteLocation;
 import com.cisco.b2b.model.MajorLine;
 import com.cisco.b2b.model.PricingInformation;
 import com.cisco.b2b.model.ProductAttributes;
 
-public class RecommendationResponseComparator {
+public class ConfigRecommendationResponseComparator {
 
+	public static List<CompareResult> comapreResponse(ConfigResponse configResponse, B2BResponse b2bResponse){
+		List<CompareResult> compareResults = new ArrayList<CompareResult>();
+		for (ConfigurationLine configurationLine : b2bResponse.getConfigurationLine()) {
+			MajorLine majorLine = null;
+			for (MajorLine line : configResponse.getMajorLine()) {
+				if (configurationLine.getItemName().contentEquals(line.getItemName())) {
+					majorLine = line;
+					break;
+				}
+			}
+			if (majorLine != null) {
+			    compareResults.addAll(compareConfigMajorLineResponse(majorLine,configurationLine));
+			}
+			
+		}
+		return compareResults;
+	}
+	
 	public static List<CompareResult> compareConfigMajorLineResponse(MajorLine majorLine, ConfigurationLine configurationLine) {
 		
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
@@ -108,9 +128,9 @@ public class RecommendationResponseComparator {
 						compareResults.add(createCompareResult(majorLine.getItemName(), "Rank", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getRank(), false));
 					}
 				}
-			}
+			}	
+			
 		}
-		
 		return compareResults;
 	}
 
@@ -119,8 +139,8 @@ public class RecommendationResponseComparator {
 		CompareResult compareResult = new CompareResult();
 		compareResult.setItemName(itemName);
 		compareResult.setPropertyName(propertyName);
-		compareResult.setValue1(value1);
-		compareResult.setValue2(value2);
+		compareResult.setConfigValue(value1);
+		compareResult.setB2bValue(value2);
 		compareResult.setResult(false);
 		return compareResult;
 	}
