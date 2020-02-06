@@ -5,7 +5,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@JsonIgnoreProperties({ "Sender", "Receiver", "CreationDateTime", "BODID", "ResponseStatus" })
+@JsonIgnoreProperties({ "Sender", "Receiver", "CreationDateTime", "BODID", "ResponseStatus","ConfigurationHeader" })
 public class B2BResponse {
 
 	@JsonProperty("ConfigurationLine")

@@ -15,6 +15,46 @@ public class ProductAttributes {
 
 	@JsonProperty("AllowedDifferentialDuration")
 	private String allowedDifferentialDuration;
+	
+	@JsonProperty("TAAIndicator")
+	private String tAAIndicator;
+	
+	@JsonProperty("TEPIndicator")
+	private String tEPIndicator;
+
+	
+	@JsonProperty("SmartAccountRequired")
+	private String smartAccountRequired;
+	
+	@JsonProperty("smartAccountRequired")
+	private String smartAccountRequiredconfig;
+
+	
+	@JsonProperty("SmartEnabled")
+	private String smartEnabled;
+	
+	@JsonProperty("EquivalentCiscoOneSku")
+	private String equivalentCiscoOneSku;
+
+	
+	@JsonProperty("CiscoONETranslated")
+	private String ciscoONETranslated;
+	
+	@JsonProperty("TAAFlag")
+	private String tAAFlag;
+	
+	@JsonProperty("TEPFlag")
+	private String tEPFlag;
+	
+	@JsonProperty("cryptoFlag")
+	private String cryptoFlag;
+	
+	
+
+	
+	@JsonProperty("smartLicense")
+	private String smartLicense;
+
 
 	public String getBundleFlag() {
 		return bundleFlag;

@@ -11,7 +11,7 @@ import com.cisco.b2b.model.MajorLine;
 import com.cisco.b2b.model.PricingInformation;
 import com.cisco.b2b.model.ProductAttributes;
 
-public class ResponseComparator {
+public class RecommendationResponseComparator {
 
 	public static List<CompareResult> compareConfigMajorLineResponse(MajorLine majorLine, ConfigurationLine configurationLine) {
 		
@@ -73,37 +73,37 @@ public class ResponseComparator {
 		
 		if(majorLine.getExtendedAttributes() != null) {
 			for(Attribute attribute : majorLine.getExtendedAttributes().getAttribute()) {
-				if(attribute.getName().equals("LifeCyclePhase")) {
+				if(attribute.getName() !=null && attribute.getName().equals("LifeCyclePhase")) {
 					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getLifeCyclePhase())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "LifeCyclePhase", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getLifeCyclePhase(), false));
 					}
 				}
-				if(attribute.getName().equals("SERVICE_TYPE")) {
+				if(attribute.getName() !=null && attribute.getName().equals("SERVICE_TYPE")) {
 					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getRecommendedServiceType())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "Service_Type", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getRecommendedServiceType(), false));
 					}
 				}
-				if(attribute.getName().equals("BusinessService")) {
+				if(attribute.getName() !=null && attribute.getName().equals("BusinessService")) {
 					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getBusinessService())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "BusinessService", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getBusinessService(), false));
 					}
 				}
-				if(attribute.getName().equals("Architecture")) {
+				if(attribute.getName() !=null && attribute.getName().equals("Architecture")) {
 					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getArchitecture())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "Architecture", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getArchitecture(), false));
 					}
 				}
-				if(attribute.getName().equals("Deliverables")) {
+				if(attribute.getName() !=null && attribute.getName().equals("Deliverables")) {
 					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getDeliverables())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "Deliverables", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getDeliverables(), false));
 					}
 				}
-				if(attribute.getName().equals("Timelines")) {
+				if(attribute.getName() !=null && attribute.getName().equals("Timelines")) {
 					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getTimelines())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "Timelines", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getTimelines(), false));
 					}
 				}
-				if(attribute.getName().equals("Rank")) {
+				if(attribute.getName() !=null && attribute.getName().equals("Rank")) {
 					if(!attribute.getText().equals(configurationLine.getConfigurationRecommendationAttributes().getRank())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "Rank", attribute.getText(), configurationLine.getConfigurationRecommendationAttributes().getRank(), false));
 					}

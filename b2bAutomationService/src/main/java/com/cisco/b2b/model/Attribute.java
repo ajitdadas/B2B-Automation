@@ -9,6 +9,17 @@ public class Attribute {
 
 	@JsonProperty("#text")
 	private String text;
+	
+	@JsonProperty("value")
+	private String value;
+	
+	@JsonProperty("name")
+	private String nameCiscoOne;
+	
+	@JsonProperty("type")
+	private String type;
+	
+	
 
 	public String getName() {
 		return name;
