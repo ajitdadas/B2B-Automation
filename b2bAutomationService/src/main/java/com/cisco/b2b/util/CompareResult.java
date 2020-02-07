@@ -7,6 +7,7 @@ public class CompareResult {
 	private Object b2bValue;
 	private boolean result;
 
+	/****************/
 	public CompareResult() {
 		this.result = true;
 	}

@@ -16,6 +16,8 @@ import com.cisco.b2b.model.ServiceLine;
 
 public class CiscoOneResponseComparator {
 	
+	
+	/****************/
 	public static List<CompareResult> compareResponse(ConfigResponse configResponse, B2BResponse b2bResponse){
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
 		List<MajorLine> majorLines = configResponse.getMajorLine() != null && !configResponse.getMajorLine().isEmpty() ? configResponse.getMajorLine()  : new ArrayList<MajorLine>();
@@ -498,12 +500,10 @@ public class CiscoOneResponseComparator {
 			}
 		}
 		if(serviceLine.getServiceLevelName() != null && configurationLine.getServiceAttributes().getServiceLevelName() ==null) {
-			//if(!serviceLine.getServiceLevelName().equals(configurationLine.getServiceAttributes().getServiceLevelName())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "ServiceLevelName", serviceLine.getServiceLevelName(), configurationLine.getItemName(), false));
 			
 		}
 		if(serviceLine.getServiceLevelName() == null && configurationLine.getServiceAttributes().getServiceLevelName() !=null) {
-			//if(!serviceLine.getServiceLevelName().equals(configurationLine.getServiceAttributes().getServiceLevelName())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "ServiceLevelName", serviceLine.getItemName(), configurationLine.getServiceAttributes().getServiceLevelName(), false));
 			
 		}
@@ -514,12 +514,10 @@ public class CiscoOneResponseComparator {
 			}
 		}
 		if(serviceLine.getDurationListPrice() != null && configurationLine.getPricingInformation().getDurationListPrice() ==null) {
-			//if(!serviceLine.getDurationListPrice().equals(configurationLine.getPricingInformation().getDurationListPrice())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "Duration List Price", serviceLine.getDurationListPrice(), configurationLine.getPricingInformation().getDurationListPrice(), false));
 			
 		}
 		if(serviceLine.getDurationListPrice() == null && configurationLine.getPricingInformation().getDurationListPrice() !=null) {
-			//if(!serviceLine.getDurationListPrice().equals(configurationLine.getPricingInformation().getDurationListPrice())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "Duration List Price", serviceLine.getDurationListPrice(), configurationLine.getPricingInformation().getDurationListPrice(), false));
 			
 		}

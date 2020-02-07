@@ -12,6 +12,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ServiceLine {
 
+	
+	/****************/
 	@JsonProperty("serviceLevelName")
 	private String serviceLevelName;
 	@JsonProperty("durationListPrice")

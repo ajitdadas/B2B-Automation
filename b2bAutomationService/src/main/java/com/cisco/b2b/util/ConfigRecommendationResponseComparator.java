@@ -15,6 +15,7 @@ import com.cisco.b2b.model.ProductAttributes;
 
 public class ConfigRecommendationResponseComparator {
 
+	/****************/
 	public static List<CompareResult> comapreResponse(ConfigResponse configResponse, B2BResponse b2bResponse){
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
 		for (ConfigurationLine configurationLine : b2bResponse.getConfigurationLine()) {
