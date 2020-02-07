@@ -53,8 +53,8 @@ public class CompareResult {
 
 	@Override
 	public String toString() {
-		return "CompareResult [itemName=" + itemName + ", propertyName=" + propertyName + ", configValue=" + configValue
-				+ ", b2bValue=" + b2bValue + ", result=" + result + "]";
+		return " [itemName=" + itemName + ", propertyName=" + propertyName + ", configValue=" + configValue
+				+ ", b2bValue=" + b2bValue + "]";
 	}
 
 }

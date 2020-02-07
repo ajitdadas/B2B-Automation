@@ -1,5 +1,6 @@
 package com.cisco.b2b.model;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +15,7 @@ public class ServiceLine {
 	@JsonProperty("serviceLevelName")
 	private String serviceLevelName;
 	@JsonProperty("durationListPrice")
-	private Double durationListPrice;
+	private BigDecimal durationListPrice;
 	@JsonProperty("servicePeriod")
 	private ServicePeriod servicePeriod;
 	@JsonProperty("lessThanMinDur")
@@ -28,7 +29,7 @@ public class ServiceLine {
 	@JsonProperty("durationList")
 	private List<Integer> durationList = null;
 	@JsonProperty("sourceLineId")
-	private List<Object> sourceLineId = null;
+	private List<Object> sourceLineId;
 	@JsonProperty("message")
 	private List<Object> message = null;
 	@JsonProperty("serviceLine")
@@ -70,13 +71,12 @@ public class ServiceLine {
 		this.serviceLevelName = serviceLevelName;
 	}
 
-	@JsonProperty("durationListPrice")
-	public Double getDurationListPrice() {
+	
+	public BigDecimal getDurationListPrice() {
 		return durationListPrice;
 	}
 
-	@JsonProperty("durationListPrice")
-	public void setDurationListPrice(Double durationListPrice) {
+	public void setDurationListPrice(BigDecimal durationListPrice) {
 		this.durationListPrice = durationListPrice;
 	}
 

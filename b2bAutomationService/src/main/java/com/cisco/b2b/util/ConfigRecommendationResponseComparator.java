@@ -36,7 +36,7 @@ public class ConfigRecommendationResponseComparator {
 	public static List<CompareResult> compareConfigMajorLineResponse(MajorLine majorLine, ConfigurationLine configurationLine) {
 		
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
-
+		
 		if (!majorLine.getItemType().equals(configurationLine.getItemType())) {
 			compareResults.add(createCompareResult(majorLine.getItemName(), "ItemType", majorLine.getItemType(),
 					configurationLine.getItemType(), false));

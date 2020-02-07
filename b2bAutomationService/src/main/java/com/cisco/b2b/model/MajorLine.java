@@ -113,7 +113,7 @@ public class MajorLine {
 	private List<ValidationMessages> validationMessages;
 
 	@JsonProperty("sourceLineId")
-	private List<Integer> sourceLineId;
+	private List<String> sourceLineId;
 
 	@JsonProperty("ciscoOneSKU")
 	private String ciscoOneSKU;
@@ -283,11 +283,11 @@ public class MajorLine {
 		this.messages = messages;
 	}
 
-	public List<Integer> getSourceLineId() {
+	public List<String> getSourceLineId() {
 		return sourceLineId;
 	}
 
-	public void setSourceLineId(List<Integer> sourceLineId) {
+	public void setSourceLineId(List<String> sourceLineId) {
 		this.sourceLineId = sourceLineId;
 	}
 

@@ -42,7 +42,7 @@ public class App {
 	private static B2BResponse getB2BResponse() throws JsonParseException, JsonMappingException, IOException {
 		B2BResponse b2BResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
-		b2BResponse = mapper.readValue(getFileFromResources("ConfigRecommendation_B2B.json"), B2BResponse.class);
+		b2BResponse = mapper.readValue(getFileFromResources("CiscoOne_B2B.json"), B2BResponse.class);
 
 		return b2BResponse;
 	}
@@ -50,7 +50,7 @@ public class App {
 	private static ConfigResponse getConfigResponse() throws JsonParseException, JsonMappingException, IOException {
 		ConfigResponse configResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
-		configResponse = mapper.readValue(getFileFromResources("ConfigRecommendation_Config.json"), ConfigResponse.class);
+		configResponse = mapper.readValue(getFileFromResources("CiscoOne_Config.json"), ConfigResponse.class);
 		return configResponse;
 	}
 
