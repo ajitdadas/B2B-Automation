@@ -1,6 +1,7 @@
 package com.cisco.b2b.util;
 
 public class CompareResult {
+	
 	private String itemName;
 	private String propertyName;
 	private Object configValue;
@@ -53,8 +54,8 @@ public class CompareResult {
 
 	@Override
 	public String toString() {
-		return "CompareResult [itemName=" + itemName + ", propertyName=" + propertyName + ", configValue=" + configValue
-				+ ", b2bValue=" + b2bValue + ", result=" + result + "]";
+		return " [itemName=" + itemName + ", propertyName=" + propertyName + ", configValue=" + configValue
+				+ ", b2bValue=" + b2bValue + "]";
 	}
 
 }

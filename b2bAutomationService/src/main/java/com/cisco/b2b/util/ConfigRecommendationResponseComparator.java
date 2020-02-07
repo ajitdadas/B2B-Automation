@@ -36,21 +36,14 @@ public class ConfigRecommendationResponseComparator {
 	public static List<CompareResult> compareConfigMajorLineResponse(MajorLine majorLine, ConfigurationLine configurationLine) {
 		
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
-
 		if (!majorLine.getItemType().equals(configurationLine.getItemType())) {
-			compareResults.add(createCompareResult(majorLine.getItemName(), "ItemType", majorLine.getItemType(),
-					configurationLine.getItemType(), false));
+			compareResults.add(createCompareResult(majorLine.getItemName(), "ItemType", majorLine.getItemType(),configurationLine.getItemType(), false));
 		}
-
 		if (!majorLine.getDescription().equals(configurationLine.getDescription())) {
-			compareResults.add(createCompareResult(majorLine.getItemName(), "Description", majorLine.getDescription(),
-					configurationLine.getDescription(), false));
-
+			compareResults.add(createCompareResult(majorLine.getItemName(), "Description", majorLine.getDescription(),configurationLine.getDescription(), false));
 		}
-
 		if (!majorLine.getQuantity().equals(configurationLine.getQuantity())) {
-			compareResults.add(createCompareResult(majorLine.getItemName(), "Quantity", majorLine.getQuantity(),
-					configurationLine.getQuantity(), false));
+			compareResults.add(createCompareResult(majorLine.getItemName(), "Quantity", majorLine.getQuantity(),configurationLine.getQuantity(), false));
 		}
 
 		PricingInformation pricingInformation = configurationLine.getPricingInformation();
@@ -60,8 +53,7 @@ public class ConfigRecommendationResponseComparator {
 						majorLine.getUnitListPrice(), pricingInformation.getUnitListPrice(), false));
 			}
 			if (!pricingInformation.getExtendedListPrice().stripTrailingZeros().equals(majorLine.getExtendedListPrice().stripTrailingZeros())) {
-				compareResults.add(createCompareResult(majorLine.getItemName(), "ExtendedListPrice",
-						majorLine.getExtendedListPrice(), pricingInformation.getExtendedListPrice(), false));
+				compareResults.add(createCompareResult(majorLine.getItemName(), "ExtendedListPrice",majorLine.getExtendedListPrice(), pricingInformation.getExtendedListPrice(), false));
 			}
 
 		}
