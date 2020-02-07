@@ -26,7 +26,7 @@ public class App {
 			compareResults = ConfigRecommendationResponseComparator.comapreResponse(configResponse, b2bResponse);
 			break;
 		case "CiscoOne":
-			compareResults = CiscoOneResponseComparator.comapreResponse(configResponse, b2bResponse);
+			compareResults = CiscoOneResponseComparator.compareResponse(configResponse, b2bResponse);
 			break;
 		}
 		if (!compareResults.isEmpty()) {
