@@ -329,7 +329,6 @@ public class CiscoOneResponseComparator {
 		return compareResults;
 	}
 	
-	/****************************/
 	
 	public static List<CompareResult> compareServiceLine(ServiceLine serviceLine,
 			ConfigurationLine configurationLine) {
