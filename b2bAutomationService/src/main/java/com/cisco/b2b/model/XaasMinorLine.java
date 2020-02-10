@@ -332,5 +332,5 @@ public class XaasMinorLine {
 				+ ", smartAccountRequired=" + smartAccountRequired + ", sourceLineId=" + sourceLineId + ", message="
 				+ message + ", serviceMapId=" + serviceMapId + ", additionalProperties=" + additionalProperties + "]";
 	}
-
+/*----*/
 }

@@ -221,6 +221,20 @@ public class ServiceLine {
 	}
 
 	
+	@Override
+	public String toString() {
+		return "ServiceLine [serviceLevelName=" + serviceLevelName + ", durationListPrice=" + durationListPrice
+				+ ", servicePeriod=" + servicePeriod + ", lessThanMinDur=" + lessThanMinDur + ", hierarchy=" + hierarchy
+				+ ", userSelected=" + userSelected + ", taxMandatoryAttach=" + taxMandatoryAttach + ", durationList="
+				+ durationList + ", sourceLineId=" + sourceLineId + ", message=" + message + ", serviceLine="
+				+ serviceLine + ", mnqAttributes=" + mnqAttributes + ", serviceAttributes=" + serviceAttributes
+				+ ", extendedAttributes=" + extendedAttributes + ", itemName=" + itemName + ", itemType=" + itemType
+				+ ", quantity=" + quantity + ", unitListPrice=" + unitListPrice + ", extendedListPrice="
+				+ extendedListPrice + ", description=" + description + ", mandatoryService=" + mandatoryService
+				+ ", leadTime=" + leadTime + ", serviceMapId=" + serviceMapId + ", additionalProperties="
+				+ additionalProperties + "]";
+	}
+
 	public String getQuantity() {
 		return quantity;
 	}

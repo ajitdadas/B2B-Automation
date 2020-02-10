@@ -474,7 +474,7 @@ public class CiscoOneResponseComparator {
 		
 	
 		
-	/*	if(serviceLine.getSourceLineId() != null && configurationLine.getSourceLineID() !=null) {
+		if(serviceLine.getSourceLineId() != null && configurationLine.getSourceLineID() !=null) {
 			if(!serviceLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "sourceLineId", serviceLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
 			}
@@ -613,7 +613,7 @@ public class CiscoOneResponseComparator {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "leadTime", serviceLine.getLeadTime(), configurationLine.getLeadTime(), false));
 		}
 		
-	*/	
+
 		
 		
 		return compareResults;

@@ -22,7 +22,7 @@ public class App {
 		List<CompareResult> compareResults = null;
 		String serviceName = "CiscoOne";
 		switch (serviceName) {
-		case "ConfigRecommendationR":
+		case "ConfigRecommendation":
 			compareResults = ConfigRecommendationResponseComparator.comapreResponse(configResponse, b2bResponse);
 			break;
 		case "CiscoOne":

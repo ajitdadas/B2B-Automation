@@ -126,6 +126,20 @@ public class MinorLine {
 		this.quantity = quantity;
 	}
 	
+	@Override
+	public String toString() {
+		return "MinorLine [configPath=" + configPath + ", selectionFlag=" + selectionFlag + ", _default=" + _default
+				+ ", productAttributes=" + productAttributes + ", serviceLine=" + serviceLine + ", extendedAttributes="
+				+ extendedAttributes + ", lineId=" + lineId + ", itemName=" + itemName + ", itemType=" + itemType
+				+ ", quantity=" + quantity + ", unitListPrice=" + unitListPrice + ", extendedListPrice="
+				+ extendedListPrice + ", description=" + description + ", mandatoryService=" + mandatoryService
+				+ ", orignalUnitListPrice=" + orignalUnitListPrice + ", leadTime=" + leadTime + ", serviceable="
+				+ serviceable + ", deliveryOption=" + deliveryOption + ", uiHide=" + uiHide + ", distiOnly=" + distiOnly
+				+ ", allowedDifferentialDuration=" + allowedDifferentialDuration + ", validationMessages="
+				+ validationMessages + ", serviceMapId=" + serviceMapId + ", sourceLineId=" + sourceLineId
+				+ ", message=" + message + ", additionalItemInfo=" + additionalItemInfo + ", additionalProperties="
+				+ additionalProperties + "]";
+	}
 	public BigDecimal getUnitListPrice() {
 		return unitListPrice;
 	}
