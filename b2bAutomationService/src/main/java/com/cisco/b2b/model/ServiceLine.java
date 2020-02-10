@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ServiceLine {
+public class ServiceLine { 
 
 	@JsonProperty("serviceLevelName")
 	private String serviceLevelName;
