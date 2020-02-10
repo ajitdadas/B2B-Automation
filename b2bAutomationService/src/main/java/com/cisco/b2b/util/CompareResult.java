@@ -54,7 +54,7 @@ public class CompareResult {
 
 	@Override
 	public String toString() {
-		return "Compare [itemName=" + itemName + ", propertyName=" + propertyName + ", configValue=" + configValue
+		return " [itemName=" + itemName + ", propertyName=" + propertyName + ", configValue=" + configValue
 				+ ", b2bValue=" + b2bValue + "]";
 	}
 

@@ -4,18 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.cisco.b2b.model.Address;
+import com.cisco.b2b.model.Attribute;
 import com.cisco.b2b.model.B2BResponse;
 import com.cisco.b2b.model.ConfigResponse;
 import com.cisco.b2b.model.ConfigurationLine;
 import com.cisco.b2b.model.InstallSiteLocation;
 import com.cisco.b2b.model.MajorLine;
+import com.cisco.b2b.model.Message;
 import com.cisco.b2b.model.MinorLine;
 import com.cisco.b2b.model.ServiceLine;
 import com.cisco.b2b.model.XaasMinorLine;
 
 public class CiscoOneResponseComparator {
 
+
 	public static List<CompareResult> compareResponse(ConfigResponse configResponse, B2BResponse b2bResponse) throws NoSuchFieldException, SecurityException{
+
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
 		List<MajorLine> majorLines = configResponse.getMajorLine() != null && !configResponse.getMajorLine().isEmpty() ? configResponse.getMajorLine()  : new ArrayList<MajorLine>();
 		List<ConfigurationLine> parentLines = new ArrayList<>(); 
@@ -271,32 +275,23 @@ public class CiscoOneResponseComparator {
 				}
 			
 		
-			if(majorLine.getUnitListPrice()!= null && configurationLine.getPricingInformation()!=null)
-		    	{
-		    		if(majorLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice()!=null)
-		    		{
+			if(majorLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice()!=null)
+			{
 				if(!majorLine.getUnitListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getUnitListPrice().stripTrailingZeros()))
-			    {
+				{
 					compareResults.add(createCompareResult(majorLine.getItemName(), "UnitListPrice", majorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
 				}
-		    		}
-		    	}
-		    	if(majorLine.getUnitListPrice() != null && configurationLine.getPricingInformation()==null) 
-		    		{
-							compareResults.add(createCompareResult(majorLine.getItemName(), "UnitListPrice", majorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
-		    		}
-				    		
-		    	if(majorLine.getUnitListPrice() == null && configurationLine.getPricingInformation()!=null) 
-		    		{
-		    			compareResults.add(createCompareResult(majorLine.getItemName(), "UnitListPrice", majorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
-		    		}
-			    		
-		    	
-		  
-	     
-	     
-	     
-	     
+			}
+
+			if(majorLine.getUnitListPrice() != null && configurationLine.getPricingInformation()==null) 
+			{
+				compareResults.add(createCompareResult(majorLine.getItemName(), "UnitListPrice", majorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
+			}
+
+			if(majorLine.getUnitListPrice() == null && configurationLine.getPricingInformation()!=null) 
+			{
+				compareResults.add(createCompareResult(majorLine.getItemName(), "UnitListPrice", majorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
+			}
 		    	if(majorLine.getExtendedListPrice()!= null && configurationLine.getPricingInformation()!=null)
 		    	{
 		    		if(majorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice()!=null) {
@@ -418,8 +413,7 @@ public class CiscoOneResponseComparator {
 						compareResults.add(createCompareResult(majorLine.getItemName(), "allowedDifferentialDuration", majorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
 					}
 				}
-	     
-	         
+
 		    	
 		    	if(majorLine.getSourceLineId() != null && configurationLine.getSourceLineID() !=null) {
 					if(!majorLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID())){
@@ -442,7 +436,6 @@ public class CiscoOneResponseComparator {
 	public static List<CompareResult> compareServiceLine(ServiceLine serviceLine,
 			ConfigurationLine configurationLine) {
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
-		//serviceLine = majorLine.getServiceLine() ;
 		
 		if(serviceLine.getServiceLevelName() != null && configurationLine.getServiceAttributes().getServiceLevelName() !=null) {
 			if(!serviceLine.getServiceLevelName().equals(configurationLine.getServiceAttributes().getServiceLevelName())){
@@ -469,7 +462,7 @@ public class CiscoOneResponseComparator {
 		}
 		if(serviceLine.getDurationListPrice() == null && configurationLine.getPricingInformation().getDurationListPrice() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "Duration List Price", serviceLine.getDurationListPrice(), configurationLine.getPricingInformation().getDurationListPrice(), false));
-			
+
 		}
 		
 	
@@ -615,6 +608,7 @@ public class CiscoOneResponseComparator {
 		
 
 		
+	
 		
 		return compareResults;
 	}

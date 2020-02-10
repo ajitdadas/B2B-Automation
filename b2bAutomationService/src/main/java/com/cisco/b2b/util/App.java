@@ -43,7 +43,6 @@ public class App {
 		B2BResponse b2BResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
 		b2BResponse = mapper.readValue(getFileFromResources("VCS_B2B.json"), B2BResponse.class);
-
 		return b2BResponse;
 	}
 
