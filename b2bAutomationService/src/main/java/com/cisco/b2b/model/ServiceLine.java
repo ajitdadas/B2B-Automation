@@ -1,3 +1,4 @@
+
 package com.cisco.b2b.model;
 
 import java.math.BigDecimal;
@@ -294,4 +295,3 @@ public class ServiceLine {
 		this.additionalProperties.put(name, value);
 	}
 
-}

@@ -7,6 +7,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MajorLine {
 
+	
+	/****************/
 	@JsonProperty("itemName")
 	private String itemName;
 
@@ -460,7 +462,7 @@ public class MajorLine {
 	}
 
 	public String toString() {
-		return "MajorLine [itemName=" + itemName + ", itemType=" + itemType + ", quantity=" + quantity
+		return "MajorLines [itemName=" + itemName + ", itemType=" + itemType + ", quantity=" + quantity
 				+ ", unitListPrice=" + unitListPrice + ", extendedListPrice=" + extendedListPrice + ", description="
 				+ description + ", orignalUnitListPrice=" + orignalUnitListPrice + ", serviceable=" + serviceable
 				+ ", additionalItemInfo=" + additionalItemInfo + ", selectionFlag=" + selectionFlag + ", status="

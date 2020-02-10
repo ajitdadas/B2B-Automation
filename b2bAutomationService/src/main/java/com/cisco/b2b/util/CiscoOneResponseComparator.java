@@ -1,3 +1,4 @@
+
 package com.cisco.b2b.util;
 
 import java.util.ArrayList;
@@ -847,5 +848,4 @@ public class CiscoOneResponseComparator {
 		compareResult.setB2bValue(value2);
 		compareResult.setResult(false);
 		return compareResult;
-	}
-}
+	
