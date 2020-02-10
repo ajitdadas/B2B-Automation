@@ -295,3 +295,4 @@ public class ServiceLine {
 		this.additionalProperties.put(name, value);
 	}
 
+}

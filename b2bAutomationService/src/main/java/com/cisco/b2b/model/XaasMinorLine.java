@@ -18,7 +18,7 @@ public class XaasMinorLine {
 	@JsonProperty("actionTag")
 	private String actionTag;
 	@JsonProperty("usageQuantity")
-	private Integer usageQuantity;
+	private String usageQuantity;
 	@JsonProperty("uom")
 	private String uom;
 	@JsonProperty("billingType")
@@ -80,13 +80,13 @@ public class XaasMinorLine {
 		this.actionTag = actionTag;
 	}
 
-	@JsonProperty("usageQuantity")
-	public Integer getUsageQuantity() {
+	
+
+	public String getUsageQuantity() {
 		return usageQuantity;
 	}
 
-	@JsonProperty("usageQuantity")
-	public void setUsageQuantity(Integer usageQuantity) {
+	public void setUsageQuantity(String usageQuantity) {
 		this.usageQuantity = usageQuantity;
 	}
 

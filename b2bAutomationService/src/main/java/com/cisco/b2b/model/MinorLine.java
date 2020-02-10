@@ -16,7 +16,7 @@ public class MinorLine {
 	@JsonProperty("selectionFlag")
 	private String selectionFlag;
 	@JsonProperty("default")
-	private Boolean _default;
+	private String _default;
 	@JsonProperty("productAttributes")
 	private ProductAttributes productAttributes;
 	@JsonProperty("serviceLine")
@@ -30,7 +30,7 @@ public class MinorLine {
 	@JsonProperty("itemType")
 	private String itemType;
 	@JsonProperty("quantity")
-	private Integer quantity;
+	private String quantity;
 	@JsonProperty("unitListPrice")
 	private BigDecimal unitListPrice;
 	@JsonProperty("extendedListPrice")
@@ -44,7 +44,7 @@ public class MinorLine {
 	@JsonProperty("leadTime")
 	private Integer leadTime;
 	@JsonProperty("serviceable")
-	private Boolean serviceable;
+	private String serviceable;
 	@JsonProperty("deliveryOption")
 	private String deliveryOption;
 	@JsonProperty("uiHide")
@@ -52,7 +52,7 @@ public class MinorLine {
 	@JsonProperty("distiOnly")
 	private Boolean distiOnly;
 	@JsonProperty("allowedDifferentialDuration")
-	private Boolean allowedDifferentialDuration;
+	private String allowedDifferentialDuration;
 	@JsonProperty("validationMessages")
 	private List<Object> validationMessages = null;
 	@JsonProperty("serviceMapId")
@@ -77,10 +77,11 @@ public class MinorLine {
 	public void setSelectionFlag(String selectionFlag) {
 		this.selectionFlag = selectionFlag;
 	}
-	public Boolean get_default() {
+	
+	public String get_default() {
 		return _default;
 	}
-	public void set_default(Boolean _default) {
+	public void set_default(String _default) {
 		this._default = _default;
 	}
 	public ProductAttributes getProductAttributes() {
@@ -119,13 +120,13 @@ public class MinorLine {
 	public void setItemType(String itemType) {
 		this.itemType = itemType;
 	}
-	public Integer getQuantity() {
+	
+	public String getQuantity() {
 		return quantity;
 	}
-	public void setQuantity(Integer quantity) {
+	public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
-	
 	@Override
 	public String toString() {
 		return "MinorLine [configPath=" + configPath + ", selectionFlag=" + selectionFlag + ", _default=" + _default
@@ -177,10 +178,11 @@ public class MinorLine {
 	public void setLeadTime(Integer leadTime) {
 		this.leadTime = leadTime;
 	}
-	public Boolean getServiceable() {
+	
+	public String getServiceable() {
 		return serviceable;
 	}
-	public void setServiceable(Boolean serviceable) {
+	public void setServiceable(String serviceable) {
 		this.serviceable = serviceable;
 	}
 	public String getDeliveryOption() {
@@ -201,10 +203,11 @@ public class MinorLine {
 	public void setDistiOnly(Boolean distiOnly) {
 		this.distiOnly = distiOnly;
 	}
-	public Boolean getAllowedDifferentialDuration() {
+	
+	public String getAllowedDifferentialDuration() {
 		return allowedDifferentialDuration;
 	}
-	public void setAllowedDifferentialDuration(Boolean allowedDifferentialDuration) {
+	public void setAllowedDifferentialDuration(String allowedDifferentialDuration) {
 		this.allowedDifferentialDuration = allowedDifferentialDuration;
 	}
 	public List<Object> getValidationMessages() {

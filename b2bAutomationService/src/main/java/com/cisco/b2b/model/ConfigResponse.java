@@ -7,7 +7,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@JsonIgnoreProperties({ "errorFlag", "requestId", "metadata" })
+@JsonIgnoreProperties({ "errorFlag", "requestId", "metadata","stats" })
 public class ConfigResponse {
 
 	@JsonProperty("majorLine")

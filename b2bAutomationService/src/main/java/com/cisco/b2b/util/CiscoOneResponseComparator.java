@@ -165,16 +165,16 @@ public class CiscoOneResponseComparator {
 	    			if(!majorLine.getProductAttributes().gettAAFlag().equals(configurationLine.getProductAttributes().gettAAIndicator()))	{
 	    				compareResults.add(createCompareResult(majorLine.getItemName(), "TAAIndicator", majorLine.getProductAttributes().gettAAFlag(), configurationLine.getProductAttributes().gettAAIndicator(), false));
 	    			}
+	    			else
 	    			System.out.println(majorLine.getItemName() + " " +  "TAAIndicator" + " "+ majorLine.getProductAttributes().gettAAFlag() + " " +configurationLine.getProductAttributes().gettAAIndicator());
 	    		}
-	    }
-	    if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) {
+	    if(majorLine.getProductAttributes().gettAAFlag() != null && configurationLine.getProductAttributes().gettAAIndicator()==null) {
 			compareResults.add(createCompareResult(majorLine.getItemName(), "TAAIndicator", majorLine.getProductAttributes().gettAAFlag(), configurationLine.getProductAttributes().gettAAIndicator(), false));
 		}
-	    if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) {
+	    if(majorLine.getProductAttributes().gettAAFlag() == null && configurationLine.getProductAttributes().gettAAIndicator()!=null) {
 			compareResults.add(createCompareResult(majorLine.getItemName(), "TAAIndicator", majorLine.getProductAttributes().gettAAFlag(), configurationLine.getProductAttributes().gettAAIndicator(), false));
 		}
-	    		
+	   }		
 	    	
 		if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null){
 		    if(majorLine.getProductAttributes().gettEPFlag()!= null && configurationLine.getProductAttributes().gettEPIndicator()!=null){
@@ -184,13 +184,13 @@ public class CiscoOneResponseComparator {
 		    	else
 		    		System.out.println(majorLine.getItemName() + " " + "TEPIndicator" + " " + majorLine.getProductAttributes().gettEPFlag() + " " +  configurationLine.getProductAttributes().gettEPIndicator());
 		    	}
-		   }
 		  if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "TEPIndicator", majorLine.getProductAttributes().gettEPFlag(), configurationLine.getProductAttributes().gettEPIndicator(), false));
 		   }
 		  if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) {
 		         compareResults.add(createCompareResult(majorLine.getItemName(), "TEPIndicator", majorLine.getProductAttributes().gettEPFlag(), configurationLine.getProductAttributes().gettEPIndicator(), false));
 		   }
+		}
 		    if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null)	{
 		    		if(majorLine.getProductAttributes().getSmartAccountRequiredconfig()!= null && configurationLine.getProductAttributes().getSmartAccountRequired()!=null){
 		    			if(!majorLine.getProductAttributes().getSmartAccountRequiredconfig().equals(configurationLine.getProductAttributes().getSmartAccountRequired())){
@@ -199,13 +199,14 @@ public class CiscoOneResponseComparator {
 		    			else
 		    				System.out.println(majorLine.getItemName() + " " + "SmartAccountRequired" + " " +  majorLine.getProductAttributes().getSmartAccountRequiredconfig() + " " + configurationLine.getProductAttributes().getSmartAccountRequired());
 		    		}
-		    	}
+		    	
 		    if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) {
 		    		compareResults.add(createCompareResult(majorLine.getItemName(), "SmartAccountRequired", majorLine.getProductAttributes().getSmartAccountRequiredconfig(), configurationLine.getProductAttributes().getSmartAccountRequired(), false));
 			}
 		    if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) {
 		    		compareResults.add(createCompareResult(majorLine.getItemName(), "SmartAccountRequired", majorLine.getProductAttributes().getSmartAccountRequiredconfig(), configurationLine.getProductAttributes().getSmartAccountRequired(), false));
 			}
+		    }
 		    if(majorLine.getItemType() != null && configurationLine.getItemType()!=null){
 		    	if (!majorLine.getItemType().equals(configurationLine.getItemType())) {
 		    			compareResults.add(createCompareResult(majorLine.getItemName(), "ItemType", majorLine.getItemType(),configurationLine.getItemType(), false));
@@ -848,4 +849,5 @@ public class CiscoOneResponseComparator {
 		compareResult.setB2bValue(value2);
 		compareResult.setResult(false);
 		return compareResult;
-	
+	}
+}

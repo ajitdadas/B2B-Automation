@@ -9,6 +9,28 @@ public class Stats {
 	
 	@JsonProperty("value")
 	private String value ;
+	
+	@JsonProperty("@value")
+	private String valueConfig ;
+	
+	@JsonProperty("@key")
+	private String keyConfig ;
+
+	public String getValueConfig() {
+		return valueConfig;
+	}
+
+	public void setValueConfig(String valueConfig) {
+		this.valueConfig = valueConfig;
+	}
+
+	public String getKeyConfig() {
+		return keyConfig;
+	}
+
+	public void setKeyConfig(String keyConfig) {
+		this.keyConfig = keyConfig;
+	}
 
 	public String getKey() {
 		return key;

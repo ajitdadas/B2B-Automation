@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MajorLine {
 
-	
-	/****************/
 	@JsonProperty("itemName")
 	private String itemName;
 
