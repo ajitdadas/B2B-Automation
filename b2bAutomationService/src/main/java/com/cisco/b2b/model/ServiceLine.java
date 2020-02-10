@@ -1,3 +1,4 @@
+
 package com.cisco.b2b.model;
 
 import java.math.BigDecimal;
@@ -10,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ServiceLine {
+public class ServiceLine { 
 
 	@JsonProperty("serviceLevelName")
 	private String serviceLevelName;
@@ -221,20 +222,6 @@ public class ServiceLine {
 	}
 
 	
-	@Override
-	public String toString() {
-		return "ServiceLine [serviceLevelName=" + serviceLevelName + ", durationListPrice=" + durationListPrice
-				+ ", servicePeriod=" + servicePeriod + ", lessThanMinDur=" + lessThanMinDur + ", hierarchy=" + hierarchy
-				+ ", userSelected=" + userSelected + ", taxMandatoryAttach=" + taxMandatoryAttach + ", durationList="
-				+ durationList + ", sourceLineId=" + sourceLineId + ", message=" + message + ", serviceLine="
-				+ serviceLine + ", mnqAttributes=" + mnqAttributes + ", serviceAttributes=" + serviceAttributes
-				+ ", extendedAttributes=" + extendedAttributes + ", itemName=" + itemName + ", itemType=" + itemType
-				+ ", quantity=" + quantity + ", unitListPrice=" + unitListPrice + ", extendedListPrice="
-				+ extendedListPrice + ", description=" + description + ", mandatoryService=" + mandatoryService
-				+ ", leadTime=" + leadTime + ", serviceMapId=" + serviceMapId + ", additionalProperties="
-				+ additionalProperties + "]";
-	}
-
 	public String getQuantity() {
 		return quantity;
 	}
@@ -308,4 +295,3 @@ public class ServiceLine {
 		this.additionalProperties.put(name, value);
 	}
 
-}

@@ -1,25 +1,22 @@
+
 package com.cisco.b2b.util;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.cisco.b2b.model.Address;
-import com.cisco.b2b.model.Attribute;
 import com.cisco.b2b.model.B2BResponse;
 import com.cisco.b2b.model.ConfigResponse;
 import com.cisco.b2b.model.ConfigurationLine;
 import com.cisco.b2b.model.InstallSiteLocation;
 import com.cisco.b2b.model.MajorLine;
-import com.cisco.b2b.model.Message;
 import com.cisco.b2b.model.MinorLine;
 import com.cisco.b2b.model.ServiceLine;
 import com.cisco.b2b.model.XaasMinorLine;
 
 public class CiscoOneResponseComparator {
 
-
 	public static List<CompareResult> compareResponse(ConfigResponse configResponse, B2BResponse b2bResponse) throws NoSuchFieldException, SecurityException{
-
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
 		List<MajorLine> majorLines = configResponse.getMajorLine() != null && !configResponse.getMajorLine().isEmpty() ? configResponse.getMajorLine()  : new ArrayList<MajorLine>();
 		List<ConfigurationLine> parentLines = new ArrayList<>(); 
@@ -96,337 +93,238 @@ public class CiscoOneResponseComparator {
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
 		
 		
-		if(majorLine.getBundleFlag() != null && configurationLine.getProductAttributes().getBundleFlag() !=null) 
-		{
+		if(majorLine.getBundleFlag() != null && configurationLine.getProductAttributes().getBundleFlag() !=null) {
 			if(!majorLine.getBundleFlag().equals(configurationLine.getProductAttributes().getBundleFlag())){
 				compareResults.add(createCompareResult(majorLine.getItemName(), "Bundle Flag", majorLine.getBundleFlag(), configurationLine.getProductAttributes().getBundleFlag(), false));
 			}
+			else
+			  System.out.println(majorLine.getItemName() + " " + "Bundle Flag" + majorLine.getBundleFlag() + " " + configurationLine.getProductAttributes().getBundleFlag());
+		if(majorLine.getBundleFlag() != null && configurationLine.getProductAttributes().getBundleFlag() == null){
+			compareResults.add(createCompareResult(majorLine.getItemName(), "Bundle Flag", majorLine.getBundleFlag(), configurationLine.getProductAttributes().getBundleFlag(), false));
+      	}
+		if(majorLine.getBundleFlag() == null && configurationLine.getProductAttributes().getBundleFlag() != null){
+			compareResults.add(createCompareResult(majorLine.getItemName(), "Bundle Flag", majorLine.getBundleFlag(), configurationLine.getProductAttributes().getBundleFlag(), false));
 		}
-		if(majorLine.getBundleFlag() != null && configurationLine.getProductAttributes().getBundleFlag() == null)
-			{
-				compareResults.add(createCompareResult(majorLine.getItemName(), "Bundle Flag", majorLine.getBundleFlag(), configurationLine.getProductAttributes().getBundleFlag(), false));
-			}
-		
-		if(majorLine.getBundleFlag() == null && configurationLine.getProductAttributes().getBundleFlag() != null)
-			{
-				compareResults.add(createCompareResult(majorLine.getItemName(), "Bundle Flag", majorLine.getBundleFlag(), configurationLine.getProductAttributes().getBundleFlag(), false));
-			}
 		
 	
-	   	if(majorLine.getConfigPath() != null && configurationLine.getConfigPath()!=null)
-	   	{
-			if(!majorLine.getConfigPath().equals(configurationLine.getConfigPath()))
-		    {
+	   	if(majorLine.getConfigPath() != null && configurationLine.getConfigPath()!=null){
+			if(!majorLine.getConfigPath().equals(configurationLine.getConfigPath())) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "Config Path", majorLine.getConfigPath(), configurationLine.getConfigPath(), false));
 			}
+			else
+				System.out.println(majorLine.getItemName() +  " " + "Config Path" +  " " + majorLine.getConfigPath() + " " + configurationLine.getConfigPath());
 		}
-		if(majorLine.getConfigPath() != null && configurationLine.getConfigPath() == null)
-		
-			{
+		if(majorLine.getConfigPath() != null && configurationLine.getConfigPath() == null){
 				compareResults.add(createCompareResult(majorLine.getItemName(), "Config Path", majorLine.getConfigPath(), configurationLine.getConfigPath(), false));
-			}
-		
-		if(majorLine.getConfigPath() == null && configurationLine.getConfigPath() != null)
-			{
-				compareResults.add(createCompareResult(majorLine.getItemName(), "Config Path", majorLine.getConfigPath(), configurationLine.getConfigPath(), false));
-			}
+		}
+		if(majorLine.getConfigPath() == null && configurationLine.getConfigPath() != null){
+		        compareResults.add(createCompareResult(majorLine.getItemName(), "Config Path", majorLine.getConfigPath(), configurationLine.getConfigPath(), false));
+		}
 		
 		
-	    if(majorLine.getSelectionFlag() != null && configurationLine.getSelectionCode()!=null) 
-	    {
-			if(!majorLine.getSelectionFlag().equals(configurationLine.getSelectionCode()))
-		    {
+	    if(majorLine.getSelectionFlag() != null && configurationLine.getSelectionCode()!=null) {
+			if(!majorLine.getSelectionFlag().equals(configurationLine.getSelectionCode())) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "SelectionCode", majorLine.getSelectionFlag(), configurationLine.getSelectionCode(), false));
 			}
+			else
+				System.out.println(majorLine.getItemName() + " " + "SelectionCode" + " " + majorLine.getSelectionFlag() + " " +  configurationLine.getSelectionCode());
 		}
-		if(majorLine.getSelectionFlag() != null && configurationLine.getSelectionCode() == null)
-			{
+		if(majorLine.getSelectionFlag() != null && configurationLine.getSelectionCode() == null){
 				compareResults.add(createCompareResult(majorLine.getItemName(), "SelectionCode", majorLine.getSelectionFlag(), configurationLine.getSelectionCode(), false));
-			}	
+		}	
 		if(majorLine.getSelectionFlag() == null && configurationLine.getSelectionCode() != null) 
-			{
-				compareResults.add(createCompareResult(majorLine.getItemName(), "SelectionCode", majorLine.getSelectionFlag(), configurationLine.getSelectionCode(), false));
-			}
+			compareResults.add(createCompareResult(majorLine.getItemName(), "SelectionCode", majorLine.getSelectionFlag(), configurationLine.getSelectionCode(), false));
+		}
 	
-	    if(majorLine.getStatus() != null && configurationLine.getStatus()!=null)
-	    {
-			if(!majorLine.getStatus().equals(configurationLine.getStatus()))
-		    {
+	    if(majorLine.getStatus() != null && configurationLine.getStatus()!=null)   {
+			if(!majorLine.getStatus().equals(configurationLine.getStatus())) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "Status", majorLine.getStatus(), configurationLine.getStatus(), false));
 			}
+			else
+				System.out.println(majorLine.getItemName() + " " + "Status" + " " + majorLine.getStatus() + " " + configurationLine.getStatus());
 	   	}
-		if(majorLine.getStatus() != null && configurationLine.getStatus() == null) 
-			{
+		if(majorLine.getStatus() != null && configurationLine.getStatus() == null) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "Status", majorLine.getStatus(), configurationLine.getStatus(), false));
-			}
-		if(majorLine.getStatus() == null && configurationLine.getStatus() != null) 
-			{
+		}
+		if(majorLine.getStatus() == null && configurationLine.getStatus() != null) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "Status", majorLine.getStatus(), configurationLine.getStatus(), false));
-			}
+		}
 		
-		 InstallSiteLocation installSiteLocation = configurationLine.getInstallSiteLocation();
+	    InstallSiteLocation installSiteLocation = configurationLine.getInstallSiteLocation();
 		Address address = installSiteLocation.getAddress();
 		if (address != null) {
 			if (address.getCountryCode() != null) {
 				if (!installSiteLocation.getAddress().getCountryCode().equals(majorLine.getInstallSiteLocation().getCountry())) {
-				compareResults.add(createCompareResult(majorLine.getItemName(), "InstallSite|Country",
-						majorLine.getInstallSiteLocation().getCountry(), installSiteLocation.getAddress().getCountryCode(),
-						false));
+			        compareResults.add(createCompareResult(majorLine.getItemName(), "InstallSite|Country",majorLine.getInstallSiteLocation().getCountry(), installSiteLocation.getAddress().getCountryCode(),false));
+				}
 			}
-		}
 		}
 	    
-	     
-			if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null)
-	    	{
-	    		if(majorLine.getProductAttributes().gettAAFlag() != null && configurationLine.getProductAttributes().gettAAIndicator()!=null) 
-	    		{
-	    			if(!majorLine.getProductAttributes().gettAAFlag().equals(configurationLine.getProductAttributes().gettAAIndicator()))
-	    			{
+	     if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null){
+	    		if(majorLine.getProductAttributes().gettAAFlag() != null && configurationLine.getProductAttributes().gettAAIndicator()!=null) {
+	    			if(!majorLine.getProductAttributes().gettAAFlag().equals(configurationLine.getProductAttributes().gettAAIndicator()))	{
 	    				compareResults.add(createCompareResult(majorLine.getItemName(), "TAAIndicator", majorLine.getProductAttributes().gettAAFlag(), configurationLine.getProductAttributes().gettAAIndicator(), false));
 	    			}
+	    			System.out.println(majorLine.getItemName() + " " +  "TAAIndicator" + " "+ majorLine.getProductAttributes().gettAAFlag() + " " +configurationLine.getProductAttributes().gettAAIndicator());
 	    		}
-	    	}
-	    	if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) 
-	    	{
-				compareResults.add(createCompareResult(majorLine.getItemName(), "TAAIndicator", majorLine.getProductAttributes().gettAAFlag(), configurationLine.getProductAttributes().gettAAIndicator(), false));
-			}
-	    	if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) 
-	    	{
-				compareResults.add(createCompareResult(majorLine.getItemName(), "TAAIndicator", majorLine.getProductAttributes().gettAAFlag(), configurationLine.getProductAttributes().gettAAIndicator(), false));
-			}
+	    }
+	    if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) {
+			compareResults.add(createCompareResult(majorLine.getItemName(), "TAAIndicator", majorLine.getProductAttributes().gettAAFlag(), configurationLine.getProductAttributes().gettAAIndicator(), false));
+		}
+	    if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) {
+			compareResults.add(createCompareResult(majorLine.getItemName(), "TAAIndicator", majorLine.getProductAttributes().gettAAFlag(), configurationLine.getProductAttributes().gettAAIndicator(), false));
+		}
 	    		
 	    	
-		    if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null)
-		    	{
-		    		if(majorLine.getProductAttributes().gettEPFlag()!= null && configurationLine.getProductAttributes().gettEPIndicator()!=null)
-		    		{
-		    			if(!majorLine.getProductAttributes().gettEPFlag().equals(configurationLine.getProductAttributes().gettEPIndicator()))
-		    			{
-		    				compareResults.add(createCompareResult(majorLine.getItemName(), "TEPIndicator", majorLine.getProductAttributes().gettEPFlag(), configurationLine.getProductAttributes().gettEPIndicator(), false));
-		    			}
-		    		}
-		    	}
-		    	if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) 
-		    	{
-					compareResults.add(createCompareResult(majorLine.getItemName(), "TEPIndicator", majorLine.getProductAttributes().gettEPFlag(), configurationLine.getProductAttributes().gettEPIndicator(), false));
-				}
-		    	if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) 
-		    	{
+		if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null){
+		    if(majorLine.getProductAttributes().gettEPFlag()!= null && configurationLine.getProductAttributes().gettEPIndicator()!=null){
+		    	if(!majorLine.getProductAttributes().gettEPFlag().equals(configurationLine.getProductAttributes().gettEPIndicator())){
 		    		compareResults.add(createCompareResult(majorLine.getItemName(), "TEPIndicator", majorLine.getProductAttributes().gettEPFlag(), configurationLine.getProductAttributes().gettEPIndicator(), false));
-				}
-		    		
-		    	
-		   
-		
-	     
-	     
-		    if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null)
-		    	{
-		    		if(majorLine.getProductAttributes().getSmartAccountRequiredconfig()!= null && configurationLine.getProductAttributes().getSmartAccountRequired()!=null)
-		    		{
-		    			if(!majorLine.getProductAttributes().getSmartAccountRequiredconfig().equals(configurationLine.getProductAttributes().getSmartAccountRequired()))
-		    			{
+		    		}
+		    	else
+		    		System.out.println(majorLine.getItemName() + " " + "TEPIndicator" + " " + majorLine.getProductAttributes().gettEPFlag() + " " +  configurationLine.getProductAttributes().gettEPIndicator());
+		    	}
+		   }
+		  if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) {
+				compareResults.add(createCompareResult(majorLine.getItemName(), "TEPIndicator", majorLine.getProductAttributes().gettEPFlag(), configurationLine.getProductAttributes().gettEPIndicator(), false));
+		   }
+		  if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) {
+		         compareResults.add(createCompareResult(majorLine.getItemName(), "TEPIndicator", majorLine.getProductAttributes().gettEPFlag(), configurationLine.getProductAttributes().gettEPIndicator(), false));
+		   }
+		    if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null)	{
+		    		if(majorLine.getProductAttributes().getSmartAccountRequiredconfig()!= null && configurationLine.getProductAttributes().getSmartAccountRequired()!=null){
+		    			if(!majorLine.getProductAttributes().getSmartAccountRequiredconfig().equals(configurationLine.getProductAttributes().getSmartAccountRequired())){
 		    				compareResults.add(createCompareResult(majorLine.getItemName(), "SmartAccountRequired", majorLine.getProductAttributes().getSmartAccountRequiredconfig(), configurationLine.getProductAttributes().getSmartAccountRequired(), false));
 		    			}
+		    			else
+		    				System.out.println(majorLine.getItemName() + " " + "SmartAccountRequired" + " " +  majorLine.getProductAttributes().getSmartAccountRequiredconfig() + " " + configurationLine.getProductAttributes().getSmartAccountRequired());
 		    		}
 		    	}
-		    	if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) 
-		    	{
+		    if(majorLine.getProductAttributes() != null && configurationLine.getProductAttributes()==null) {
 		    		compareResults.add(createCompareResult(majorLine.getItemName(), "SmartAccountRequired", majorLine.getProductAttributes().getSmartAccountRequiredconfig(), configurationLine.getProductAttributes().getSmartAccountRequired(), false));
-				}
-		    	if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) 
-		    	{
+			}
+		    if(majorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null) {
 		    		compareResults.add(createCompareResult(majorLine.getItemName(), "SmartAccountRequired", majorLine.getProductAttributes().getSmartAccountRequiredconfig(), configurationLine.getProductAttributes().getSmartAccountRequired(), false));
-				}
-		    		
-		    	
-		    	if(majorLine.getItemType() != null && configurationLine.getItemType()!=null)
-		    	{
-		    		if (!majorLine.getItemType().equals(configurationLine.getItemType())) 
-		    		{
+			}
+		    if(majorLine.getItemType() != null && configurationLine.getItemType()!=null){
+		    	if (!majorLine.getItemType().equals(configurationLine.getItemType())) {
 		    			compareResults.add(createCompareResult(majorLine.getItemName(), "ItemType", majorLine.getItemType(),configurationLine.getItemType(), false));
 		    		}
+		    	else
+		    		System.out.println(majorLine.getItemName() + " " + "ItemType" + " "+ majorLine.getItemType() + " " +configurationLine.getItemType());
 		    	}
-			if(majorLine.getItemType() != null && configurationLine.getItemType() == null) 
-				{
+			if(majorLine.getItemType() != null && configurationLine.getItemType() == null) 	{
 					compareResults.add(createCompareResult(majorLine.getItemName(), "ItemType", majorLine.getItemType(),configurationLine.getItemType(), false));
-				}
-			if(majorLine.getItemType() == null && configurationLine.getItemType() != null)
-				{
-					compareResults.add(createCompareResult(majorLine.getItemName(), "ItemType", majorLine.getItemType(),configurationLine.getItemType(), false));
-				}
-			
-		
-	     if(majorLine.getQuantity() != null && configurationLine.getQuantity()!=null) 
-	     	{
-	    	 	if (!majorLine.getQuantity().equals(configurationLine.getQuantity()))
-	    	 		{
-	    	 			compareResults.add(createCompareResult(majorLine.getItemName(), "Quantity", majorLine.getQuantity(),configurationLine.getQuantity(), false));
-		    		}
 			}
-			if(majorLine.getQuantity() != null && configurationLine.getQuantity() == null)
-				{
+			if(majorLine.getItemType() == null && configurationLine.getItemType() != null)	{
+					compareResults.add(createCompareResult(majorLine.getItemName(), "ItemType", majorLine.getItemType(),configurationLine.getItemType(), false));
+			}
+	       if(majorLine.getQuantity() != null && configurationLine.getQuantity()!=null) {
+	    	 	if (!majorLine.getQuantity().equals(configurationLine.getQuantity()))	{
+	    	 			compareResults.add(createCompareResult(majorLine.getItemName(), "Quantity", majorLine.getQuantity(),configurationLine.getQuantity(), false));
+		    	}
+	    	 	else
+	    	 		System.out.println(majorLine.getItemName() + " " + "Quantity" + " " + majorLine.getQuantity() + " " + configurationLine.getQuantity());
+			}
+			if(majorLine.getQuantity() != null && configurationLine.getQuantity() == null){
 					compareResults.add(createCompareResult(majorLine.getItemName(), "Quantity", majorLine.getQuantity(),configurationLine.getQuantity(), false));
-				}
-			if(majorLine.getQuantity() == null && configurationLine.getQuantity() != null)
-				{
+			}
+			if(majorLine.getQuantity() == null && configurationLine.getQuantity() != null){
 					compareResults.add(createCompareResult(majorLine.getItemName(), "Quantity", majorLine.getQuantity(),configurationLine.getQuantity(), false));
-				}
-			
-		
-			if(majorLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice()!=null)
-			{
-				if(!majorLine.getUnitListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getUnitListPrice().stripTrailingZeros()))
-				{
+			}
+			if(majorLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice()!=null){
+				if(!majorLine.getUnitListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getUnitListPrice().stripTrailingZeros())){
 					compareResults.add(createCompareResult(majorLine.getItemName(), "UnitListPrice", majorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
 				}
 			}
-
-			if(majorLine.getUnitListPrice() != null && configurationLine.getPricingInformation()==null) 
-			{
+            if(majorLine.getUnitListPrice() != null && configurationLine.getPricingInformation()==null) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "UnitListPrice", majorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
 			}
-
-			if(majorLine.getUnitListPrice() == null && configurationLine.getPricingInformation()!=null) 
-			{
+			if(majorLine.getUnitListPrice() == null && configurationLine.getPricingInformation()!=null) {
 				compareResults.add(createCompareResult(majorLine.getItemName(), "UnitListPrice", majorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
 			}
-		    	if(majorLine.getExtendedListPrice()!= null && configurationLine.getPricingInformation()!=null)
-		    	{
-		    		if(majorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice()!=null) {
-				if(!majorLine.getExtendedListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getExtendedListPrice().stripTrailingZeros()))
-			    {
-					compareResults.add(createCompareResult(majorLine.getItemName(), "ExtendedListPrice", majorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
-				}
-		    		}
+			    		
+	    	if(majorLine.getExtendedListPrice()!= null && configurationLine.getPricingInformation()!=null) 	{
+		    	if(majorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice()!=null) {
+		    		if(!majorLine.getExtendedListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getExtendedListPrice().stripTrailingZeros()))   {
+		    			compareResults.add(createCompareResult(majorLine.getItemName(), "ExtendedListPrice", majorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
+			     	}
+		    		else
+		    			System.out.println(majorLine.getItemName() + " " +  "ExtendedListPrice" + " " +  majorLine.getExtendedListPrice()+ " " + configurationLine.getPricingInformation().getExtendedListPrice());
 		    	}
-		    	if(majorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation()==null) 
-		    	{
-		    		if(majorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice()!=null) {
-						if(!majorLine.getExtendedListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getExtendedListPrice().stripTrailingZeros()))
-					    {
-							compareResults.add(createCompareResult(majorLine.getItemName(), "ExtendedListPrice", majorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
-						}
-				    		}
+		    }
+		     if(majorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation()==null) {
+		    		compareResults.add(createCompareResult(majorLine.getItemName(), "ExtendedListPrice", majorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
+			}
+	        if(majorLine.getExtendedListPrice() == null && configurationLine.getPricingInformation()!=null) {
+		    	compareResults.add(createCompareResult(majorLine.getItemName(), "ExtendedListPrice", majorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
+			}
+			    		
+	       if(majorLine.getDescription() != null && configurationLine.getDescription()!=null) {
+		    	if (!majorLine.getDescription().equals(configurationLine.getDescription())) {
+		    		compareResults.add(createCompareResult(majorLine.getItemName(), "Description", majorLine.getDescription(),configurationLine.getDescription(), false));
 		    	}
-		    	if(majorLine.getExtendedListPrice() == null && configurationLine.getPricingInformation()!=null) 
-		    	{if(majorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice()!=null) {
-					if(!majorLine.getExtendedListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getExtendedListPrice().stripTrailingZeros()))
-				    {
-						compareResults.add(createCompareResult(majorLine.getItemName(), "ExtendedListPrice", majorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
-					}
-			    		}
-		    	}
-		  
-	     
-	     
-	     
-	     
-		    	if(majorLine.getDescription() != null && configurationLine.getDescription()!=null) {
-		    		if (!majorLine.getDescription().equals(configurationLine.getDescription())) {
-		    			compareResults.add(createCompareResult(majorLine.getItemName(), "Description", majorLine.getDescription(),
-		    					configurationLine.getDescription(), false));
-
-		    		}
+		    	else
+		    		System.out.println(majorLine.getItemName() + " " +  "Description" + " " + majorLine.getDescription() +" " + configurationLine.getDescription());
 			}
 			if(majorLine.getDescription() != null && configurationLine.getDescription() == null) {
-				if (!majorLine.getDescription().equals(configurationLine.getDescription())) {
-					compareResults.add(createCompareResult(majorLine.getItemName(), "Description", majorLine.getDescription(),
-							configurationLine.getDescription(), false));
-
-				}
+					compareResults.add(createCompareResult(majorLine.getItemName(), "Description", majorLine.getDescription(),configurationLine.getDescription(), false));
 			}
-			if(majorLine.getDescription() == null && configurationLine.getDescription() != null) {
-				if (!majorLine.getDescription().equals(configurationLine.getDescription())) {
-					compareResults.add(createCompareResult(majorLine.getItemName(), "Description", majorLine.getDescription(),
+            if(majorLine.getDescription() == null && configurationLine.getDescription() != null) {
+				compareResults.add(createCompareResult(majorLine.getItemName(), "Description", majorLine.getDescription(),
 							configurationLine.getDescription(), false));
-
-				}
 			}
-		
-	     
-	     
-	     
-	    
-		    	if(majorLine.getLeadTime() != null && configurationLine.getLeadTime()!=null) 
-		    	{
-		    		if (!majorLine.getLeadTime().equals(configurationLine.getLeadTime().getDuration()))
-		    		{
-		    			compareResults.add(createCompareResult(majorLine.getItemName(), "LeadTime",majorLine.getLeadTime(),
-		    					configurationLine.getLeadTime().getDuration(), false));
+	        if(majorLine.getLeadTime() != null && configurationLine.getLeadTime()!=null) {
+		         if (!majorLine.getLeadTime().equals(configurationLine.getLeadTime().getDuration())){
+		    			compareResults.add(createCompareResult(majorLine.getItemName(), "LeadTime",majorLine.getLeadTime(),configurationLine.getLeadTime().getDuration(), false));
 		    		}
+		         else
+		        	 System.out.println(majorLine.getItemName() + " " +  "LeadTime" + " " +majorLine.getLeadTime() + " " + configurationLine.getLeadTime().getDuration());
 			  }
-		    
-		    	if(majorLine.getLeadTime() != null && configurationLine.getLeadTime()==null) 
-		    	{
-		    		if (!majorLine.getLeadTime().equals(configurationLine.getLeadTime().getDuration()))
-		    		{
-		    			compareResults.add(createCompareResult(majorLine.getItemName(), "LeadTime",majorLine.getLeadTime(),
+		   	if(majorLine.getLeadTime() != null && configurationLine.getLeadTime()==null) {
+		    		compareResults.add(createCompareResult(majorLine.getItemName(), "LeadTime",majorLine.getLeadTime(),configurationLine.getLeadTime().getDuration(), false));
+		    }
+		    if(majorLine.getLeadTime() == null && configurationLine.getLeadTime()!=null) {
+		    	compareResults.add(createCompareResult(majorLine.getItemName(), "LeadTime",majorLine.getLeadTime(),
 		    					configurationLine.getLeadTime().getDuration(), false));
-		    		}
-			  }
-		    	if(majorLine.getLeadTime() == null && configurationLine.getLeadTime()!=null) 
-		    	{
-		    		if (!majorLine.getLeadTime().equals(configurationLine.getLeadTime().getDuration()))
-		    		{
-		    			compareResults.add(createCompareResult(majorLine.getItemName(), "LeadTime",majorLine.getLeadTime(),
-		    					configurationLine.getLeadTime().getDuration(), false));
-		    		}
-			  }
-	     
-		    	
-	     
-		    	if(majorLine.getServiceable() != null && configurationLine.getProductAttributes().getServiceable() !=null) {
-					if(!majorLine.getServiceable().equals(configurationLine.getProductAttributes().getServiceable())){
+		     }
+	        if(majorLine.getServiceable() != null && configurationLine.getProductAttributes().getServiceable() !=null) {
+			    if(!majorLine.getServiceable().equals(configurationLine.getProductAttributes().getServiceable())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "serviceable", majorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
-					}
 				}
-		    	if(majorLine.getServiceable() != null && configurationLine.getProductAttributes().getServiceable() ==null) {
-					if(!majorLine.getServiceable().equals(configurationLine.getProductAttributes().getServiceable())){
-						compareResults.add(createCompareResult(majorLine.getItemName(), "serviceable", majorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
-					}
-				}
-		    	if(majorLine.getServiceable() == null && configurationLine.getProductAttributes().getServiceable() !=null) {
-					if(!majorLine.getServiceable().equals(configurationLine.getProductAttributes().getServiceable())){
-						compareResults.add(createCompareResult(majorLine.getItemName(), "serviceable", majorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
-					}
-				}
+			    else
+			     		System.out.println(majorLine.getItemName() + " "+ "serviceable" +" " +  majorLine.getServiceable() +" " +  configurationLine.getProductAttributes().getServiceable());
+			}
+		    if(majorLine.getServiceable() != null && configurationLine.getProductAttributes().getServiceable() ==null) {
+					compareResults.add(createCompareResult(majorLine.getItemName(), "serviceable", majorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
+			}
+	        if(majorLine.getServiceable() == null && configurationLine.getProductAttributes().getServiceable() !=null) {
+					compareResults.add(createCompareResult(majorLine.getItemName(), "serviceable", majorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
+			}
 	     
-		    	
-		    	
-		    	
-		    	
-	     
-		    	if(majorLine.getAllowedDifferentialDuration() != null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() !=null) {
+		    if(majorLine.getAllowedDifferentialDuration() != null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() !=null) {
 					if(!majorLine.getAllowedDifferentialDuration().equals(configurationLine.getProductAttributes().getAllowedDifferentialDuration())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "allowedDifferentialDuration", majorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
 					}
 				}
 		    	if(majorLine.getAllowedDifferentialDuration() != null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() ==null) {
-					if(!majorLine.getAllowedDifferentialDuration().equals(configurationLine.getProductAttributes().getAllowedDifferentialDuration())){
-						compareResults.add(createCompareResult(majorLine.getItemName(), "allowedDifferentialDuration", majorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
-					}
+					compareResults.add(createCompareResult(majorLine.getItemName(), "allowedDifferentialDuration", majorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
 				}
-		    	if(majorLine.getAllowedDifferentialDuration() == null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() !=null) {
-					if(!majorLine.getAllowedDifferentialDuration().equals(configurationLine.getProductAttributes().getAllowedDifferentialDuration())){
+			  if(majorLine.getAllowedDifferentialDuration() == null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() !=null) {
 						compareResults.add(createCompareResult(majorLine.getItemName(), "allowedDifferentialDuration", majorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
-					}
-				}
-
-		    	
-		    	if(majorLine.getSourceLineId() != null && configurationLine.getSourceLineID() !=null) {
-					if(!majorLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID())){
+			}
+		 if(majorLine.getSourceLineId() != null && configurationLine.getSourceLineID() !=null) {
+				if(!majorLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "sourceLineId",majorLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
-					}
+				}
+				else
+					System.out.println(majorLine.getItemName() + " " + "sourceLineId" +" " + majorLine.getSourceLineId()+ " "+ configurationLine.getSourceLineID());
 				}
 		    	if(majorLine.getSourceLineId() != null && configurationLine.getSourceLineID() ==null) {
-					//if(!majorLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID())){
 						compareResults.add(createCompareResult(majorLine.getItemName(), "sourceLineId",majorLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
-					}
+				}
 		    	if(majorLine.getSourceLineId() == null && configurationLine.getSourceLineID() !=null) {
-					//if(!majorLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID())){
-						compareResults.add(createCompareResult(majorLine.getItemName(), "sourceLineId",majorLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
+					compareResults.add(createCompareResult(majorLine.getItemName(), "sourceLineId",majorLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
 		    	}
 		
 		return compareResults;
@@ -441,6 +339,8 @@ public class CiscoOneResponseComparator {
 			if(!serviceLine.getServiceLevelName().equals(configurationLine.getServiceAttributes().getServiceLevelName())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "ServiceLevelName", serviceLine.getServiceLevelName(), configurationLine.getServiceAttributes().getServiceLevelName(), false));
 			}
+			else
+				System.out.println(serviceLine.getItemName() +" ServiceLevelName "+ serviceLine.getServiceLevelName()+ " "+ configurationLine.getServiceAttributes().getServiceLevelName());
 		}
 		if(serviceLine.getServiceLevelName() != null && configurationLine.getServiceAttributes().getServiceLevelName() ==null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "ServiceLevelName", serviceLine.getServiceLevelName(), configurationLine.getItemName(), false));
@@ -448,13 +348,14 @@ public class CiscoOneResponseComparator {
 		}
 		if(serviceLine.getServiceLevelName() == null && configurationLine.getServiceAttributes().getServiceLevelName() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "ServiceLevelName", serviceLine.getItemName(), configurationLine.getServiceAttributes().getServiceLevelName(), false));
-			
 		}
 		
 		if(serviceLine.getDurationListPrice() != null && configurationLine.getPricingInformation().getDurationListPrice() !=null) {
 			if(!serviceLine.getDurationListPrice().equals(configurationLine.getPricingInformation().getDurationListPrice())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "Duration List Price", serviceLine.getDurationListPrice(), configurationLine.getPricingInformation().getDurationListPrice(), false));
 			}
+			else
+				System.out.println(serviceLine.getItemName()+ " Duration List Price "+ serviceLine.getDurationListPrice()+" "+ configurationLine.getPricingInformation().getDurationListPrice());
 		}
 		if(serviceLine.getDurationListPrice() != null && configurationLine.getPricingInformation().getDurationListPrice() ==null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "Duration List Price", serviceLine.getDurationListPrice(), configurationLine.getPricingInformation().getDurationListPrice(), false));
@@ -462,15 +363,16 @@ public class CiscoOneResponseComparator {
 		}
 		if(serviceLine.getDurationListPrice() == null && configurationLine.getPricingInformation().getDurationListPrice() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "Duration List Price", serviceLine.getDurationListPrice(), configurationLine.getPricingInformation().getDurationListPrice(), false));
-
+			
 		}
 		
 	
-		
 		if(serviceLine.getSourceLineId() != null && configurationLine.getSourceLineID() !=null) {
 			if(!serviceLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "sourceLineId", serviceLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
 			}
+			else 
+				System.out.println(serviceLine.getItemName()+ " sourceLineId "+ serviceLine.getSourceLineId()+" "+ configurationLine.getSourceLineID());
 		}
 		
 		if(serviceLine.getSourceLineId() != null && configurationLine.getSourceLineID() ==null) {
@@ -484,10 +386,11 @@ public class CiscoOneResponseComparator {
 		
 		
 		if(serviceLine.getServiceAttributes().getServiceType() != null && configurationLine.getServiceAttributes().getServiceType() !=null) {
-			if(!serviceLine.getServiceAttributes().getServiceType().equals(configurationLine.getServiceAttributes().getServiceType()))
-			{
+			if(!serviceLine.getServiceAttributes().getServiceType().equals(configurationLine.getServiceAttributes().getServiceType())) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "serviceAttributes", serviceLine.getServiceAttributes().getServiceType(), configurationLine.getServiceAttributes().getServiceType(), false));
 			}
+			else
+				System.out.println(serviceLine.getItemName()+ " serviceAttributes "+ serviceLine.getServiceAttributes().getServiceType()+" "+ configurationLine.getServiceAttributes().getServiceType());
 		}
 		if(serviceLine.getServiceAttributes() != null && configurationLine.getServiceAttributes() ==null) {
 			compareResults.add(createCompareResult(serviceLine.getItemName(), "serviceAttributes", serviceLine.getServiceAttributes().getServiceType(), configurationLine.getServiceAttributes().getServiceType(), false));
@@ -497,118 +400,94 @@ public class CiscoOneResponseComparator {
 		}
 		
 		
-		
-		if(serviceLine.getItemType() != null && configurationLine.getItemType() !=null) 
-		{
-			if(!serviceLine.getItemType().equals(configurationLine.getItemType()))
-			{
+		if(serviceLine.getItemType() != null && configurationLine.getItemType() !=null) {
+			if(!serviceLine.getItemType().equals(configurationLine.getItemType())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "itemType", serviceLine.getItemType(), configurationLine.getItemType(), false));
 			}
+			else
+				System.out.println(serviceLine.getItemName()+ " itemType "+ serviceLine.getItemType()+" "+ configurationLine.getItemType());
 		}
-		if(serviceLine.getItemType() != null && configurationLine.getItemType() ==null) 
-		{
+		if(serviceLine.getItemType() != null && configurationLine.getItemType() ==null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "itemType", serviceLine.getItemType(), configurationLine.getItemType(), false));
 		}
-		if(serviceLine.getItemType() == null && configurationLine.getItemType() !=null) 
-		{
+		if(serviceLine.getItemType() == null && configurationLine.getItemType() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "itemType", serviceLine.getItemType(), configurationLine.getItemType(), false));
 		}
 		
 		
-		
-		if(serviceLine.getQuantity() != null && configurationLine.getQuantity() !=null) 
-		{
-			if(!serviceLine.getQuantity().equals(configurationLine.getQuantity()))
-			{
+		if(serviceLine.getQuantity() != null && configurationLine.getQuantity() !=null) {
+			if(!serviceLine.getQuantity().equals(configurationLine.getQuantity())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "quantity", serviceLine.getQuantity(), configurationLine.getQuantity(), false));
 			}
+			else
+				System.out.println(serviceLine.getItemName()+ " quantity "+ serviceLine.getQuantity()+" "+ configurationLine.getQuantity());
 		}
-		if(serviceLine.getQuantity() != null && configurationLine.getQuantity() ==null) 
-		{
+		if(serviceLine.getQuantity() != null && configurationLine.getQuantity() ==null) {
 			compareResults.add(createCompareResult(serviceLine.getItemName(), "quantity", serviceLine.getQuantity(), configurationLine.getQuantity(), false));
 		}
-		if(serviceLine.getQuantity() == null && configurationLine.getQuantity() !=null) 
-		{
+		if(serviceLine.getQuantity() == null && configurationLine.getQuantity() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "quantity", serviceLine.getQuantity(), configurationLine.getQuantity(), false));
 		}
 		
 		
-		
-		if(serviceLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice() !=null) 
-		{
-			if(!serviceLine.getUnitListPrice().equals(configurationLine.getPricingInformation().getUnitListPrice()))
-			{
+		if(serviceLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice() !=null){
+			if(!serviceLine.getUnitListPrice().equals(configurationLine.getPricingInformation().getUnitListPrice())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "unitListPrice", serviceLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
 			}
+			else
+				System.out.println(serviceLine.getItemName()+ " unitListPrice " + serviceLine.getUnitListPrice()+" "+ configurationLine.getPricingInformation().getUnitListPrice());
 		}
-		if(serviceLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice() ==null) 
-		{
+		if(serviceLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice() ==null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "unitListPrice", serviceLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
 		}
-		if(serviceLine.getUnitListPrice() == null && configurationLine.getPricingInformation().getUnitListPrice() !=null) 
-		{
+		if(serviceLine.getUnitListPrice() == null && configurationLine.getPricingInformation().getUnitListPrice() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "unitListPrice", serviceLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
 		}
 		
 		
-		
-		
-		if(serviceLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice() !=null) 
-		{
-			if(!serviceLine.getExtendedListPrice().equals(configurationLine.getPricingInformation().getExtendedListPrice()))
-			{
+		if(serviceLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice() !=null){
+			if(!serviceLine.getExtendedListPrice().equals(configurationLine.getPricingInformation().getExtendedListPrice())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "extendedListPrice", serviceLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
 			}
+			else
+				System.out.println(serviceLine.getItemName()+ " extendedListPrice " + serviceLine.getExtendedListPrice()+" "+ configurationLine.getPricingInformation().getExtendedListPrice());
 		}
-		if(serviceLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice() ==null) 
-		{
+		if(serviceLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice() ==null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "extendedListPrice", serviceLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
 		}
-		if(serviceLine.getExtendedListPrice() == null && configurationLine.getPricingInformation().getExtendedListPrice() !=null) 
-		{
+		if(serviceLine.getExtendedListPrice() == null && configurationLine.getPricingInformation().getExtendedListPrice() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "extendedListPrice", serviceLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
 		}
 		
-		
-		
-		if(serviceLine.getDescription() != null && configurationLine.getDescription() !=null) 
-		{
-			if(!serviceLine.getDescription().equals(configurationLine.getDescription()))
-			{
+		if(serviceLine.getDescription() != null && configurationLine.getDescription() !=null){
+			if(!serviceLine.getDescription().equals(configurationLine.getDescription())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "description", serviceLine.getDescription(), configurationLine.getDescription(), false));
 			}
+			
+			else
+				System.out.println(serviceLine.getItemName()+ " description "+ serviceLine.getDescription()+" "+ configurationLine.getDescription());
 		}
-		if(serviceLine.getDescription() != null && configurationLine.getDescription() ==null) 
-		{
+		if(serviceLine.getDescription() != null && configurationLine.getDescription() ==null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "description", serviceLine.getDescription(), configurationLine.getDescription(), false));
 		}
-		if(serviceLine.getDescription() == null && configurationLine.getDescription() !=null) 
-		{
+		if(serviceLine.getDescription() == null && configurationLine.getDescription() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "description", serviceLine.getDescription(), configurationLine.getDescription(), false));
 		}
 		
 		
-		
-		
-		if(serviceLine.getLeadTime() != null && configurationLine.getLeadTime() !=null) 
-		{
-			if(!serviceLine.getLeadTime().equals(configurationLine.getLeadTime().getDuration()))
-			{
+		if(serviceLine.getLeadTime() != null && configurationLine.getLeadTime() !=null) {
+			if(!serviceLine.getLeadTime().equals(configurationLine.getLeadTime().getDuration())){
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "leadTime", serviceLine.getLeadTime(), configurationLine.getLeadTime().getDuration(), false));
 			}
+			else
+				System.out.println(serviceLine.getItemName()+ " leadTime "+ serviceLine.getLeadTime()+" "+ configurationLine.getLeadTime().getDuration());
 		}
-		if(serviceLine.getLeadTime() != null && configurationLine.getLeadTime() ==null) 
-		{
+		if(serviceLine.getLeadTime() != null && configurationLine.getLeadTime() ==null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "leadTime", serviceLine.getLeadTime(), configurationLine.getLeadTime(), false));
 		}
-		if(serviceLine.getLeadTime() == null && configurationLine.getLeadTime() !=null) 
-		{
+		if(serviceLine.getLeadTime() == null && configurationLine.getLeadTime() !=null) {
 				compareResults.add(createCompareResult(serviceLine.getItemName(), "leadTime", serviceLine.getLeadTime(), configurationLine.getLeadTime(), false));
 		}
-		
-
-		
-	
 		
 		return compareResults;
 	}
@@ -618,260 +497,200 @@ public class CiscoOneResponseComparator {
 	{
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();
 		
-		if(minorLine.getConfigPath() != null && configurationLine.getConfigPath() !=null)
-		{
-			if(!minorLine.getConfigPath().equals(configurationLine.getConfigPath()))
-			{
+		if(minorLine.getConfigPath() != null && configurationLine.getConfigPath() !=null){
+			if(!minorLine.getConfigPath().equals(configurationLine.getConfigPath())){
 				compareResults.add(createCompareResult(minorLine.getItemName(), "ConfigPath", minorLine.getConfigPath(), configurationLine.getConfigPath(), false));
 			}
+			else
+				System.out.println(minorLine.getItemName()+ " ConfigPath "+ minorLine.getConfigPath()+" "+ configurationLine.getConfigPath());
 		}
-		if(minorLine.getConfigPath() != null && configurationLine.getConfigPath() ==null)
-			{
+		if(minorLine.getConfigPath() != null && configurationLine.getConfigPath() ==null){
 				compareResults.add(createCompareResult(minorLine.getItemName(), "ConfigPath", minorLine.getConfigPath(), configurationLine.getConfigPath(), false));
-			}
-		
-		if(minorLine.getConfigPath() == null && configurationLine.getConfigPath() !=null)
-			{
+		}
+		if(minorLine.getConfigPath() == null && configurationLine.getConfigPath() !=null){
 				compareResults.add(createCompareResult(minorLine.getItemName(), "ConfigPath", minorLine.getConfigPath(), configurationLine.getConfigPath(), false));
-			}
+		}
 		
-	
-		if(minorLine.getSelectionFlag() != null && configurationLine.getSelectionCode() !=null)
-		{
-			if(!minorLine.getSelectionFlag().equals(configurationLine.getSelectionCode() ))
-			{
+	   if(minorLine.getSelectionFlag() != null && configurationLine.getSelectionCode() !=null){
+			if(!minorLine.getSelectionFlag().equals(configurationLine.getSelectionCode() )){
 				compareResults.add(createCompareResult(minorLine.getItemName(), "SelectionCode", minorLine.getSelectionFlag(), configurationLine.getSelectionCode(), false));
 			}
+			else
+				System.out.println(minorLine.getItemName()+ " SelectionCode "+ minorLine.getSelectionFlag()+" "+ configurationLine.getSelectionCode());
 		}
-		if(minorLine.getSelectionFlag() != null && configurationLine.getSelectionCode() ==null)
-			{
+		if(minorLine.getSelectionFlag() != null && configurationLine.getSelectionCode() ==null){
 			compareResults.add(createCompareResult(minorLine.getItemName(), "SelectionCode", minorLine.getSelectionFlag(), configurationLine.getSelectionCode(), false));
-			}
-		if(minorLine.getSelectionFlag() == null && configurationLine.getSelectionCode() !=null)
-			{
-				compareResults.add(createCompareResult(minorLine.getItemName(), "SelectionCode", minorLine.getSelectionFlag(), configurationLine.getSelectionCode(), false));
-			}
-		
-		
-		
-		if(minorLine.get_default() != null && configurationLine.getDefault_() !=null)
-		{
-			if(!minorLine.get_default().equals(configurationLine.getDefault_() ))
-			{
-				compareResults.add(createCompareResult(minorLine.getItemName(), "Default", minorLine.get_default(), configurationLine.getDefault_(), false));
-			}
 		}
-		if(minorLine.get_default() != null && configurationLine.getDefault_() ==null)
-			{
+		if(minorLine.getSelectionFlag() == null && configurationLine.getSelectionCode() !=null){
+				compareResults.add(createCompareResult(minorLine.getItemName(), "SelectionCode", minorLine.getSelectionFlag(), configurationLine.getSelectionCode(), false));
+		}
+		
+		
+		if(minorLine.get_default() != null && configurationLine.getDefault_() !=null){
+			if(!minorLine.get_default().equals(configurationLine.getDefault_() )){
 				compareResults.add(createCompareResult(minorLine.getItemName(), "Default", minorLine.get_default(), configurationLine.getDefault_(), false));
 			}
-		
-		if(minorLine.get_default() == null && configurationLine.getDefault_() !=null)
-			if(!minorLine.get_default().equals(configurationLine.getDefault_() ))
-			{
+			else
+				System.out.println(minorLine.getItemName()+ " Default "+ minorLine.get_default()+" "+ configurationLine.getDefault_());
+		}
+		if(minorLine.get_default() != null && configurationLine.getDefault_() ==null){
 				compareResults.add(createCompareResult(minorLine.getItemName(), "Default", minorLine.get_default(), configurationLine.getDefault_(), false));
-			}
+		}
+	    if(minorLine.get_default() == null && configurationLine.getDefault_() !=null) {
+				compareResults.add(createCompareResult(minorLine.getItemName(), "Default", minorLine.get_default(), configurationLine.getDefault_(), false));
+		}
 		
 		
-		
-		if(minorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null)
-    	{
-    		if(minorLine.getProductAttributes().getSmartAccountRequiredconfig()!= null && configurationLine.getProductAttributes().getSmartAccountRequired()!=null)
-    		{
-    			if(!minorLine.getProductAttributes().getSmartAccountRequiredconfig().equals(configurationLine.getProductAttributes().getSmartAccountRequired()))
-    			{
+		if(minorLine.getProductAttributes() != null && configurationLine.getProductAttributes()!=null){
+    		if(minorLine.getProductAttributes().getSmartAccountRequiredconfig()!= null && configurationLine.getProductAttributes().getSmartAccountRequired()!=null){
+    			if(!minorLine.getProductAttributes().getSmartAccountRequiredconfig().equals(configurationLine.getProductAttributes().getSmartAccountRequired())){
     				compareResults.add(createCompareResult(minorLine.getItemName(), "SmartAccountRequired", minorLine.getProductAttributes().getSmartAccountRequiredconfig(), configurationLine.getProductAttributes().getSmartAccountRequired(), false));
     			}	
-    		}
+    			else
+    				System.out.println(minorLine.getItemName()+ " SmartAccountRequired "+ minorLine.getProductAttributes().getSmartAccountRequiredconfig()+" "+ configurationLine.getProductAttributes().getSmartAccountRequired());
+    	     }  
     	}
-		if(minorLine.getProductAttributes() != null && configurationLine.getProductAttributes() == null)
-    	{
+		if(minorLine.getProductAttributes() != null && configurationLine.getProductAttributes() == null){
 			compareResults.add(createCompareResult(minorLine.getItemName(), "SmartAccountRequired", minorLine.getProductAttributes().getSmartAccountRequiredconfig(), configurationLine.getProductAttributes().getSmartAccountRequired(), false));
     	}	
-    	
-		if(minorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null)
-    	{
+    	if(minorLine.getProductAttributes() == null && configurationLine.getProductAttributes()!=null){
     		compareResults.add(createCompareResult(minorLine.getItemName(), "SmartAccountRequired", minorLine.getProductAttributes().getSmartAccountRequiredconfig(), configurationLine.getProductAttributes().getSmartAccountRequired(), false));
     	}	
     		
-		
-		if(minorLine.getItemType() != null && configurationLine.getItemType() !=null) 
-		{
-			if(!minorLine.getItemType().equals(configurationLine.getItemType()))
-			{
+		if(minorLine.getItemType() != null && configurationLine.getItemType() !=null) {
+			if(!minorLine.getItemType().equals(configurationLine.getItemType())){
 				compareResults.add(createCompareResult(minorLine.getItemName(), "itemType", minorLine.getItemType(), configurationLine.getItemType(), false));
 			}
+			else
+				System.out.println(minorLine.getItemName()+ " itemType "+ minorLine.getItemType()+" "+ configurationLine.getItemType());
 		}
-		if(minorLine.getItemType() != null && configurationLine.getItemType() == null) 
-			{
+		if(minorLine.getItemType() != null && configurationLine.getItemType() == null) {
 				compareResults.add(createCompareResult(minorLine.getItemName(), "itemType", minorLine.getItemType(), configurationLine.getItemType(), false));
-			}
-		if(minorLine.getItemType() == null && configurationLine.getItemType() != null)
-			{
+		}
+		if(minorLine.getItemType() == null && configurationLine.getItemType() != null){
 				compareResults.add(createCompareResult(minorLine.getItemName(), "itemType", minorLine.getItemType(), configurationLine.getItemType(), false));
-			}
+		}
 		
-		
-		if(minorLine.getQuantity() != null && configurationLine.getQuantity()!=null)
-		{
-    		if (!minorLine.getQuantity().equals(configurationLine.getQuantity())) 
-    		{
+		if(minorLine.getQuantity() != null && configurationLine.getQuantity()!=null){
+    		if (!minorLine.getQuantity().equals(configurationLine.getQuantity())) {
     			compareResults.add(createCompareResult(minorLine.getItemName(), "Quantity", minorLine.getQuantity(),configurationLine.getQuantity(), false));
     		}
-    		if(minorLine.getQuantity() != null && configurationLine.getQuantity() == null) 
-    			{
-    			compareResults.add(createCompareResult(minorLine.getItemName(), "Quantity", minorLine.getQuantity(),configurationLine.getQuantity(), false));
-    			}
-        					
-        		}
-        		if(minorLine.getQuantity() == null && configurationLine.getQuantity()!= null) 
-        		{
-            			compareResults.add(createCompareResult(minorLine.getItemName(), "Quantity", minorLine.getQuantity(),configurationLine.getQuantity(), false));
-            		}
+    		else
+    			System.out.println(minorLine.getItemName()+ " Quantity "+ minorLine.getQuantity()+" "+configurationLine.getQuantity());
+		}
+    	if(minorLine.getQuantity() != null && configurationLine.getQuantity() == null) {
+    		compareResults.add(createCompareResult(minorLine.getItemName(), "Quantity", minorLine.getQuantity(),configurationLine.getQuantity(), false));
+    	}
+        if(minorLine.getQuantity() == null && configurationLine.getQuantity()!= null){
+            compareResults.add(createCompareResult(minorLine.getItemName(), "Quantity", minorLine.getQuantity(),configurationLine.getQuantity(), false));
+        }
         		
-		
-
-		    	if(minorLine.getUnitListPrice()!= null && configurationLine.getPricingInformation()!=null)
-		    	{
-		    		if(minorLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice()!=null)
-		    		{
-		    			if(!minorLine.getUnitListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getUnitListPrice().stripTrailingZeros()))
-			    {
+        if(minorLine.getUnitListPrice()!= null && configurationLine.getPricingInformation()!=null){
+		    if(minorLine.getUnitListPrice() != null && configurationLine.getPricingInformation().getUnitListPrice()!=null){
+		    	if(!minorLine.getUnitListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getUnitListPrice().stripTrailingZeros())){
 					compareResults.add(createCompareResult(minorLine.getItemName(), "UnitListPrice", minorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
 				}
-		    		}
-		    	}
-		    	if(minorLine.getUnitListPrice() != null && configurationLine.getPricingInformation()==null) 
-		    	{
-		    		compareResults.add(createCompareResult(minorLine.getItemName(), "UnitListPrice", minorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
-		    	}
-		    	if(minorLine.getUnitListPrice() == null && configurationLine.getPricingInformation()!=null) 
-		    		{
-				    	compareResults.add(createCompareResult(minorLine.getItemName(), "UnitListPrice", minorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
-				  	}
-		    
-		
-
-		    	if(minorLine.getExtendedListPrice()!= null && configurationLine.getPricingInformation()!=null)
-		    	{
-		    		if(minorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice()!=null)
-		    		{
-		    			if(!minorLine.getExtendedListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getExtendedListPrice().stripTrailingZeros()))
-		    			{
+		    	else
+		    		System.out.println(minorLine.getItemName()+ " UnitListPrice "+ minorLine.getUnitListPrice()+ " "+ configurationLine.getPricingInformation().getUnitListPrice());
+		    }
+		 }
+		 if(minorLine.getUnitListPrice() != null && configurationLine.getPricingInformation()==null) {
+		     compareResults.add(createCompareResult(minorLine.getItemName(), "UnitListPrice", minorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
+		  }
+		  if(minorLine.getUnitListPrice() == null && configurationLine.getPricingInformation()!=null) {
+			  compareResults.add(createCompareResult(minorLine.getItemName(), "UnitListPrice", minorLine.getUnitListPrice(), configurationLine.getPricingInformation().getUnitListPrice(), false));
+	      }
+ 
+		  if(minorLine.getExtendedListPrice()!= null && configurationLine.getPricingInformation()!=null){
+		    	if(minorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation().getExtendedListPrice()!=null){
+		    		if(!minorLine.getExtendedListPrice().stripTrailingZeros().equals(configurationLine.getPricingInformation().getExtendedListPrice().stripTrailingZeros())){
 		    				compareResults.add(createCompareResult(minorLine.getItemName(), "ExtendedListPrice", minorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
 		    			}
-		    		}
+		    		else
+		    			System.out.println(minorLine.getItemName()+ " ExtendedListPrice "+ minorLine.getExtendedListPrice()+" "+ configurationLine.getPricingInformation().getExtendedListPrice());
 		    	}
-		    	if(minorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation()==null) 
-		    		{
-		    			compareResults.add(createCompareResult(minorLine.getItemName(), "ExtendedListPrice", minorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
-		    		}
-				if(minorLine.getExtendedListPrice() == null && configurationLine.getPricingInformation()!=null) 
-				    {
-						compareResults.add(createCompareResult(minorLine.getItemName(), "ExtendedListPrice", minorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
-					}
-			    		
-		    	
-				if(minorLine.getDescription() != null && configurationLine.getDescription()!=null)
-				{
-		    		if (!minorLine.getDescription().equals(configurationLine.getDescription())) 
-		    		{
+		   }
+		   if(minorLine.getExtendedListPrice() != null && configurationLine.getPricingInformation()==null){
+		    	compareResults.add(createCompareResult(minorLine.getItemName(), "ExtendedListPrice", minorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
+		    }
+			if(minorLine.getExtendedListPrice() == null && configurationLine.getPricingInformation()!=null){
+				compareResults.add(createCompareResult(minorLine.getItemName(), "ExtendedListPrice", minorLine.getExtendedListPrice(), configurationLine.getPricingInformation().getExtendedListPrice(), false));
+			}
+			
+			if(minorLine.getDescription() != null && configurationLine.getDescription()!=null){
+		    	if (!minorLine.getDescription().equals(configurationLine.getDescription())){
 		    			compareResults.add(createCompareResult(minorLine.getItemName(), "Description", minorLine.getDescription(),configurationLine.getDescription(), false));
-		    		}
-				}
-			if(minorLine.getDescription() != null && configurationLine.getDescription() == null)
-				{
+		    	}
+		    	else
+		    		System.out.println(minorLine.getItemName()+ " Description "+ minorLine.getDescription()+" "+configurationLine.getDescription());
+		    }
+			if(minorLine.getDescription() != null && configurationLine.getDescription() == null){
 					compareResults.add(createCompareResult(minorLine.getItemName(), "Description", minorLine.getDescription(),configurationLine.getDescription(), false));
-				}
-			if(minorLine.getDescription() == null && configurationLine.getDescription() != null)
-				{
+			}
+			if(minorLine.getDescription() == null && configurationLine.getDescription() != null){
 					compareResults.add(createCompareResult(minorLine.getItemName(), "Description", minorLine.getDescription(),configurationLine.getDescription(), false));
-				}
+			}
 		
-			
-			if(minorLine.getLeadTime() != null && configurationLine.getLeadTime()!=null) 
-	    	{
-	    		if (!minorLine.getLeadTime().equals(configurationLine.getLeadTime().getDuration()))
-	    		{
+			if(minorLine.getLeadTime() != null && configurationLine.getLeadTime()!=null) {
+	    		if (!minorLine.getLeadTime().equals(configurationLine.getLeadTime().getDuration())){
 	    			compareResults.add(createCompareResult(minorLine.getItemName(), "LeadTime",minorLine.getLeadTime(),	configurationLine.getLeadTime().getDuration(), false));
 	    		}
+	    		else
+	    			System.out.println(minorLine.getItemName()+ " LeadTime "+minorLine.getLeadTime()+" "+	configurationLine.getLeadTime().getDuration());
 		  }
-	    
-	    	if(minorLine.getLeadTime() != null && configurationLine.getLeadTime()==null) 
-	    		{
-	    			compareResults.add(createCompareResult(minorLine.getItemName(), "LeadTime",minorLine.getLeadTime(),	configurationLine.getLeadTime().getDuration(), false));
-	    		}
-		  
-	    	if(minorLine.getLeadTime() == null && configurationLine.getLeadTime()!=null) 
-	    		{
-	    			compareResults.add(createCompareResult(minorLine.getItemName(), "LeadTime",minorLine.getLeadTime(),configurationLine.getLeadTime().getDuration(), false));
-	    		}
-		  
-     
+	      if(minorLine.getLeadTime() != null && configurationLine.getLeadTime()==null) {
+	    		compareResults.add(createCompareResult(minorLine.getItemName(), "LeadTime",minorLine.getLeadTime(),	configurationLine.getLeadTime().getDuration(), false));
+	      }
+		  if(minorLine.getLeadTime() == null && configurationLine.getLeadTime()!=null) {
+	    		compareResults.add(createCompareResult(minorLine.getItemName(), "LeadTime",minorLine.getLeadTime(),configurationLine.getLeadTime().getDuration(), false));
+	      }
 
-	    	if(minorLine.getServiceable() != null && configurationLine.getProductAttributes().getServiceable() !=null)
-	    	{
-				if(!minorLine.getServiceable().equals(configurationLine.getProductAttributes().getServiceable()))
-				{
+	    if(minorLine.getServiceable() != null && configurationLine.getProductAttributes().getServiceable() !=null){
+				if(!minorLine.getServiceable().equals(configurationLine.getProductAttributes().getServiceable())){
 					compareResults.add(createCompareResult(minorLine.getItemName(), "serviceable", minorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
 				}
-			}
-	    	if(minorLine.getServiceable() != null && configurationLine.getProductAttributes().getServiceable() ==null)
-	    		{
-	    			compareResults.add(createCompareResult(minorLine.getItemName(), "serviceable", minorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
-				}
-	
-	    	if(minorLine.getServiceable() == null && configurationLine.getProductAttributes().getServiceable() !=null) 
-	    		{
-					compareResults.add(createCompareResult(minorLine.getItemName(), "serviceable", minorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
-				}
-			
+				else
+					System.out.println(minorLine.getItemName()+ " serviceable " + minorLine.getServiceable()+" "+ configurationLine.getProductAttributes().getServiceable());
+		}
+	    if(minorLine.getServiceable() != null && configurationLine.getProductAttributes().getServiceable() ==null){
+	    	compareResults.add(createCompareResult(minorLine.getItemName(), "serviceable", minorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
+		}
+		if(minorLine.getServiceable() == null && configurationLine.getProductAttributes().getServiceable() !=null) {
+			compareResults.add(createCompareResult(minorLine.getItemName(), "serviceable", minorLine.getServiceable(), configurationLine.getProductAttributes().getServiceable(), false));
+		}
 		
-	    	if(minorLine.getAllowedDifferentialDuration() != null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() !=null)
-	    	{
-				if(!minorLine.getAllowedDifferentialDuration().equals(configurationLine.getProductAttributes().getAllowedDifferentialDuration()))
-				{
-					compareResults.add(createCompareResult(minorLine.getItemName(), "allowedDifferentialDuration", minorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
-				}
+	    if(minorLine.getAllowedDifferentialDuration() != null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() !=null){
+		    if(!minorLine.getAllowedDifferentialDuration().equals(configurationLine.getProductAttributes().getAllowedDifferentialDuration())){
+				compareResults.add(createCompareResult(minorLine.getItemName(), "allowedDifferentialDuration", minorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
 			}
-	    	if(minorLine.getAllowedDifferentialDuration() != null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() ==null)
-	    		{
+		    else
+		    	System.out.println(minorLine.getItemName()+ " allowedDifferentialDuration "+ minorLine.getAllowedDifferentialDuration()+" "+ configurationLine.getProductAttributes().getAllowedDifferentialDuration());
+			}
+	    	if(minorLine.getAllowedDifferentialDuration() != null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() ==null){
 					compareResults.add(createCompareResult(minorLine.getItemName(), "allowedDifferentialDuration", minorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
-				}
-			
-	    	if(minorLine.getAllowedDifferentialDuration() == null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() !=null)
-	    		{
+			}
+			if(minorLine.getAllowedDifferentialDuration() == null && configurationLine.getProductAttributes().getAllowedDifferentialDuration() !=null){
 					compareResults.add(createCompareResult(minorLine.getItemName(), "allowedDifferentialDuration", minorLine.getAllowedDifferentialDuration(), configurationLine.getProductAttributes().getAllowedDifferentialDuration(), false));
-				}
+			}
 			
-
-	    	if(minorLine.getSourceLineId() != null && configurationLine.getSourceLineID() !=null)
-	    	{
-				if(!minorLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID()))
-				{
+         if(minorLine.getSourceLineId() != null && configurationLine.getSourceLineID() !=null){
+				if(!minorLine.getSourceLineId().get(0).equals(configurationLine.getSourceLineID())){
 					compareResults.add(createCompareResult(minorLine.getItemName(), "sourceLineId",minorLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
 				}
+				else
+					System.out.println(minorLine.getItemName()+ " sourceLineId "+minorLine.getSourceLineId()+" "+ configurationLine.getSourceLineID());
 			}
-	    	if(minorLine.getSourceLineId() != null && configurationLine.getSourceLineID() ==null) 
-	    		{
+	    	if(minorLine.getSourceLineId() != null && configurationLine.getSourceLineID() ==null) {
 					compareResults.add(createCompareResult(minorLine.getItemName(), "sourceLineId",minorLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
-				}
-	    	if(minorLine.getSourceLineId() == null && configurationLine.getSourceLineID() !=null)
-	    		{
+			}
+	    	if(minorLine.getSourceLineId() == null && configurationLine.getSourceLineID() !=null){
 					compareResults.add(createCompareResult(minorLine.getItemName(), "sourceLineId",minorLine.getSourceLineId(), configurationLine.getSourceLineID(), false));
-	    		}
-		
-		
-		
-    	
-		
-		
-		
+	    	}
 		
 		return compareResults;
 	}
 
-	
+	/***************************************/
 	public static List<CompareResult> compareXaasMinorLine(XaasMinorLine xaasMinorLine,	ConfigurationLine configurationLine) {
 		List<CompareResult> compareResults = new ArrayList<CompareResult>();	
 		if(xaasMinorLine.getActionTag() != null && configurationLine.getXaasAttributes().getActionCode() !=null) {
@@ -1029,5 +848,4 @@ public class CiscoOneResponseComparator {
 		compareResult.setB2bValue(value2);
 		compareResult.setResult(false);
 		return compareResult;
-	}
-}
+	
