@@ -15,15 +15,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class App {
 
-	/****************/
-	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException, NoSuchFieldException, SecurityException {
 		B2BResponse b2bResponse = getB2BResponse();
 		ConfigResponse configResponse = getConfigResponse();
 		Map<String, Object> mapDiff = new HashMap<>();
 		List<CompareResult> compareResults = null;
 		String serviceName = "CiscoOne";
 		switch (serviceName) {
-		case "ConfigRecommendationR":
+		case "ConfigRecommendation":
 			compareResults = ConfigRecommendationResponseComparator.comapreResponse(configResponse, b2bResponse);
 			break;
 		case "CiscoOne":
@@ -33,7 +32,7 @@ public class App {
 		if (!compareResults.isEmpty()) {
 			System.out.println("Found Difference");
 			for (CompareResult compareResult : compareResults) {
-				mapDiff.put(compareResult.getItemName(), compareResults);
+				mapDiff.put("Different Response Details", compareResults);
 			}
 		}
 		System.out.println(mapDiff);
@@ -43,15 +42,14 @@ public class App {
 	private static B2BResponse getB2BResponse() throws JsonParseException, JsonMappingException, IOException {
 		B2BResponse b2BResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
-		b2BResponse = mapper.readValue(getFileFromResources("CiscoOne_B2B.json"), B2BResponse.class);
-
+		b2BResponse = mapper.readValue(getFileFromResources("VCS_B2B.json"), B2BResponse.class);
 		return b2BResponse;
 	}
 
 	private static ConfigResponse getConfigResponse() throws JsonParseException, JsonMappingException, IOException {
 		ConfigResponse configResponse = null;
 		ObjectMapper mapper = new ObjectMapper();
-		configResponse = mapper.readValue(getFileFromResources("CiscoOne_Config.json"), ConfigResponse.class);
+		configResponse = mapper.readValue(getFileFromResources("VCS_Config.json"), ConfigResponse.class);
 		return configResponse;
 	}
 

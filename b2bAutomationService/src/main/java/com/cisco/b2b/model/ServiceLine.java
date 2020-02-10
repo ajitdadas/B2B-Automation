@@ -12,8 +12,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ServiceLine {
 
-	
-	/****************/
 	@JsonProperty("serviceLevelName")
 	private String serviceLevelName;
 	@JsonProperty("durationListPrice")
@@ -31,7 +29,7 @@ public class ServiceLine {
 	@JsonProperty("durationList")
 	private List<Integer> durationList = null;
 	@JsonProperty("sourceLineId")
-	private List<Object> sourceLineId;
+	private List<String> sourceLineId;
 	@JsonProperty("message")
 	private List<Object> message = null;
 	@JsonProperty("serviceLine")
@@ -47,17 +45,17 @@ public class ServiceLine {
 	@JsonProperty("itemType")
 	private String itemType;
 	@JsonProperty("quantity")
-	private Integer quantity;
+	private String quantity;
 	@JsonProperty("unitListPrice")
-	private Double unitListPrice;
+	private BigDecimal unitListPrice;
 	@JsonProperty("extendedListPrice")
-	private Double extendedListPrice;
+	private BigDecimal extendedListPrice;
 	@JsonProperty("description")
 	private String description;
 	@JsonProperty("mandatoryService")
 	private Boolean mandatoryService;
 	@JsonProperty("leadTime")
-	private Integer leadTime;
+	private String leadTime;
 	@JsonProperty("serviceMapId")
 	private Integer serviceMapId;
 	@JsonIgnore
@@ -142,13 +140,11 @@ public class ServiceLine {
 		this.durationList = durationList;
 	}
 
-	@JsonProperty("sourceLineId")
-	public List<Object> getSourceLineId() {
+	public List<String> getSourceLineId() {
 		return sourceLineId;
 	}
 
-	@JsonProperty("sourceLineId")
-	public void setSourceLineId(List<Object> sourceLineId) {
+	public void setSourceLineId(List<String> sourceLineId) {
 		this.sourceLineId = sourceLineId;
 	}
 
@@ -224,34 +220,51 @@ public class ServiceLine {
 		this.itemType = itemType;
 	}
 
-	@JsonProperty("quantity")
-	public Integer getQuantity() {
+	
+	@Override
+	public String toString() {
+		return "ServiceLine [serviceLevelName=" + serviceLevelName + ", durationListPrice=" + durationListPrice
+				+ ", servicePeriod=" + servicePeriod + ", lessThanMinDur=" + lessThanMinDur + ", hierarchy=" + hierarchy
+				+ ", userSelected=" + userSelected + ", taxMandatoryAttach=" + taxMandatoryAttach + ", durationList="
+				+ durationList + ", sourceLineId=" + sourceLineId + ", message=" + message + ", serviceLine="
+				+ serviceLine + ", mnqAttributes=" + mnqAttributes + ", serviceAttributes=" + serviceAttributes
+				+ ", extendedAttributes=" + extendedAttributes + ", itemName=" + itemName + ", itemType=" + itemType
+				+ ", quantity=" + quantity + ", unitListPrice=" + unitListPrice + ", extendedListPrice="
+				+ extendedListPrice + ", description=" + description + ", mandatoryService=" + mandatoryService
+				+ ", leadTime=" + leadTime + ", serviceMapId=" + serviceMapId + ", additionalProperties="
+				+ additionalProperties + "]";
+	}
+
+	public String getQuantity() {
 		return quantity;
 	}
 
-	@JsonProperty("quantity")
-	public void setQuantity(Integer quantity) {
+	public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
 
-	@JsonProperty("unitListPrice")
-	public Double getUnitListPrice() {
+	public BigDecimal getUnitListPrice() {
 		return unitListPrice;
 	}
 
-	@JsonProperty("unitListPrice")
-	public void setUnitListPrice(Double unitListPrice) {
+	public void setUnitListPrice(BigDecimal unitListPrice) {
 		this.unitListPrice = unitListPrice;
 	}
 
-	@JsonProperty("extendedListPrice")
-	public Double getExtendedListPrice() {
+	public BigDecimal getExtendedListPrice() {
 		return extendedListPrice;
 	}
 
-	@JsonProperty("extendedListPrice")
-	public void setExtendedListPrice(Double extendedListPrice) {
+	public void setExtendedListPrice(BigDecimal extendedListPrice) {
 		this.extendedListPrice = extendedListPrice;
+	}
+
+	public String getLeadTime() {
+		return leadTime;
+	}
+
+	public void setLeadTime(String leadTime) {
+		this.leadTime = leadTime;
 	}
 
 	@JsonProperty("description")
@@ -274,16 +287,7 @@ public class ServiceLine {
 		this.mandatoryService = mandatoryService;
 	}
 
-	@JsonProperty("leadTime")
-	public Integer getLeadTime() {
-		return leadTime;
-	}
-
-	@JsonProperty("leadTime")
-	public void setLeadTime(Integer leadTime) {
-		this.leadTime = leadTime;
-	}
-
+	
 	@JsonProperty("serviceMapId")
 	public Integer getServiceMapId() {
 		return serviceMapId;

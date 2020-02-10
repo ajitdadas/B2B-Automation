@@ -13,309 +13,324 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 public class XaasMinorLine {
 
-@JsonProperty("actionTag")
-private String actionTag;
-@JsonProperty("usageQuantity")
-private Integer usageQuantity;
-@JsonProperty("uom")
-private String uom;
-@JsonProperty("billingType")
-private String billingType;
-@JsonProperty("chargeType")
-private String chargeType;
-@JsonProperty("xaasTermPayment")
-private XaasTermPayment xaasTermPayment;
-@JsonProperty("subscriptionUnit")
-private String subscriptionUnit;
-public void setAdditionalProperties(Map<String, Object> additionalProperties) {
-	this.additionalProperties = additionalProperties;
-}
 
-@JsonProperty("groupDescription")
-private String groupDescription;
-@JsonProperty("lineId")
-private Integer lineId;
-@JsonProperty("itemName")
-private String itemName;
-@JsonProperty("quantity")
-private Integer quantity;
-@JsonProperty("configPath")
-private String configPath;
-@JsonProperty("selectionFlag")
-private String selectionFlag;
-@JsonProperty("description")
-private String description;
-@JsonProperty("leadTime")
-private Integer leadTime;
-@JsonProperty("pricingInfo")
-private PricingInfo pricingInfo;
-@JsonProperty("uiHide")
-private Boolean uiHide;
-@JsonProperty("additionalItemInfo")
-private String additionalItemInfo;
-@JsonProperty("deliveryOption")
-private String deliveryOption;
-@JsonProperty("extendedAttributes")
-private ExtendedAttributes extendedAttributes;
-@JsonProperty("smartAccountRequired")
-private String smartAccountRequired;
-@JsonProperty("sourceLineId")
-private List<Integer> sourceLineId = null;
-@JsonProperty("message")
-private List<Object> message = null;
-@JsonProperty("serviceMapId")
-private Integer serviceMapId;
-@JsonIgnore
-private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-@JsonProperty("actionTag")
-public String getActionTag() {
-return actionTag;
-}
+	@JsonProperty("actionTag")
+	private String actionTag;
+	@JsonProperty("usageQuantity")
+	private Integer usageQuantity;
+	@JsonProperty("uom")
+	private String uom;
+	@JsonProperty("billingType")
+	private String billingType;
+	@JsonProperty("chargeType")
+	private String chargeType;
+	@JsonProperty("xaasTermPayment")
+	private XaasTermPayment xaasTermPayment;
+	@JsonProperty("subscriptionUnit")
+	private String subscriptionUnit;
+	public void setAdditionalProperties(Map<String, Object> additionalProperties) {
+		this.additionalProperties = additionalProperties;
+	}
 
-@JsonProperty("actionTag")
-public void setActionTag(String actionTag) {
-this.actionTag = actionTag;
-}
+	@JsonProperty("groupDescription")
+	private String groupDescription;
+	@JsonProperty("lineId")
+	private Integer lineId;
+	@JsonProperty("itemName")
+	private String itemName;
+	@JsonProperty("quantity")
+	private Integer quantity;
+	@JsonProperty("configPath")
+	private String configPath;
+	@JsonProperty("selectionFlag")
+	private String selectionFlag;
+	@JsonProperty("description")
+	private String description;
+	@JsonProperty("leadTime")
+	private Integer leadTime;
+	@JsonProperty("pricingInfo")
+	private PricingInfo pricingInfo;
+	@JsonProperty("uiHide")
+	private Boolean uiHide;
+	@JsonProperty("additionalItemInfo")
+	private String additionalItemInfo;
+	@JsonProperty("deliveryOption")
+	private String deliveryOption;
+	@JsonProperty("extendedAttributes")
+	private ExtendedAttributes extendedAttributes;
+	@JsonProperty("smartAccountRequired")
+	private String smartAccountRequired;
+	@JsonProperty("sourceLineId")
+	private List<Integer> sourceLineId = null;
+	@JsonProperty("message")
+	private List<Object> message = null;
+	@JsonProperty("serviceMapId")
+	private Integer serviceMapId;
+	@JsonIgnore
+	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-@JsonProperty("usageQuantity")
-public Integer getUsageQuantity() {
-return usageQuantity;
-}
+	@JsonProperty("actionTag")
+	public String getActionTag() {
+		return actionTag;
+	}
 
-@JsonProperty("usageQuantity")
-public void setUsageQuantity(Integer usageQuantity) {
-this.usageQuantity = usageQuantity;
-}
+	@JsonProperty("actionTag")
+	public void setActionTag(String actionTag) {
+		this.actionTag = actionTag;
+	}
 
-@JsonProperty("uom")
-public String getUom() {
-return uom;
-}
+	@JsonProperty("usageQuantity")
+	public Integer getUsageQuantity() {
+		return usageQuantity;
+	}
 
-@JsonProperty("uom")
-public void setUom(String uom) {
-this.uom = uom;
-}
+	@JsonProperty("usageQuantity")
+	public void setUsageQuantity(Integer usageQuantity) {
+		this.usageQuantity = usageQuantity;
+	}
 
-@JsonProperty("billingType")
-public String getBillingType() {
-return billingType;
-}
+	@JsonProperty("uom")
+	public String getUom() {
+		return uom;
+	}
 
-@JsonProperty("billingType")
-public void setBillingType(String billingType) {
-this.billingType = billingType;
-}
+	@JsonProperty("uom")
+	public void setUom(String uom) {
+		this.uom = uom;
+	}
 
-@JsonProperty("chargeType")
-public String getChargeType() {
-return chargeType;
-}
+	@JsonProperty("billingType")
+	public String getBillingType() {
+		return billingType;
+	}
 
-@JsonProperty("chargeType")
-public void setChargeType(String chargeType) {
-this.chargeType = chargeType;
-}
+	@JsonProperty("billingType")
+	public void setBillingType(String billingType) {
+		this.billingType = billingType;
+	}
 
-@JsonProperty("xaasTermPayment")
-public XaasTermPayment getXaasTermPayment() {
-return xaasTermPayment;
-}
+	@JsonProperty("chargeType")
+	public String getChargeType() {
+		return chargeType;
+	}
 
-@JsonProperty("xaasTermPayment")
-public void setXaasTermPayment(XaasTermPayment xaasTermPayment) {
-this.xaasTermPayment = xaasTermPayment;
-}
+	@JsonProperty("chargeType")
+	public void setChargeType(String chargeType) {
+		this.chargeType = chargeType;
+	}
 
-@JsonProperty("subscriptionUnit")
-public String getSubscriptionUnit() {
-return subscriptionUnit;
-}
+	@JsonProperty("xaasTermPayment")
+	public XaasTermPayment getXaasTermPayment() {
+		return xaasTermPayment;
+	}
 
-@JsonProperty("subscriptionUnit")
-public void setSubscriptionUnit(String subscriptionUnit) {
-this.subscriptionUnit = subscriptionUnit;
-}
+	@JsonProperty("xaasTermPayment")
+	public void setXaasTermPayment(XaasTermPayment xaasTermPayment) {
+		this.xaasTermPayment = xaasTermPayment;
+	}
 
-@JsonProperty("groupDescription")
-public String getGroupDescription() {
-return groupDescription;
-}
+	@JsonProperty("subscriptionUnit")
+	public String getSubscriptionUnit() {
+		return subscriptionUnit;
+	}
 
-@JsonProperty("groupDescription")
-public void setGroupDescription(String groupDescription) {
-this.groupDescription = groupDescription;
-}
+	@JsonProperty("subscriptionUnit")
+	public void setSubscriptionUnit(String subscriptionUnit) {
+		this.subscriptionUnit = subscriptionUnit;
+	}
 
-@JsonProperty("lineId")
-public Integer getLineId() {
-return lineId;
-}
+	@JsonProperty("groupDescription")
+	public String getGroupDescription() {
+		return groupDescription;
+	}
 
-@JsonProperty("lineId")
-public void setLineId(Integer lineId) {
-this.lineId = lineId;
-}
+	@JsonProperty("groupDescription")
+	public void setGroupDescription(String groupDescription) {
+		this.groupDescription = groupDescription;
+	}
 
-@JsonProperty("itemName")
-public String getItemName() {
-return itemName;
-}
+	@JsonProperty("lineId")
+	public Integer getLineId() {
+		return lineId;
+	}
 
-@JsonProperty("itemName")
-public void setItemName(String itemName) {
-this.itemName = itemName;
-}
+	@JsonProperty("lineId")
+	public void setLineId(Integer lineId) {
+		this.lineId = lineId;
+	}
 
-@JsonProperty("quantity")
-public Integer getQuantity() {
-return quantity;
-}
+	@JsonProperty("itemName")
+	public String getItemName() {
+		return itemName;
+	}
 
-@JsonProperty("quantity")
-public void setQuantity(Integer quantity) {
-this.quantity = quantity;
-}
+	@JsonProperty("itemName")
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
 
-@JsonProperty("configPath")
-public String getConfigPath() {
-return configPath;
-}
+	@JsonProperty("quantity")
+	public Integer getQuantity() {
+		return quantity;
+	}
 
-@JsonProperty("configPath")
-public void setConfigPath(String configPath) {
-this.configPath = configPath;
-}
+	@JsonProperty("quantity")
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
 
-@JsonProperty("selectionFlag")
-public String getSelectionFlag() {
-return selectionFlag;
-}
+	@JsonProperty("configPath")
+	public String getConfigPath() {
+		return configPath;
+	}
 
-@JsonProperty("selectionFlag")
-public void setSelectionFlag(String selectionFlag) {
-this.selectionFlag = selectionFlag;
-}
+	@JsonProperty("configPath")
+	public void setConfigPath(String configPath) {
+		this.configPath = configPath;
+	}
 
-@JsonProperty("description")
-public String getDescription() {
-return description;
-}
+	@JsonProperty("selectionFlag")
+	public String getSelectionFlag() {
+		return selectionFlag;
+	}
 
-@JsonProperty("description")
-public void setDescription(String description) {
-this.description = description;
-}
+	@JsonProperty("selectionFlag")
+	public void setSelectionFlag(String selectionFlag) {
+		this.selectionFlag = selectionFlag;
+	}
 
-@JsonProperty("leadTime")
-public Integer getLeadTime() {
-return leadTime;
-}
+	@JsonProperty("description")
+	public String getDescription() {
+		return description;
+	}
 
-@JsonProperty("leadTime")
-public void setLeadTime(Integer leadTime) {
-this.leadTime = leadTime;
-}
+	@JsonProperty("description")
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
-@JsonProperty("pricingInfo")
-public PricingInfo getPricingInfo() {
-return pricingInfo;
-}
+	@JsonProperty("leadTime")
+	public Integer getLeadTime() {
+		return leadTime;
+	}
 
-@JsonProperty("pricingInfo")
-public void setPricingInfo(PricingInfo pricingInfo) {
-this.pricingInfo = pricingInfo;
-}
+	@JsonProperty("leadTime")
+	public void setLeadTime(Integer leadTime) {
+		this.leadTime = leadTime;
+	}
 
-@JsonProperty("uiHide")
-public Boolean getUiHide() {
-return uiHide;
-}
+	@JsonProperty("pricingInfo")
+	public PricingInfo getPricingInfo() {
+		return pricingInfo;
+	}
 
-@JsonProperty("uiHide")
-public void setUiHide(Boolean uiHide) {
-this.uiHide = uiHide;
-}
+	@JsonProperty("pricingInfo")
+	public void setPricingInfo(PricingInfo pricingInfo) {
+		this.pricingInfo = pricingInfo;
+	}
 
-@JsonProperty("additionalItemInfo")
-public String getAdditionalItemInfo() {
-return additionalItemInfo;
-}
+	@JsonProperty("uiHide")
+	public Boolean getUiHide() {
+		return uiHide;
+	}
 
-@JsonProperty("additionalItemInfo")
-public void setAdditionalItemInfo(String additionalItemInfo) {
-this.additionalItemInfo = additionalItemInfo;
-}
+	@JsonProperty("uiHide")
+	public void setUiHide(Boolean uiHide) {
+		this.uiHide = uiHide;
+	}
 
-@JsonProperty("deliveryOption")
-public String getDeliveryOption() {
-return deliveryOption;
-}
+	@JsonProperty("additionalItemInfo")
+	public String getAdditionalItemInfo() {
+		return additionalItemInfo;
+	}
 
-@JsonProperty("deliveryOption")
-public void setDeliveryOption(String deliveryOption) {
-this.deliveryOption = deliveryOption;
-}
+	@JsonProperty("additionalItemInfo")
+	public void setAdditionalItemInfo(String additionalItemInfo) {
+		this.additionalItemInfo = additionalItemInfo;
+	}
 
-@JsonProperty("extendedAttributes")
-public ExtendedAttributes getExtendedAttributes() {
-return extendedAttributes;
-}
+	@JsonProperty("deliveryOption")
+	public String getDeliveryOption() {
+		return deliveryOption;
+	}
 
-@JsonProperty("extendedAttributes")
-public void setExtendedAttributes(ExtendedAttributes extendedAttributes) {
-this.extendedAttributes = extendedAttributes;
-}
+	@JsonProperty("deliveryOption")
+	public void setDeliveryOption(String deliveryOption) {
+		this.deliveryOption = deliveryOption;
+	}
 
-@JsonProperty("smartAccountRequired")
-public String getSmartAccountRequired() {
-return smartAccountRequired;
-}
+	@JsonProperty("extendedAttributes")
+	public ExtendedAttributes getExtendedAttributes() {
+		return extendedAttributes;
+	}
 
-@JsonProperty("smartAccountRequired")
-public void setSmartAccountRequired(String smartAccountRequired) {
-this.smartAccountRequired = smartAccountRequired;
-}
+	@JsonProperty("extendedAttributes")
+	public void setExtendedAttributes(ExtendedAttributes extendedAttributes) {
+		this.extendedAttributes = extendedAttributes;
+	}
 
-@JsonProperty("sourceLineId")
-public List<Integer> getSourceLineId() {
-return sourceLineId;
-}
+	@JsonProperty("smartAccountRequired")
+	public String getSmartAccountRequired() {
+		return smartAccountRequired;
+	}
 
-@JsonProperty("sourceLineId")
-public void setSourceLineId(List<Integer> sourceLineId) {
-this.sourceLineId = sourceLineId;
-}
+	@JsonProperty("smartAccountRequired")
+	public void setSmartAccountRequired(String smartAccountRequired) {
+		this.smartAccountRequired = smartAccountRequired;
+	}
 
-@JsonProperty("message")
-public List<Object> getMessage() {
-return message;
-}
+	@JsonProperty("sourceLineId")
+	public List<Integer> getSourceLineId() {
+		return sourceLineId;
+	}
 
-@JsonProperty("message")
-public void setMessage(List<Object> message) {
-this.message = message;
-}
+	@JsonProperty("sourceLineId")
+	public void setSourceLineId(List<Integer> sourceLineId) {
+		this.sourceLineId = sourceLineId;
+	}
 
-@JsonProperty("serviceMapId")
-public Integer getServiceMapId() {
-return serviceMapId;
-}
+	@JsonProperty("message")
+	public List<Object> getMessage() {
+		return message;
+	}
 
-@JsonProperty("serviceMapId")
-public void setServiceMapId(Integer serviceMapId) {
-this.serviceMapId = serviceMapId;
-}
+	@JsonProperty("message")
+	public void setMessage(List<Object> message) {
+		this.message = message;
+	}
 
-@JsonAnyGetter
-public Map<String, Object> getAdditionalProperties() {
-return this.additionalProperties;
-}
+	@JsonProperty("serviceMapId")
+	public Integer getServiceMapId() {
+		return serviceMapId;
+	}
 
-@JsonAnySetter
-public void setAdditionalProperty(String name, Object value) {
-this.additionalProperties.put(name, value);
-}
+	@JsonProperty("serviceMapId")
+	public void setServiceMapId(Integer serviceMapId) {
+		this.serviceMapId = serviceMapId;
+	}
 
+	@JsonAnyGetter
+	public Map<String, Object> getAdditionalProperties() {
+		return this.additionalProperties;
+	}
+
+	@JsonAnySetter
+	public void setAdditionalProperty(String name, Object value) {
+		this.additionalProperties.put(name, value);
+	}
+
+	@Override
+	public String toString() {
+		return "XaasMinorLine [actionTag=" + actionTag + ", usageQuantity=" + usageQuantity + ", uom=" + uom
+				+ ", billingType=" + billingType + ", chargeType=" + chargeType + ", xaasTermPayment=" + xaasTermPayment
+				+ ", subscriptionUnit=" + subscriptionUnit + ", groupDescription=" + groupDescription + ", lineId="
+				+ lineId + ", itemName=" + itemName + ", quantity=" + quantity + ", configPath=" + configPath
+				+ ", selectionFlag=" + selectionFlag + ", description=" + description + ", leadTime=" + leadTime
+				+ ", pricingInfo=" + pricingInfo + ", uiHide=" + uiHide + ", additionalItemInfo=" + additionalItemInfo
+				+ ", deliveryOption=" + deliveryOption + ", extendedAttributes=" + extendedAttributes
+				+ ", smartAccountRequired=" + smartAccountRequired + ", sourceLineId=" + sourceLineId + ", message="
+				+ message + ", serviceMapId=" + serviceMapId + ", additionalProperties=" + additionalProperties + "]";
+	}
+/*----*/
 }

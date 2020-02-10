@@ -1,13 +1,13 @@
 package com.cisco.b2b.util;
 
 public class CompareResult {
+	
 	private String itemName;
 	private String propertyName;
 	private Object configValue;
 	private Object b2bValue;
 	private boolean result;
 
-	/****************/
 	public CompareResult() {
 		this.result = true;
 	}
